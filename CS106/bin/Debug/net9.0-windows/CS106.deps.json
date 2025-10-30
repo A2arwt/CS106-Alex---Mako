@@ -6,6 +6,14 @@
   "compilationOptions": {},
   "targets": {
     ".NETCoreApp,Version=v9.0": {
+      "CS106/1.0.0": {
+        "dependencies": {
+          "System.Data.SQLite": "2.0.2"
+        },
+        "runtime": {
+          "CS106.dll": {}
+        }
+      },
       "System.Data.SQLite/2.0.2": {
         "runtime": {
           "lib/netstandard2.1/System.Data.SQLite.dll": {
@@ -17,6 +25,11 @@
     }
   },
   "libraries": {
+    "CS106/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
     "System.Data.SQLite/2.0.2": {
       "type": "package",
       "serviceable": true,
