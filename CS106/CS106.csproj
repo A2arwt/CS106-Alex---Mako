@@ -9,6 +9,17 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <None Remove="database\CS106.db" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Include="database\CS106.db">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.Data.Sqlite" Version="9.0.10" />
     <PackageReference Include="System.Data.SQLite" Version="2.0.2" />
   </ItemGroup>
 
