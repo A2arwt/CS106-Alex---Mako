@@ -24,7 +24,7 @@ public partial class MainWindow : Window
     int i = 1;
 
 
-    class EmployeeDataStruct
+    class SQL_EmployeeDataStruct
     {
         public long employee_id { get; set; }
         public string? name { get; set; }
@@ -35,7 +35,7 @@ public partial class MainWindow : Window
     }
 
 
-    class MessageDataStruct
+    class SQL_MessageDataStruct
     {
         public long employee_id { get; set; }
         public string? reply_message { get; set; }
@@ -44,14 +44,14 @@ public partial class MainWindow : Window
     }
 
 
-    class PreformanceReviewDataStruct
+    class SQL_PreformanceReviewDataStruct
     {
         public long employee_id { get; set; }
         public DateTime review_data { get; set; }
         public string? feedback { get; set; }
         public long review_score { get; set; }
     }
-    class RequestDataStruct
+    class SQL_RequestDataStruct
     {
         public long employee_id { get; set; }
         public string? request_type { get; set; }
@@ -63,42 +63,50 @@ public partial class MainWindow : Window
     }
 
 
-    class TrainingReportDataStruct
+    class SQL_RosterDataStruct
     {
-        long employee_id { get; set; }
-        string? training_course { get; set; }
-        DateTime data_aquired { get; set; }
-        string? status { get; set; }
-        long leave_used { get; set; }
-        DateTime date_expired { get; set; }
+        public long employee_id { get; set; }
+        public DateTime shift_date { get; set; }
+        public float shift_start_time { get; set; }
+        public float shift_finish_time { get; set; }
+    }
+
+    class SQL_TrainingReportDataStruct
+    {
+        public long employee_id { get; set; }
+        public string? training_course { get; set; }
+        public DateTime data_aquired { get; set; }
+        public string? status { get; set; }
+        public long leave_used { get; set; }
+        public DateTime date_expired { get; set; }
     }
 
 
-    class UserDataStruct
+    class SQL_UserDataStruct
     {
-        long employee_id { get; set; }
-        string? email { get; set; }
-        string? username { get; set; }
-        string? password { get; set; }
+        public long employee_id { get; set; }
+        public string? email { get; set; }
+        public string? username { get; set; }
+        public string? password { get; set; }
     }
 
 
 
-    SQLiteConnection database;
+    SQLiteConnection sql_database;
     public MainWindow()
     {
         InitializeComponent();
-        database = new SQLiteConnection("Data Source=./database/CS106.db");
-        database.Open();
+        sql_database = new SQLiteConnection("Data Source=./database/CS106.db");
+        sql_database.Open();
 
 
     }
-    long SignIn(string username, string password)
+    long SQL_GetUserEmployeeID(string username, string password)
     {
         /*
          * This function returns the employee ID of the user or -1 if the user does not exist
          */
-        var command = new SQLiteCommand("select employee_id from user where  password is @password and username is @username", database);
+        var command = new SQLiteCommand("select employee_id from user where  password is @password and username is @username", sql_database);
         command.Parameters.AddWithValue("@username", username);
         command.Parameters.AddWithValue("@password", password);
 
@@ -113,13 +121,13 @@ public partial class MainWindow : Window
         return -1;
     }
 
-    void CreateUser(string name,string username,string job,float payrate)
+    void SQL_CreateEmployee(string name,string username,string job,float payrate)
     {
         /*  
          *  this function create both a user and employee table
          */
         var command = new SQLiteCommand("insert into employee(name,job_tittle,pay_rate,hire_date,username)" +
-                                                    " VALUES(@name,@job,@payrate,@data,@username)", database);
+                                                    " VALUES(@name,@job,@payrate,@data,@username)", sql_database);
         command.Parameters.AddWithValue("@data", DateTime.Now.ToString("dd - MM - yyyy hh: mm:ss.fff"));
         command.Parameters.AddWithValue("@name", name);
         command.Parameters.AddWithValue("@username", username);
@@ -129,14 +137,14 @@ public partial class MainWindow : Window
         command.ExecuteNonQuery();
 
 
-        command = new SQLiteCommand("select employee_id from employee where username is @username", database);
+        command = new SQLiteCommand("select employee_id from employee where username is @username", sql_database);
         command.Parameters.AddWithValue("@username", username);
         var result = command.ExecuteReader();
         if (result.Read())
         {
             var employee_id = (long)result[0];
             command = new SQLiteCommand("insert into user(employee_id,username)" +
-                                                    " VALUES(@employee_id,@username)", database);
+                                                    " VALUES(@employee_id,@username)", sql_database);
             command.Parameters.AddWithValue("@username", username);
             command.Parameters.AddWithValue("@employee_id", employee_id);
             command.ExecuteNonQuery();
@@ -145,21 +153,21 @@ public partial class MainWindow : Window
         }
     }
 
-    void DeleteEmployee(string employee_id)
+    void SQL_DeleteEmployee(string employee_id)
     {
-        var command = new SQLiteCommand("delete from employee where employee_id is @employee_id", database);
+        var command = new SQLiteCommand("delete from employee where employee_id is @employee_id", sql_database);
         command.Parameters.AddWithValue("@employee_id", employee_id);
         command.ExecuteNonQuery();
     }
 
-    List<EmployeeDataStruct>? SelectAllEmployees()
+    List<SQL_EmployeeDataStruct>? SQL_SelectAllEmployees()
     {
-        var command = new SQLiteCommand("select * from messages", database);
+        var command = new SQLiteCommand("select * from Employee", sql_database);
         var result = command.ExecuteReader();
-        List<EmployeeDataStruct> data = new List<EmployeeDataStruct>();
+        List<SQL_EmployeeDataStruct> data = new List<SQL_EmployeeDataStruct>();
         while (result.Read())
         {
-            EmployeeDataStruct i = new EmployeeDataStruct();
+            SQL_EmployeeDataStruct i = new SQL_EmployeeDataStruct();
             i.employee_id = (long)result[0];
             i.name = (string)result[1];
             i.username = (string)result[2];
@@ -173,30 +181,47 @@ public partial class MainWindow : Window
     }
 
 
-    List<MessageDataStruct> SelectAllMessages()
+    List<SQL_MessageDataStruct> SQL_SelectAllMessages()
     {
-        var command = new SQLiteCommand("select * from performance_review", database);
+        var command = new SQLiteCommand("select * from Messages ", sql_database);
         var result = command.ExecuteReader();
-        List<MessageDataStruct> data = new List<MessageDataStruct>();
+        List<SQL_MessageDataStruct> data = new List<SQL_MessageDataStruct>();
         while (result.Read())
         {
-            MessageDataStruct i = new MessageDataStruct();
+            SQL_MessageDataStruct i = new SQL_MessageDataStruct();
             i.employee_id = (long)result[0];
             i.reply_message = (string)result[1];
             i.send_message = (string)result[2];
             i.recieve_data = (DateTime)result[3];
             data.Add(i);
+        }//performance_review
+        return data;
+    }
+    List<SQL_PreformanceReviewDataStruct> SQL_SelectAllPreformanceReviews()
+    {
+        var command = new SQLiteCommand("select * from roster", sql_database);
+        var result = command.ExecuteReader();
+        List<SQL_PreformanceReviewDataStruct> data = new List<SQL_PreformanceReviewDataStruct>();
+        while (result.Read())
+        {
+            SQL_PreformanceReviewDataStruct i = new SQL_PreformanceReviewDataStruct();
+            i.employee_id = (long)result[0];
+            i.review_data = (DateTime)result[1];
+            i.feedback = (string)result[2];
+            i.review_score = (long)result[3];
+            //
+            data.Add(i);
         }
         return data;
     }
-    List<RequestDataStruct> SelectAll()
+    List<SQL_RequestDataStruct> SQL_SelectAllRequest()
     {
-        var command = new SQLiteCommand("select * from request", database);
+        var command = new SQLiteCommand("select * from request", sql_database);
         var result = command.ExecuteReader();
-        List<RequestDataStruct> data = new List<RequestDataStruct>(); 
+        List<SQL_RequestDataStruct> data = new List<SQL_RequestDataStruct>(); 
         while (result.Read())
         {
-            RequestDataStruct i = new RequestDataStruct();
+            SQL_RequestDataStruct i = new SQL_RequestDataStruct();
             i.employee_id = (long)result[0];
             i.request_type = (string)result[1];
             i.leave_status = (string)result[2];
@@ -205,28 +230,66 @@ public partial class MainWindow : Window
         }
         return data;
     }
-    PreformanceReviewDataStruct? SelectAllPreformanceReviews()
+
+
+    List<SQL_RosterDataStruct> SQL_SelectAllRoster()
     {
-        var command = new SQLiteCommand("select * from roster", database);
+        var command = new SQLiteCommand("select * from request", sql_database);
         var result = command.ExecuteReader();
-        List<PreformanceReviewDataStruct> data;
-        if (result.Read())
+        List<SQL_RosterDataStruct> data = new List<SQL_RosterDataStruct>();
+        while (result.Read())
         {
-            PreformanceReviewDataStruct i = new PreformanceReviewDataStruct();
+            SQL_RosterDataStruct i = new SQL_RosterDataStruct();
             i.employee_id = (long)result[0];
-            i.review_data = (DateTime)result[1];
-            i.feedback = (string)result[2];
-            i.review_score = (long)result[3];
-            //
-            return i;
+            i.shift_date = (DateTime)result[1];
+            i.shift_start_time = (long)result[2];
+            i.shift_finish_time = (long)result[3];
+            data.Add(i);
         }
-        return null;
+        return data;
+    }
+
+
+    List<SQL_TrainingReportDataStruct> SQL_SelectAllTrainingReport()
+    {
+        var command = new SQLiteCommand("select * from request", sql_database);
+        var result = command.ExecuteReader();
+        List<SQL_TrainingReportDataStruct> data = new List<SQL_TrainingReportDataStruct>();
+        while (result.Read())
+        {
+            SQL_TrainingReportDataStruct i = new SQL_TrainingReportDataStruct();
+            i.employee_id = (long)result[0];
+            i.training_course = (string)result[1];
+            i.data_aquired = (DateTime)result[2];
+            i.status = (string)result[3];
+            i.date_expired = (DateTime)result[4];
+            data.Add(i);
+        }
+        return data;
+    }
+
+
+    List<SQL_UserDataStruct> SQL_SelectAllUser()
+    {
+        var command = new SQLiteCommand("select * from request", sql_database);
+        var result = command.ExecuteReader();
+        List<SQL_UserDataStruct> data = new List<SQL_UserDataStruct>();
+        while (result.Read())
+        {
+            SQL_UserDataStruct i = new SQL_UserDataStruct();
+            i.employee_id = (long)result[0];
+            i.email = (string)result[1];
+            i.username = (string)result[2];
+            i.password = (string)result[3];
+            data.Add(i);
+        }
+        return data;
     }
 
     private void Button_Click(object sender, RoutedEventArgs e)
     {
-        p.Text = SignIn(username.Text,password.Password).ToString();
-        CreateUser("new","ddd" + ++i, "other", 3);
+        p.Text = SQL_GetUserEmployeeID(username.Text,password.Password).ToString();
+        SQL_CreateEmployee("new","ddd" + ++i, "other", 3);
     }
 
     
