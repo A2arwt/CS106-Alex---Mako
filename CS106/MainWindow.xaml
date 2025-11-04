@@ -7,10 +7,10 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
     <Grid>
-        <PasswordBox x:Name="password" HorizontalAlignment="Left" Margin="280,199,0,0" VerticalAlignment="Top" Width="120"/>
-        <Button Content="Button" HorizontalAlignment="Left" Margin="280,239,0,0" VerticalAlignment="Top" Width="126" Click="Button_Click"/>
+        <PasswordBox x:Name="password" HorizontalAlignment="Left" Margin="315,167,0,0" VerticalAlignment="Top" Width="120"/>
+        <Button Content="Button" HorizontalAlignment="Left" Margin="398,232,0,0" VerticalAlignment="Top" Width="37" Click="Button_Click" RenderTransformOrigin="1.113,1.72"/>
         <TextBlock x:Name="p" HorizontalAlignment="Left" Margin="373,61,0,0" TextWrapping="Wrap" Text="TextBlock" VerticalAlignment="Top"/>
-        <TextBox x:Name="username" HorizontalAlignment="Left" Margin="433,0,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Center" Width="120"/>
+        <TextBox x:Name="username" HorizontalAlignment="Left" Margin="315,199,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="120"/>
 
     </Grid>
 </Window>
