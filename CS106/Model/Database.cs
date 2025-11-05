@@ -4,6 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Data.SQLite;
+using System.Xml.Linq;
 
 namespace CS106.Model
 {
@@ -17,7 +18,7 @@ namespace CS106.Model
             public string? name { get; set; }
             public string? username { get; set; }
             public string? job_title { get; set; }
-            public long pay_rate { get; set; }
+            public float pay_rate { get; set; }
             public DateTime hire_date { get; set; }
         }
 
@@ -79,10 +80,10 @@ namespace CS106.Model
         }
 
 
-        public long SQL_GetUserEmployeeID(string username, string password)
+        public SQL_EmployeeDataStruct? SQL_GetEmployee(string username, string password)
         {
             /*
-             * This function returns the employee ID of the user or -1 if the user does not exist
+             * This function returns the employee Struct of the user or null if the user does not exist
              */
             var command = new SQLiteCommand("select employee_id from user where  password is @password and username is @username", sql_database);
             command.Parameters.AddWithValue("@username", username);
@@ -91,12 +92,21 @@ namespace CS106.Model
             var result = command.ExecuteReader();
             if (result.Read())
             {
-                return (long)result[0];
+                SQL_EmployeeDataStruct employee = new SQL_EmployeeDataStruct();
+                employee.employee_id = (long)result[0];
+                employee.name = (string)result[0];
+                employee.username = (string)result[0];
+                employee.job_title = (string)result[0];
+                employee.pay_rate = (float)result[0];
+                employee.hire_date = (DateTime)result[0];
+                return employee;
             }
+     
+                return null;
 
 
-            //p.Visibility = System.Windows.Visibility.Hidden;
-            return -1;
+                //p.Visibility = System.Windows.Visibility.Hidden;
+
         }
 
         public void SQL_CreateEmployee(string name, string username, string job, float payrate)
@@ -265,97 +275,315 @@ namespace CS106.Model
         }
 
 
-        public void SQL_UpdateEmployees(SQL_EmployeeDataStruct data)
+        public int SQL_UpdateEmployees(SQL_EmployeeDataStruct data)
         {
-            var command = new SQLiteCommand("update Employee set name = @name, username = @username, job_title = @job_title, pay_rate = @pay_rate,hire_date = @hire_date" +
+            var command = new SQLiteCommand("select employee_id from employee where employee_id is @employee_id", sql_database);
+            command.Parameters.AddWithValue("@employee_id", data.employee_id);
+            var result = command.ExecuteReader();
+
+            if (result.Read())
+            {
+                command = new SQLiteCommand("update Employee set name = @name, username = @username, job_title = @job_title, pay_rate = @pay_rate,hire_date = @hire_date" +
                 " where employee_id is @employee_id", sql_database);
-            command.Parameters.AddWithValue("@employee_id", data.employee_id);
-            command.Parameters.AddWithValue("@name", data.name);
-            command.Parameters.AddWithValue("@username", data.username);
-            command.Parameters.AddWithValue("@job_title", data.job_title);
-            command.Parameters.AddWithValue("@pay_rate", data.pay_rate);
-            command.Parameters.AddWithValue("@hire_date", data.hire_date);
-            command.ExecuteNonQuery();
+                command.Parameters.AddWithValue("@employee_id", data.employee_id);
+                command.Parameters.AddWithValue("@name", data.name);
+                command.Parameters.AddWithValue("@username", data.username);
+                command.Parameters.AddWithValue("@job_title", data.job_title);
+                command.Parameters.AddWithValue("@pay_rate", data.pay_rate);
+                command.Parameters.AddWithValue("@hire_date", data.hire_date);
+                command.ExecuteNonQuery();
+                return 0;
+            }
+            return -1;
         }
 
 
-        public void SQL_UpdateMessages(SQL_MessageDataStruct data)
+        public int SQL_UpdateMessages(SQL_MessageDataStruct data)
         {
+            var command = new SQLiteCommand("select employee_id from employee where employee_id is @employee_id", sql_database);
+            command.Parameters.AddWithValue("@employee_id", data.employee_id);
+            var result = command.ExecuteReader();
 
-            var command = new SQLiteCommand("update Employee set reply_message = @reply_message, send_message = @send_message, recieve_data = @recieve_data" +
+            if (result.Read())
+            {
+                command = new SQLiteCommand("update Messages set reply_message = @reply_message, send_message = @send_message, recieve_data = @recieve_data" +
                 "where employee_id is @employee_id", sql_database);
-            command.Parameters.AddWithValue("@employee_id", data.employee_id);
-            command.Parameters.AddWithValue("@reply_message", data.reply_message);
-            command.Parameters.AddWithValue("@send_message", data.send_message);
-            command.Parameters.AddWithValue("@recieve_data", data.recieve_data);
-            command.ExecuteNonQuery();
+                command.Parameters.AddWithValue("@employee_id", data.employee_id);
+                command.Parameters.AddWithValue("@reply_message", data.reply_message);
+                command.Parameters.AddWithValue("@send_message", data.send_message);
+                command.Parameters.AddWithValue("@recieve_data", data.recieve_data);
+                command.ExecuteNonQuery();
+                return 0;
+            }
+            return -1;
         }
-        public void SQL_UpdatePreformanceReviews(SQL_PreformanceReviewDataStruct data)
+        public int SQL_UpdatePreformanceReviews(SQL_PreformanceReviewDataStruct data)
         {
-            var command = new SQLiteCommand("update Employee set review_data = @review_data, feedback = @feedback, review_score = @review_score" +
+            var command = new SQLiteCommand("select employee_id from employee where employee_id is @employee_id", sql_database);
+            command.Parameters.AddWithValue("@employee_id", data.employee_id);
+            var result = command.ExecuteReader();
+
+            if (result.Read())
+            {
+                 command = new SQLiteCommand("update preformance_review set review_data = @review_data, feedback = @feedback, review_score = @review_score" +
                 "where employee_id is @employee_id", sql_database);
-            command.Parameters.AddWithValue("@employee_id", data.employee_id);
-            command.Parameters.AddWithValue("@review_data", data.review_data);
-            command.Parameters.AddWithValue("@feedback", data.feedback);
-            command.Parameters.AddWithValue("@review_score", data.review_score);
-            command.ExecuteNonQuery();
+                command.Parameters.AddWithValue("@employee_id", data.employee_id);
+                command.Parameters.AddWithValue("@review_data", data.review_data);
+                command.Parameters.AddWithValue("@feedback", data.feedback);
+                command.Parameters.AddWithValue("@review_score", data.review_score);
+                command.ExecuteNonQuery();
+                return 0;
+            }
+            return -1;
         }
-        public void SQL_UpdateRequest(SQL_RequestDataStruct data)
+        public int SQL_UpdateRequest(SQL_RequestDataStruct data)
         {
-            var command = new SQLiteCommand("update Employee set request_type = @request_type, leave_status = @leave_status, total_leave = @total_leave" +
+            var command = new SQLiteCommand("select employee_id from employee where employee_id is @employee_id", sql_database);
+            command.Parameters.AddWithValue("@employee_id", data.employee_id);
+            var result = command.ExecuteReader();
+
+            if (result.Read())
+            {
+                command = new SQLiteCommand("update request set request_type = @request_type, leave_status = @leave_status, total_leave = @total_leave" +
                 "leave_used = @leave_used, leave_start_date = @leave_start_date,leave_end_date = @leave_end_date" +
                 "where employee_id is @employee_id", sql_database);
-            command.Parameters.AddWithValue("@employee_id", data.employee_id);
-            command.Parameters.AddWithValue("@request_type", data.request_type);
-            command.Parameters.AddWithValue("@leave_status", data.leave_status);
-            command.Parameters.AddWithValue("@total_leave", data.total_leave);
-            command.Parameters.AddWithValue("@leave_used", data.leave_used);
-            command.Parameters.AddWithValue("@leave_start_date", data.leave_start_date);
-            command.Parameters.AddWithValue("@leave_end_date", data.leave_end_date);
-            command.ExecuteNonQuery();
+                command.Parameters.AddWithValue("@employee_id", data.employee_id);
+                command.Parameters.AddWithValue("@request_type", data.request_type);
+                command.Parameters.AddWithValue("@leave_status", data.leave_status);
+                command.Parameters.AddWithValue("@total_leave", data.total_leave);
+                command.Parameters.AddWithValue("@leave_used", data.leave_used);
+                command.Parameters.AddWithValue("@leave_start_date", data.leave_start_date);
+                command.Parameters.AddWithValue("@leave_end_date", data.leave_end_date);
+                command.ExecuteNonQuery();
+                return 0;
+            }
+            return -1;
         }
 
-        public void SQL_UpdateRoster(SQL_RosterDataStruct data)
+        public int SQL_UpdateRoster(SQL_RosterDataStruct data)
         {
-            var command = new SQLiteCommand("update Employee set shift_date = @shift_date, shift_start_time = @shift_start_time, shift_finish_time = @shift_finish_time" +
+            var command = new SQLiteCommand("select employee_id from employee where employee_id is @employee_id", sql_database);
+            command.Parameters.AddWithValue("@employee_id", data.employee_id);
+            var result = command.ExecuteReader();
+
+            if (result.Read())
+            {
+                command = new SQLiteCommand("update roster set shift_date = @shift_date, shift_start_time = @shift_start_time, shift_finish_time = @shift_finish_time" +
                 "where employee_id is @employee_id", sql_database);
-            command.Parameters.AddWithValue("@employee_id", data.employee_id);
-            command.Parameters.AddWithValue("@shift_date", data.shift_date);
-            command.Parameters.AddWithValue("@shift_start_time", data.shift_start_time);
-            command.Parameters.AddWithValue("@shift_finish_time", data.shift_finish_time);
-            command.ExecuteNonQuery();
+                command.Parameters.AddWithValue("@employee_id", data.employee_id);
+                command.Parameters.AddWithValue("@shift_date", data.shift_date);
+                command.Parameters.AddWithValue("@shift_start_time", data.shift_start_time);
+                command.Parameters.AddWithValue("@shift_finish_time", data.shift_finish_time);
+                command.ExecuteNonQuery();
+            }
+            return -1;
+                
         }
 
 
-        public void SQL_UpdateTrainingReport(SQL_TrainingReportDataStruct data)
+        public int SQL_UpdateTrainingReport(SQL_TrainingReportDataStruct data)
         {
-            var command = new SQLiteCommand("update Employee set training_course = @training_course, data_aquired = @data_aquired, status = @status," +
-                "date_expired = @date_expired where employee_id is @employee_id", sql_database);
+            var command = new SQLiteCommand("select employee_id from employee where employee_id is @employee_id", sql_database);
             command.Parameters.AddWithValue("@employee_id", data.employee_id);
-            command.Parameters.AddWithValue("@training_course", data.training_course);
-            command.Parameters.AddWithValue("@data_aquired", data.data_aquired);
-            command.Parameters.AddWithValue("@status", data.status);
-            command.Parameters.AddWithValue("@date_expired", data.date_expired);
-            command.ExecuteNonQuery();
+            var result = command.ExecuteReader();
+
+            if(result.Read())
+            {
+                command = new SQLiteCommand("update training_report set training_course = @training_course, data_aquired = @data_aquired, status = @status," +
+                    "date_expired = @date_expired where employee_id is @employee_id", sql_database);
+                command.Parameters.AddWithValue("@employee_id", data.employee_id);
+                command.Parameters.AddWithValue("@training_course", data.training_course);
+                command.Parameters.AddWithValue("@data_aquired", data.data_aquired);
+                command.Parameters.AddWithValue("@status", data.status);
+                command.Parameters.AddWithValue("@date_expired", data.date_expired);
+                    command.ExecuteNonQuery();
+                return 0;
+            }
+            return -1;
         }
 
 
-        public void SQL_SelectAllUser(SQL_UserDataStruct data)
+        public int SQL_UpdateUser(SQL_UserDataStruct data)
         {
-#warning add error checking here
-            if (SQL_GetUserEmployeeID(data.username, data.password) != -1)
-                return;
-            var command = new SQLiteCommand("update Employee set email = @email, username = @username, password = @password," +
-                "where employee_id is @employee_id", sql_database);
+            var command = new SQLiteCommand("select employee_id from employee where employee_id is @employee_id", sql_database);
             command.Parameters.AddWithValue("@employee_id", data.employee_id);
-            command.Parameters.AddWithValue("@email", data.email);
-            command.Parameters.AddWithValue("@username", data.username);
-            command.Parameters.AddWithValue("@password", data.password);
-            command.ExecuteNonQuery();
+            var result = command.ExecuteReader();
+            if(result.Read())
+            {
+                command = new SQLiteCommand("update user set email = @email, username = @username, password = @password", sql_database);
+                command.Parameters.AddWithValue("@email", data.email);
+                command.Parameters.AddWithValue("@username", data.username);
+                command.Parameters.AddWithValue("@password", data.password);
+                command.ExecuteNonQuery();
+                return 0;
+            }
+            return -1;
         }
 
 
+        public int SQL_InsertMessageData(SQL_MessageDataStruct data)
+        {
+            /*  
+             *  
+             */
 
+            var command = new SQLiteCommand("select employee_id from employee where employee_id is @employee_id", sql_database);
+            command.Parameters.AddWithValue("@employee_id", data.employee_id);
+            var result = command.ExecuteReader();
+            if (result.Read())
+            {
+                command = new SQLiteCommand("insert into messages(employee_id,reply_message,send_message,recieve_data)" +
+                                                        " VALUES(@employee_id,@reply_message,@send_message,@recieve_data)", sql_database);
+                command.Parameters.AddWithValue("@employee_id", data.employee_id);
+                command.Parameters.AddWithValue("@reply_message", data.reply_message);
+                command.Parameters.AddWithValue("@send_message", data.send_message);
+                command.Parameters.AddWithValue("@recieve_data", data.recieve_data);
+
+                command.ExecuteNonQuery();
+            }
+            return -1;
+
+
+            
+        }
+
+
+        public int SQL_InsertPreformanceReviewData(SQL_PreformanceReviewDataStruct data)
+        {
+            /*  
+             *  
+             */
+
+            var command = new SQLiteCommand("select employee_id from employee where employee_id is @employee_id", sql_database);
+            command.Parameters.AddWithValue("@employee_id", data.employee_id);
+            var result = command.ExecuteReader();
+            if (result.Read())
+            {
+                command = new SQLiteCommand("insert into preformance_review(employee_id,review_data,feedback,review_score)" +
+                                                        " VALUES(@employee_id,@review_data,@feedback,@review_score)", sql_database);
+                command.Parameters.AddWithValue("@employee_id", data.employee_id);
+                command.Parameters.AddWithValue("@review_data", data.review_data);
+                command.Parameters.AddWithValue("@feedback", data.feedback);
+                command.Parameters.AddWithValue("@review_score", data.review_score);
+
+                command.ExecuteNonQuery();
+            }
+            return -1;
+
+
+
+        }
+
+        public int SQL_InsertRequestData(SQL_RequestDataStruct data)
+        {
+            /*  
+             *  
+             */
+
+            var command = new SQLiteCommand("select employee_id from employee where employee_id is @employee_id", sql_database);
+            command.Parameters.AddWithValue("@employee_id", data.employee_id);
+            var result = command.ExecuteReader();
+            if (result.Read())
+            {
+                command = new SQLiteCommand("insert into request(employee_id,request_type,leave_status,total_leave," +
+                                                        "leave_used,leave_start_date,leave_end_date)" +
+                                                        " VALUES(@employee_id,@request_type,@leave_status,@total_leave," +
+                                                        "@leave_used,@leave_start_date,@leave_end_date)", sql_database);
+                command.Parameters.AddWithValue("@employee_id", data.employee_id);
+                command.Parameters.AddWithValue("@request_type", data.request_type);
+                command.Parameters.AddWithValue("@leave_status", data.leave_status);
+                command.Parameters.AddWithValue("@total_leave", data.total_leave);
+                command.Parameters.AddWithValue("@leave_used", data.leave_used);
+                command.Parameters.AddWithValue("@leave_start_date", data.leave_start_date);
+                command.Parameters.AddWithValue("@leave_end_date", data.leave_end_date);
+
+                command.ExecuteNonQuery();
+            }
+            return -1;
+
+
+
+        }
+
+        public int SQL_InsertRostertData(SQL_RosterDataStruct data)
+        {
+            /*  
+             *  
+             */
+
+            var command = new SQLiteCommand("select employee_id from employee where employee_id is @employee_id", sql_database);
+            command.Parameters.AddWithValue("@employee_id", data.employee_id);
+            var result = command.ExecuteReader();
+            if (result.Read())
+            {
+                command = new SQLiteCommand("insert into roster(employee_id,shift_date,shift_start_time,shift_finish_time)" +
+                                                        " VALUES(@employee_id,@shift_date,@shift_start_time,@shift_finish_time)", sql_database);
+                command.Parameters.AddWithValue("@employee_id", data.employee_id);
+                command.Parameters.AddWithValue("@shift_date", data.shift_date);
+                command.Parameters.AddWithValue("@shift_start_time", data.shift_start_time);
+                command.Parameters.AddWithValue("@shift_finish_time", data.shift_finish_time);
+
+                command.ExecuteNonQuery();
+            }
+            return -1;
+
+
+
+        }
+
+
+        public int SQL_TrainingReportData(SQL_TrainingReportDataStruct data)
+        {
+            /*  
+             *  
+             */
+
+            var command = new SQLiteCommand("select employee_id from employee where employee_id is @employee_id", sql_database);
+            command.Parameters.AddWithValue("@employee_id", data.employee_id);
+            var result = command.ExecuteReader();
+            if (result.Read())
+            {
+                command = new SQLiteCommand("insert into roster(employee_id,training_course,data_aquired,status,date_expired)" +
+                                                        " VALUES(@employee_id,@training_course,@data_aquired,@status,@date_expired)", sql_database);
+                command.Parameters.AddWithValue("@employee_id", data.employee_id);
+                command.Parameters.AddWithValue("@training_course", data.training_course);
+                command.Parameters.AddWithValue("@data_aquired", data.data_aquired);
+                command.Parameters.AddWithValue("@status", data.status);
+                command.Parameters.AddWithValue("@date_expired", data.date_expired);
+
+                command.ExecuteNonQuery();
+            }
+            return -1;
+
+
+
+        }
+
+        public int SQL_UserData(SQL_UserDataStruct data)
+        {
+            /*  
+             *  
+             */
+
+            var command = new SQLiteCommand("select employee_id from employee where employee_id is @employee_id", sql_database);
+            command.Parameters.AddWithValue("@employee_id", data.employee_id);
+            var result = command.ExecuteReader();
+            if (result.Read())
+            {
+                command = new SQLiteCommand("insert into roster(employee_id,email,username,password)" +
+                                                        " VALUES(@employee_id,@email,@username,@password)", sql_database);
+                command.Parameters.AddWithValue("@employee_id", data.employee_id);
+                command.Parameters.AddWithValue("@email", data.email);
+                command.Parameters.AddWithValue("@username", data.username);
+                command.Parameters.AddWithValue("@password", data.password);
+
+                command.ExecuteNonQuery();
+            }
+            return -1;
+
+
+
+        }
 
     }
 }

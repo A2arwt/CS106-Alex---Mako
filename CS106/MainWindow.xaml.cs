@@ -37,7 +37,6 @@ public partial class MainWindow : Window
 
     private void Button_Click(object sender, RoutedEventArgs e)
     {
-        p.Text = sql_database.SQL_GetUserEmployeeID(username.Text,password.Password).ToString();
         sql_database.SQL_CreateEmployee("new","ddd" + ++i, "other", 3);
     }
 
