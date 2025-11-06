@@ -8,7 +8,7 @@ using System.Xml.Linq;
 
 namespace CS106.Model
 {
-    public class Database
+    public class SQL_Database
     {
         public SQLiteConnection? sql_database { get; set; }
 
@@ -585,5 +585,46 @@ namespace CS106.Model
 
         }
 
+    }
+
+
+    public class Database : SQL_Database
+    {
+        bool is_admin;
+        public Database(string path)
+        {
+            if(path == null)
+            sql_database = new SQLiteConnection("Data Source=./database/CS106.db");
+            else
+                sql_database = new SQLiteConnection(path);
+            sql_database.Open();
+        }
+        public Database()
+        {
+            sql_database = new SQLiteConnection("Data Source=./database/CS106.db");
+            sql_database.Open();
+        }
+        ~Database()
+        {
+            if(sql_database != null)
+            sql_database.Close();
+        }
+
+        public int operator +(SQL_EmployeeDataStruct i)
+        {
+
+
+            List<SQL_EmployeeDataStruct> templist = SQL_SelectAllEmployees();
+            if (templist == null || i == null)
+                return 0;
+            foreach(var list in templist)
+            {
+                if (i.employee_id == list.employee_id)
+                    return 0;
+            }
+            SQL_CreateEmployee(i.name,i.username,i.job_title,i.pay_rate);
+            return 0;
+        }
+        // public void static AddToDatatbase operator +(
     }
 }
