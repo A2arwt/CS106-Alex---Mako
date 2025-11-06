@@ -1,4 +1,5 @@
-﻿using System;
+﻿using CS106.Model;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -20,9 +21,22 @@ namespace CS106
     /// </summary>
     public partial class Login : Page
     {
+        Database sql_database;
         public Login()
         {
             InitializeComponent();
+             sql_database = new Database();
+        }
+
+        private void LoginButton_Click(object sender, RoutedEventArgs e)
+        {
+            var i = sql_database.login(Username.Text, Password.Password);
+            if(i != null)
+            Nav.Navigate(new Menu());
+        }
+
+        private void nav_Navigated(object sender, NavigationEventArgs e)
+        {
         }
     }
 }

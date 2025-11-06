@@ -25,20 +25,11 @@ public partial class MainWindow : Window
 #warning delete i
     int i = 1;
 
-    Database sql_database = new Database();
+    
     public MainWindow()
     {
         InitializeComponent();
-        sql_database.sql_database = new SQLiteConnection("Data Source=./database/CS106.db");
-        sql_database.sql_database.Open();
-
-
+        f.Navigate(new Login());
     }
 
-    private void Button_Click(object sender, RoutedEventArgs e)
-    {
-        sql_database.SQL_CreateEmployee("new","ddd" + ++i, "other", 3);
-    }
-
-    
 }

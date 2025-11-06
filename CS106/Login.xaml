@@ -8,18 +8,19 @@
       d:DesignHeight="450" d:DesignWidth="800"
       Title="Login">
 
-    <Grid>
+    <Grid x:Name="plane">
         <TextBox x:Name="Username" HorizontalAlignment="Left" Margin="263,196,0,0" TextWrapping="Wrap"  VerticalAlignment="Top" Width="199" Height="29" FontSize="20">
             <TextBox.Effect>
                 <DropShadowEffect/>
             </TextBox.Effect>
         </TextBox>
-        <PasswordBox HorizontalAlignment="Left" Margin="263,256,0,0" VerticalAlignment="Top" Width="199" Height="27">
+        <PasswordBox x:Name="Password" HorizontalAlignment="Left" Margin="263,256,0,0" VerticalAlignment="Top" Width="199" Height="27">
             <PasswordBox.Effect>
                 <DropShadowEffect/>
             </PasswordBox.Effect>
         </PasswordBox>
-        <Button Content="Continue" HorizontalAlignment="Left" Margin="410,301,0,0" VerticalAlignment="Top"/>
+        <Button x:Name="LoginButton" Content="Continue" HorizontalAlignment="Left" Margin="410,301,0,0" VerticalAlignment="Top" Click="LoginButton_Click"/>
+        <Frame x:Name="Nav" NavigationUIVisibility="Automatic" Navigated="nav_Navigated"></Frame>
 
     </Grid>
 </Page>

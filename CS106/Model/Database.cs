@@ -20,6 +20,15 @@ namespace CS106.Model
             public string? job_title { get; set; }
             public float pay_rate { get; set; }
             public DateTime hire_date { get; set; }
+            public SQL_EmployeeDataStruct(long employee_id, string? name, string? username, string? job_title, float pay_rate, DateTime hire_date)
+            {
+                this.employee_id = employee_id;
+                this.name = name;
+                this.username = username;
+                this.job_title = job_title;
+                this.pay_rate = pay_rate;
+                this.hire_date = hire_date;
+            }
         }
 
 
@@ -29,6 +38,13 @@ namespace CS106.Model
             public string? reply_message { get; set; }
             public string? send_message { get; set; }
             public DateTime recieve_data { get; set; }
+            public SQL_MessageDataStruct(long employee_id, string? reply_message, string? send_message, DateTime recieve_data)
+            {
+                this.employee_id = employee_id;
+                this.reply_message = reply_message;
+                this.send_message = send_message;
+                this.recieve_data = recieve_data;
+            }
         }
 
 
@@ -38,6 +54,14 @@ namespace CS106.Model
             public DateTime review_data { get; set; }
             public string? feedback { get; set; }
             public long review_score { get; set; }
+
+            public SQL_PreformanceReviewDataStruct(long employee_id, DateTime review_data, string? feedback, long review_score)
+            {
+                this.employee_id = employee_id;
+                this.review_data = review_data;
+                this.feedback = feedback;
+                this.review_score = review_score;
+            }
         }
 
         public class SQL_RequestDataStruct
@@ -49,6 +73,17 @@ namespace CS106.Model
             public long leave_used { get; set; }
             public DateTime leave_start_date { get; set; }
             public DateTime leave_end_date { get; set; }
+
+            public SQL_RequestDataStruct(long employee_id, string? request_type, string? leave_status, long total_leave, long leave_used, DateTime leave_start_date, DateTime leave_end_date)
+            {
+                this.employee_id = employee_id;
+                this.request_type = request_type;
+                this.leave_status = leave_status;
+                this.total_leave = total_leave;
+                this.leave_used = leave_used;
+                this.leave_start_date = leave_start_date;
+                this.leave_end_date = leave_end_date;
+            }
         }
 
 
@@ -58,6 +93,13 @@ namespace CS106.Model
             public DateTime shift_date { get; set; }
             public float shift_start_time { get; set; }
             public float shift_finish_time { get; set; }
+            public SQL_RosterDataStruct(long employee_id, DateTime shift_date, float shift_start_time, float shift_finish_time)
+            {
+                this.employee_id = employee_id;
+                this.shift_date = shift_date;
+                this.shift_start_time = shift_start_time;
+                this.shift_finish_time = shift_finish_time;
+            }
         }
 
 
@@ -69,6 +111,16 @@ namespace CS106.Model
             public string? status { get; set; }
             public long leave_used { get; set; }
             public DateTime date_expired { get; set; }
+
+            public SQL_TrainingReportDataStruct(long employee_id, string? training_course, DateTime data_aquired, string? status, long leave_used, DateTime date_expired)
+            {
+                this.employee_id = employee_id;
+                this.training_course = training_course;
+                this.data_aquired = data_aquired;
+                this.status = status;
+                this.leave_used = leave_used;
+                this.date_expired = date_expired;
+            }
         }
 
         public class SQL_UserDataStruct
@@ -77,6 +129,14 @@ namespace CS106.Model
             public string? email { get; set; }
             public string? username { get; set; }
             public string? password { get; set; }
+
+            public SQL_UserDataStruct(long employee_id, string? email, string? username, string? password)
+            {
+                this.employee_id = employee_id;
+                this.email = email;
+                this.username = username;
+                this.password = password;
+            }
         }
 
 
@@ -92,7 +152,7 @@ namespace CS106.Model
             var result = command.ExecuteReader();
             if (result.Read())
             {
-                SQL_EmployeeDataStruct employee = new SQL_EmployeeDataStruct();
+                SQL_EmployeeDataStruct employee = new SQL_EmployeeDataStruct((long)result[0], (string)result[1], (string)result[2], (string)result[3], (float)result[4], (DateTime)result[5]);
                 employee.employee_id = (long)result[0];
                 employee.name = (string)result[0];
                 employee.username = (string)result[0];
@@ -109,7 +169,7 @@ namespace CS106.Model
 
         }
 
-        public void SQL_CreateEmployee(string name, string username, string job, float payrate)
+        public void SQL_CreateEmployee(SQL_EmployeeDataStruct data)
         {
             /*  
              *  this function create both a user and employee table
@@ -117,23 +177,23 @@ namespace CS106.Model
             var command = new SQLiteCommand("insert into employee(name,job_title,pay_rate,hire_date,username)" +
                                                         " VALUES(@name,@job,@payrate,@data,@username)", sql_database);
             command.Parameters.AddWithValue("@data", DateTime.Now.ToString("dd - MM - yyyy hh: mm:ss.fff"));
-            command.Parameters.AddWithValue("@name", name);
-            command.Parameters.AddWithValue("@username", username);
-            command.Parameters.AddWithValue("@job", job);
-            command.Parameters.AddWithValue("@payrate", payrate);
+            command.Parameters.AddWithValue("@name", data.name);
+            command.Parameters.AddWithValue("@username", data.username);
+            command.Parameters.AddWithValue("@job", data.job_title);
+            command.Parameters.AddWithValue("@payrate", data.pay_rate);
 
             command.ExecuteNonQuery();
 
 
             command = new SQLiteCommand("select employee_id from employee where username is @username", sql_database);
-            command.Parameters.AddWithValue("@username", username);
+            command.Parameters.AddWithValue("@username", data.username);
             var result = command.ExecuteReader();
             if (result.Read())
             {
                 var employee_id = (long)result[0];
                 command = new SQLiteCommand("insert into user(employee_id,username)" +
                                                         " VALUES(@employee_id,@username)", sql_database);
-                command.Parameters.AddWithValue("@username", username);
+                command.Parameters.AddWithValue("@username", data.username);
                 command.Parameters.AddWithValue("@employee_id", employee_id);
                 command.ExecuteNonQuery();
 
@@ -141,7 +201,7 @@ namespace CS106.Model
             }
         }
 
-        public void SQL_DeleteEmployee(string employee_id)
+        public void SQL_DeleteEmployee(long employee_id)
         {
             var command = new SQLiteCommand("delete from employee where employee_id is @employee_id", sql_database);
             command.Parameters.AddWithValue("@employee_id", employee_id);
@@ -155,13 +215,7 @@ namespace CS106.Model
             List<SQL_EmployeeDataStruct> data = new List<SQL_EmployeeDataStruct>();
             while (result.Read())
             {
-                SQL_EmployeeDataStruct i = new SQL_EmployeeDataStruct();
-                i.employee_id = (long)result[0];
-                i.name = (string)result[1];
-                i.username = (string)result[2];
-                i.job_title = (string)result[3];
-                i.pay_rate = (long)result[5];
-                i.hire_date = (DateTime)result[6];
+                SQL_EmployeeDataStruct i = new SQL_EmployeeDataStruct((long)result[0], (string)result[1], (string)result[2], (string)result[3], (float)result[4], (DateTime)result[5]);
                 data.Add(i);
             }
             return data;
@@ -176,13 +230,9 @@ namespace CS106.Model
             List<SQL_MessageDataStruct> data = new List<SQL_MessageDataStruct>();
             while (result.Read())
             {
-                SQL_MessageDataStruct i = new SQL_MessageDataStruct();
-                i.employee_id = (long)result[0];
-                i.reply_message = (string)result[1];
-                i.send_message = (string)result[2];
-                i.recieve_data = (DateTime)result[3];
+                SQL_MessageDataStruct i = new SQL_MessageDataStruct((long)result[0], (string)result[1], (string)result[2], (DateTime)result[3]);
                 data.Add(i);
-            }//performance_review
+            }
             return data;
         }
         public List<SQL_PreformanceReviewDataStruct> SQL_SelectAllPreformanceReviews()
@@ -192,12 +242,7 @@ namespace CS106.Model
             List<SQL_PreformanceReviewDataStruct> data = new List<SQL_PreformanceReviewDataStruct>();
             while (result.Read())
             {
-                SQL_PreformanceReviewDataStruct i = new SQL_PreformanceReviewDataStruct();
-                i.employee_id = (long)result[0];
-                i.review_data = (DateTime)result[1];
-                i.feedback = (string)result[2];
-                i.review_score = (long)result[3];
-                //
+                SQL_PreformanceReviewDataStruct i = new SQL_PreformanceReviewDataStruct((long)result[0], (DateTime)result[1], (string)result[2], (long)result[3]);
                 data.Add(i);
             }
             return data;
@@ -209,11 +254,7 @@ namespace CS106.Model
             List<SQL_RequestDataStruct> data = new List<SQL_RequestDataStruct>();
             while (result.Read())
             {
-                SQL_RequestDataStruct i = new SQL_RequestDataStruct();
-                i.employee_id = (long)result[0];
-                i.request_type = (string)result[1];
-                i.leave_status = (string)result[2];
-                i.total_leave = (long)result[3];
+                SQL_RequestDataStruct i = new SQL_RequestDataStruct((long)result[0], (string)result[1], (string)result[2], (long)result[3], (long)result[4], (DateTime)result[5], (DateTime)result[6]);
                 data.Add(i);
             }
             return data;
@@ -227,11 +268,7 @@ namespace CS106.Model
             List<SQL_RosterDataStruct> data = new List<SQL_RosterDataStruct>();
             while (result.Read())
             {
-                SQL_RosterDataStruct i = new SQL_RosterDataStruct();
-                i.employee_id = (long)result[0];
-                i.shift_date = (DateTime)result[1];
-                i.shift_start_time = (long)result[2];
-                i.shift_finish_time = (long)result[3];
+                SQL_RosterDataStruct i = new SQL_RosterDataStruct((long)result[0], (DateTime)result[1], (long)result[2], (long)result[3]);
                 data.Add(i);
             }
             return data;
@@ -245,13 +282,9 @@ namespace CS106.Model
             List<SQL_TrainingReportDataStruct> data = new List<SQL_TrainingReportDataStruct>();
             while (result.Read())
             {
-                SQL_TrainingReportDataStruct i = new SQL_TrainingReportDataStruct();
-                i.employee_id = (long)result[0];
-                i.training_course = (string)result[1];
-                i.data_aquired = (DateTime)result[2];
-                i.status = (string)result[3];
-                i.date_expired = (DateTime)result[4];
+                SQL_TrainingReportDataStruct i = new SQL_TrainingReportDataStruct((long)result[0], (string)result[1], (DateTime)result[2], (string)result[3], (long)result[0], (DateTime)result[4]);
                 data.Add(i);
+                //long employee_id, string? training_course, DateTime data_aquired, string? status, long leave_used, DateTime date_expired
             }
             return data;
         }
@@ -264,11 +297,7 @@ namespace CS106.Model
             List<SQL_UserDataStruct> data = new List<SQL_UserDataStruct>();
             while (result.Read())
             {
-                SQL_UserDataStruct i = new SQL_UserDataStruct();
-                i.employee_id = (long)result[0];
-                i.email = (string)result[1];
-                i.username = (string)result[2];
-                i.password = (string)result[3];
+                SQL_UserDataStruct i = new SQL_UserDataStruct((long)result[0], (string)result[1], (string)result[2], (string)result[3]);
                 data.Add(i);
             }
             return data;
@@ -405,17 +434,39 @@ namespace CS106.Model
 
         public int SQL_UpdateUser(SQL_UserDataStruct data)
         {
+            //check if the employee ID has been change. if so returns -1
             var command = new SQLiteCommand("select employee_id from employee where employee_id is @employee_id", sql_database);
             command.Parameters.AddWithValue("@employee_id", data.employee_id);
             var result = command.ExecuteReader();
             if(result.Read())
             {
-                command = new SQLiteCommand("update user set email = @email, username = @username, password = @password", sql_database);
-                command.Parameters.AddWithValue("@email", data.email);
+                //checks if the username is take. if so doesnt change the username and return 1 or else return 0
+                command = new SQLiteCommand("select username from employee where username is @username", sql_database);
                 command.Parameters.AddWithValue("@username", data.username);
-                command.Parameters.AddWithValue("@password", data.password);
-                command.ExecuteNonQuery();
-                return 0;
+                result = command.ExecuteReader();
+                if (result.Read())
+                {
+                    command = new SQLiteCommand("update user set email = @email, username = @username, password = @password where employee_id is @employee_id", sql_database);
+                    command.Parameters.AddWithValue("@email", data.email);
+                    command.Parameters.AddWithValue("@employee_id", data.employee_id);
+                    command.Parameters.AddWithValue("@password", data.password);
+                    command.ExecuteNonQuery();      
+                    return 1;
+                }else
+                {
+                    command = new SQLiteCommand("update user set email = @email, username = @username, password = @password where employee_id is @employee_id", sql_database);
+                    command.Parameters.AddWithValue("@email", data.email);
+                    command.Parameters.AddWithValue("@username", data.username);
+                    command.Parameters.AddWithValue("@employee_id", data.employee_id);
+                    command.Parameters.AddWithValue("@password", data.password);
+                    command.ExecuteNonQuery();
+                    //change the username in employee id so they keep pointing to each other
+                    command = new SQLiteCommand("update employee set  username = @username where employee_id is @employee_id", sql_database);
+                    command.Parameters.AddWithValue("@username", data.username);
+                    command.Parameters.AddWithValue("@employee_id", data.employee_id);
+                    command.ExecuteNonQuery();
+                    return 0;
+                }
             }
             return -1;
         }
@@ -532,7 +583,7 @@ namespace CS106.Model
         }
 
 
-        public int SQL_TrainingReportData(SQL_TrainingReportDataStruct data)
+        public int SQL_InsertTrainingReportData(SQL_TrainingReportDataStruct data)
         {
             /*  
              *  
@@ -594,14 +645,14 @@ namespace CS106.Model
         public Database(string path)
         {
             if(path == null)
-            sql_database = new SQLiteConnection("Data Source=./database/CS106.db");
+            sql_database = new SQLiteConnection("Data Source=database/CS106.db");
             else
                 sql_database = new SQLiteConnection(path);
             sql_database.Open();
         }
         public Database()
         {
-            sql_database = new SQLiteConnection("Data Source=./database/CS106.db");
+            sql_database = new SQLiteConnection("Data Source=database/CS106.db");
             sql_database.Open();
         }
         ~Database()
@@ -609,22 +660,73 @@ namespace CS106.Model
             if(sql_database != null)
             sql_database.Close();
         }
-
-        public int operator +(SQL_EmployeeDataStruct i)
+        public SQL_EmployeeDataStruct? login(string username,string password)
         {
-
-
-            List<SQL_EmployeeDataStruct> templist = SQL_SelectAllEmployees();
-            if (templist == null || i == null)
-                return 0;
-            foreach(var list in templist)
-            {
-                if (i.employee_id == list.employee_id)
-                    return 0;
-            }
-            SQL_CreateEmployee(i.name,i.username,i.job_title,i.pay_rate);
-            return 0;
+            return SQL_GetEmployee(username, password);
         }
+        
+        void Add(SQL_EmployeeDataStruct data)
+        {
+            SQL_CreateEmployee(data);
+        }
+        void Add(SQL_MessageDataStruct data)
+        {
+            SQL_InsertMessageData(data);
+        }
+        void Add(SQL_PreformanceReviewDataStruct data)
+        {
+            SQL_InsertPreformanceReviewData(data);
+        }
+        void Add(SQL_RequestDataStruct data)
+        {
+            SQL_InsertRequestData(data);
+        }
+        void Add(SQL_RosterDataStruct data)
+        {
+            SQL_InsertRostertData(data);
+        }
+        void Add(SQL_TrainingReportDataStruct data)
+        {
+            SQL_InsertTrainingReportData(data);
+        }
+        void Add(SQL_UserDataStruct data)
+        {
+            SQL_UpdateUser(data);
+        }
+        void Update(SQL_EmployeeDataStruct data)
+        {
+            SQL_UpdateEmployees(data);
+        }
+        void Update(SQL_MessageDataStruct data)
+        {
+            SQL_UpdateMessages(data);
+        }
+        void Update(SQL_PreformanceReviewDataStruct data)
+        {
+            SQL_UpdatePreformanceReviews(data);
+        }
+        void Update(SQL_RequestDataStruct data)
+        {
+        SQL_UpdateRequest(data);
+        }
+        void Update(SQL_RosterDataStruct data)
+        {
+            SQL_UpdateRoster(data);
+        }
+        void Update(SQL_TrainingReportDataStruct data)
+        {
+            SQL_UpdateTrainingReport(data);
+        }
+        void Update(SQL_UserDataStruct data)
+        {
+            SQL_UpdateUser(data);
+        }
+        void remove(SQL_EmployeeDataStruct data)
+        {
+            SQL_DeleteEmployee(data.employee_id);
+        }
+
+
         // public void static AddToDatatbase operator +(
     }
 }
