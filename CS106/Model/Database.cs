@@ -10,7 +10,7 @@ namespace CS106.Model
 {
     public class SQL_Database
     {
-        public SQLiteConnection? sql_database { get; set; }
+        public static SQLiteConnection? sql_database { get; set; }
 
         public class SQL_EmployeeDataStruct
         {
@@ -18,9 +18,11 @@ namespace CS106.Model
             public string? name { get; set; }
             public string? username { get; set; }
             public string? job_title { get; set; }
-            public float pay_rate { get; set; }
-            public DateTime hire_date { get; set; }
-            public SQL_EmployeeDataStruct(long employee_id, string? name, string? username, string? job_title, float pay_rate, DateTime hire_date)
+            public double pay_rate { get; set; }
+            public string hire_date { get; set; }
+            public long total_leave { get; set; }
+            public long leave_used { get; set; }
+            public SQL_EmployeeDataStruct(long employee_id, string? username, string? name, string? job_title, double pay_rate, string hire_date, long total_leave,long leave_used)
             {
                 this.employee_id = employee_id;
                 this.name = name;
@@ -28,6 +30,8 @@ namespace CS106.Model
                 this.job_title = job_title;
                 this.pay_rate = pay_rate;
                 this.hire_date = hire_date;
+                this.total_leave = total_leave;
+                this.leave_used = leave_used;
             }
         }
 
@@ -71,10 +75,10 @@ namespace CS106.Model
             public string? leave_status { get; set; }
             public long total_leave { get; set; }
             public long leave_used { get; set; }
-            public DateTime leave_start_date { get; set; }
-            public DateTime leave_end_date { get; set; }
+            public string leave_start_date { get; set; }
+            public string leave_end_date { get; set; }
 
-            public SQL_RequestDataStruct(long employee_id, string? request_type, string? leave_status, long total_leave, long leave_used, DateTime leave_start_date, DateTime leave_end_date)
+            public SQL_RequestDataStruct(long employee_id, string? request_type, string? leave_status, long total_leave, long leave_used, string leave_start_date, string leave_end_date)
             {
                 this.employee_id = employee_id;
                 this.request_type = request_type;
@@ -152,14 +156,26 @@ namespace CS106.Model
             var result = command.ExecuteReader();
             if (result.Read())
             {
-                SQL_EmployeeDataStruct employee = new SQL_EmployeeDataStruct((long)result[0], (string)result[1], (string)result[2], (string)result[3], (float)result[4], (DateTime)result[5]);
-                employee.employee_id = (long)result[0];
-                employee.name = (string)result[0];
-                employee.username = (string)result[0];
-                employee.job_title = (string)result[0];
-                employee.pay_rate = (float)result[0];
-                employee.hire_date = (DateTime)result[0];
-                return employee;
+                command = new SQLiteCommand("select * from employee where  employee_id is @employee_id", sql_database);
+                command.Parameters.AddWithValue("@employee_id", result[0]);
+                result = command.ExecuteReader();
+                if (result.Read())
+                {
+                    var employee_id = (long)result["employee_id"];
+                    var usernameE = (string)result["username"];
+                    var name = (string)result["name"];
+                    var job_title = (string)result["job_title"];
+                    var pay_rate = (double)result["pay_rate"];
+                    var total_leave = (long)result["total_leave"];
+                    var leave_used = (long)result["leave_used"];
+                    string hire_date = DateTime.Now.ToString();
+                    if(result[5] != DBNull.Value)
+                        hire_date = (string)result["hire_date"];
+
+                    SQL_EmployeeDataStruct employee = new SQL_EmployeeDataStruct(employee_id, usernameE, name, job_title, pay_rate, hire_date, total_leave, leave_used);
+                
+                    return employee;
+                }
             }
      
                 return null;
@@ -215,7 +231,7 @@ namespace CS106.Model
             List<SQL_EmployeeDataStruct> data = new List<SQL_EmployeeDataStruct>();
             while (result.Read())
             {
-                SQL_EmployeeDataStruct i = new SQL_EmployeeDataStruct((long)result[0], (string)result[1], (string)result[2], (string)result[3], (float)result[4], (DateTime)result[5]);
+                SQL_EmployeeDataStruct i = new SQL_EmployeeDataStruct((long)result[0], (string)result[1], (string)result[2], (string)result[3], (float)result[4], (string)result[5], (long)result[6], (long)result[7]);
                 data.Add(i);
             }
             return data;
@@ -254,7 +270,7 @@ namespace CS106.Model
             List<SQL_RequestDataStruct> data = new List<SQL_RequestDataStruct>();
             while (result.Read())
             {
-                SQL_RequestDataStruct i = new SQL_RequestDataStruct((long)result[0], (string)result[1], (string)result[2], (long)result[3], (long)result[4], (DateTime)result[5], (DateTime)result[6]);
+                SQL_RequestDataStruct i = new SQL_RequestDataStruct((long)result[0], (string)result[1], (string)result[2], (long)result[3], (long)result[4], (string)result[5], (string)result[6]);
                 data.Add(i);
             }
             return data;
@@ -525,14 +541,14 @@ namespace CS106.Model
 
         }
 
-        public int SQL_InsertRequestData(SQL_RequestDataStruct data)
+        public void SQL_InsertRequestData(long employee_id,string request_type,string leave_status,long total_leave,long leave_used,string leave_start_date, string leave_end_date)
         {
             /*  
              *  
              */
 
             var command = new SQLiteCommand("select employee_id from employee where employee_id is @employee_id", sql_database);
-            command.Parameters.AddWithValue("@employee_id", data.employee_id);
+            command.Parameters.AddWithValue("@employee_id", employee_id);
             var result = command.ExecuteReader();
             if (result.Read())
             {
@@ -540,17 +556,17 @@ namespace CS106.Model
                                                         "leave_used,leave_start_date,leave_end_date)" +
                                                         " VALUES(@employee_id,@request_type,@leave_status,@total_leave," +
                                                         "@leave_used,@leave_start_date,@leave_end_date)", sql_database);
-                command.Parameters.AddWithValue("@employee_id", data.employee_id);
-                command.Parameters.AddWithValue("@request_type", data.request_type);
-                command.Parameters.AddWithValue("@leave_status", data.leave_status);
-                command.Parameters.AddWithValue("@total_leave", data.total_leave);
-                command.Parameters.AddWithValue("@leave_used", data.leave_used);
-                command.Parameters.AddWithValue("@leave_start_date", data.leave_start_date);
-                command.Parameters.AddWithValue("@leave_end_date", data.leave_end_date);
+                command.Parameters.AddWithValue("@employee_id", employee_id);
+                command.Parameters.AddWithValue("@request_type", request_type);
+                command.Parameters.AddWithValue("@leave_status", leave_status);
+                command.Parameters.AddWithValue("@total_leave", total_leave);
+                command.Parameters.AddWithValue("@leave_used", leave_used);
+                command.Parameters.AddWithValue("@leave_start_date", leave_start_date);
+                command.Parameters.AddWithValue("@leave_end_date", leave_end_date);
 
                 command.ExecuteNonQuery();
             }
-            return -1;
+
 
 
 
@@ -582,6 +598,19 @@ namespace CS106.Model
 
         }
 
+        public List<SQL_RequestDataStruct> GetAllUserRequest()
+        {
+            return SQL_SelectAllRequest();
+        }
+        public List<SQL_RequestDataStruct> GetSQL_Requests(long ID)
+        {
+            var req = SQL_SelectAllRequest();
+
+
+
+
+            return req;
+        }
 
         public int SQL_InsertTrainingReportData(SQL_TrainingReportDataStruct data)
         {
@@ -641,7 +670,7 @@ namespace CS106.Model
 
     public class Database : SQL_Database
     {
-        bool is_admin;
+        public static SQL_EmployeeDataStruct? user;
         public Database(string path)
         {
             if(path == null)
@@ -677,9 +706,11 @@ namespace CS106.Model
         {
             SQL_InsertPreformanceReviewData(data);
         }
-        void Add(SQL_RequestDataStruct data)
+        SQL_RequestDataStruct Add(int Id,string type,string status,int leave,int used,string start,string end)
         {
-            SQL_InsertRequestData(data);
+            SQL_InsertRequestData(Id, type, status, leave, used, start, end);
+
+            return new SQL_RequestDataStruct(Id, type, status, leave, used, start, end);
         }
         void Add(SQL_RosterDataStruct data)
         {

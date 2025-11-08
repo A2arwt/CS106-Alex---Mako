@@ -1,0 +1,23 @@
+﻿<Page x:Class="CS106.Menu"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:CS106"
+      mc:Ignorable="d" 
+      d:DesignHeight="450" d:DesignWidth="800"
+      Title="Menu">
+
+    <Grid>
+        <StackPanel Orientation="Vertical" Margin="0,0,690,0">
+            <Button Content="Admin" ></Button>
+            <Button Content="Leave Request" Click="LeaveRequest" ></Button>
+            <Button Content="Salary Details"></Button>
+            <Button Content="Personal Details"></Button>
+            <Button Content="Company events/News"></Button>
+            <Button Content="Resignation"></Button>
+            <Button Content="logout"></Button>
+        </StackPanel>
+
+    </Grid>
+</Page>

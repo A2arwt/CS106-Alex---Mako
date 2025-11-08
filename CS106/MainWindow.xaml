@@ -6,8 +6,8 @@
         xmlns:local="clr-namespace:CS106"
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
-    <Grid>
-        <Frame x:Name="f" NavigationUIVisibility="Hidden"></Frame>
+    <Grid Background="#0468BF">
+        <Frame x:Name="main_frame" NavigationUIVisibility="Hidden"></Frame>
 
     </Grid>
 </Window>

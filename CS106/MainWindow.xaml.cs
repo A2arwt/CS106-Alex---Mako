@@ -22,14 +22,12 @@ namespace CS106;
 /// 
 public partial class MainWindow : Window
 {
-#warning delete i
-    int i = 1;
+        public static Database sql_database = new Database();
 
-    
     public MainWindow()
     {
         InitializeComponent();
-        f.Navigate(new Login());
+        main_frame.Navigate(new LoginPage());
     }
 
 }
