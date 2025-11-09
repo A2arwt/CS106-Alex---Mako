@@ -30,10 +30,10 @@ namespace CS106
         private void Button_Click(object sender, RoutedEventArgs e)
         {
 
-            Database.user = MainWindow.sql_database.login(Username.Text.ToLower().Trim(), Password.Password.ToLower().Trim());
-            if (Database.user != null)
+            MainWindow.ManagementSystem.login(Username.Text, Password.Password);
+            if (EmployeeManagementSystem.current_user != null)
                {
-                if (Database.user.username.ToLower().Trim() == "admin")
+                if (EmployeeManagementSystem.current_user.username == "admin")
                 {
                     NavigationService.Navigate(new Menu());
 

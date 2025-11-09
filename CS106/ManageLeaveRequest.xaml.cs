@@ -12,25 +12,18 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
-using CS106.Model;
 
 namespace CS106
 {
     /// <summary>
-    /// Interaction logic for AdminLeaveRequest.xaml
+    /// Interaction logic for ManageLeaveRequest.xaml
     /// </summary>
-    public partial class AdminLeaveRequest : Page
+    public partial class ManageLeaveRequest : Page
     {
-        public AdminLeaveRequest()
+        public ManageLeaveRequest()
         {
             InitializeComponent();
-        }
 
-        private void Submit(object sender, RoutedEventArgs e)
-        {
-
-
-            MainWindow.sql_database.SQL_InsertRequestData(Database.user.employee_id, null, null, Database.user.leave_used, Database.user.total_leave, StartDate.DataContext.ToString(), EndDate.DataContext.ToString());
         }
     }
 }

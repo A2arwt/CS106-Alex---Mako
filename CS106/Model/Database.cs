@@ -5,6 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Data.SQLite;
 using System.Xml.Linq;
+using CS106.Model;
 
 namespace CS106.Model
 {
@@ -541,30 +542,54 @@ namespace CS106.Model
 
         }
 
-        public void SQL_InsertRequestData(long employee_id,string request_type,string leave_status,long total_leave,long leave_used,string leave_start_date, string leave_end_date)
+        public void SQL_InsertRequestData(long employee_id,string request_type,string leave_start_date, string leave_end_date)
         {
             /*  
              *  
              */
-
-            var command = new SQLiteCommand("select employee_id from employee where employee_id is @employee_id", sql_database);
-            command.Parameters.AddWithValue("@employee_id", employee_id);
-            var result = command.ExecuteReader();
-            if (result.Read())
+            if(employee_id == EmployeeManagementSystem.current_user.employee_id)
             {
-                command = new SQLiteCommand("insert into request(employee_id,request_type,leave_status,total_leave," +
-                                                        "leave_used,leave_start_date,leave_end_date)" +
-                                                        " VALUES(@employee_id,@request_type,@leave_status,@total_leave," +
-                                                        "@leave_used,@leave_start_date,@leave_end_date)", sql_database);
+                var command = new SQLiteCommand("select employee_id from employee where employee_id is @employee_id", sql_database);
                 command.Parameters.AddWithValue("@employee_id", employee_id);
-                command.Parameters.AddWithValue("@request_type", request_type);
-                command.Parameters.AddWithValue("@leave_status", leave_status);
-                command.Parameters.AddWithValue("@total_leave", total_leave);
-                command.Parameters.AddWithValue("@leave_used", leave_used);
-                command.Parameters.AddWithValue("@leave_start_date", leave_start_date);
-                command.Parameters.AddWithValue("@leave_end_date", leave_end_date);
+                var result = command.ExecuteReader();
+                if (result.Read())
+                {
+                    command = new SQLiteCommand("insert into request(employee_id,request_type,leave_status,total_leave," +
+                                                            "leave_used,leave_start_date,leave_end_date)" +
+                                                            " VALUES(@employee_id,@request_type,@leave_status,@total_leave," +
+                                                            "@leave_used,@leave_start_date,@leave_end_date)", sql_database);
+                    command.Parameters.AddWithValue("@employee_id", employee_id);
+                    command.Parameters.AddWithValue("@request_type", request_type);
+                    command.Parameters.AddWithValue("@leave_status", "pending");
+                    command.Parameters.AddWithValue("@total_leave", EmployeeManagementSystem.current_user.total_leave);
+                    command.Parameters.AddWithValue("@leave_used", EmployeeManagementSystem.current_user.leave_used);
+                    command.Parameters.AddWithValue("@leave_start_date", leave_start_date);
+                    command.Parameters.AddWithValue("@leave_end_date", leave_end_date);
 
-                command.ExecuteNonQuery();
+                    command.ExecuteNonQuery();
+                }
+            }
+            else
+            {
+                var command = new SQLiteCommand("select employee_id, total_leave, leave_used from employee where employee_id is @employee_id", sql_database);
+                command.Parameters.AddWithValue("@employee_id", employee_id);
+                var result = command.ExecuteReader();
+                if (result.Read())
+                {
+                    command = new SQLiteCommand("insert into request(employee_id,request_type,leave_status,total_leave," +
+                                                            "leave_used,leave_start_date,leave_end_date)" +
+                                                            " VALUES(@employee_id,@request_type,@leave_status,@total_leave," +
+                                                            "@leave_used,@leave_start_date,@leave_end_date)", sql_database);
+                    command.Parameters.AddWithValue("@employee_id", result[0]);
+                    command.Parameters.AddWithValue("@request_type", request_type);
+                    command.Parameters.AddWithValue("@leave_status", "pending");
+                    command.Parameters.AddWithValue("@total_leave", result[1]);
+                    command.Parameters.AddWithValue("@leave_used", result[2]);
+                    command.Parameters.AddWithValue("@leave_start_date", leave_start_date);
+                    command.Parameters.AddWithValue("@leave_end_date", leave_end_date);
+
+                    command.ExecuteNonQuery();
+                }
             }
 
 
@@ -694,70 +719,39 @@ namespace CS106.Model
             return SQL_GetEmployee(username, password);
         }
         
-        void Add(SQL_EmployeeDataStruct data)
-        {
-            SQL_CreateEmployee(data);
-        }
-        void Add(SQL_MessageDataStruct data)
-        {
-            SQL_InsertMessageData(data);
-        }
-        void Add(SQL_PreformanceReviewDataStruct data)
-        {
-            SQL_InsertPreformanceReviewData(data);
-        }
-        SQL_RequestDataStruct Add(int Id,string type,string status,int leave,int used,string start,string end)
-        {
-            SQL_InsertRequestData(Id, type, status, leave, used, start, end);
 
-            return new SQL_RequestDataStruct(Id, type, status, leave, used, start, end);
-        }
-        void Add(SQL_RosterDataStruct data)
-        {
-            SQL_InsertRostertData(data);
-        }
-        void Add(SQL_TrainingReportDataStruct data)
-        {
-            SQL_InsertTrainingReportData(data);
-        }
-        void Add(SQL_UserDataStruct data)
-        {
-            SQL_UpdateUser(data);
-        }
-        void Update(SQL_EmployeeDataStruct data)
-        {
-            SQL_UpdateEmployees(data);
-        }
-        void Update(SQL_MessageDataStruct data)
-        {
-            SQL_UpdateMessages(data);
-        }
-        void Update(SQL_PreformanceReviewDataStruct data)
-        {
-            SQL_UpdatePreformanceReviews(data);
-        }
-        void Update(SQL_RequestDataStruct data)
-        {
-        SQL_UpdateRequest(data);
-        }
-        void Update(SQL_RosterDataStruct data)
-        {
-            SQL_UpdateRoster(data);
-        }
-        void Update(SQL_TrainingReportDataStruct data)
-        {
-            SQL_UpdateTrainingReport(data);
-        }
-        void Update(SQL_UserDataStruct data)
-        {
-            SQL_UpdateUser(data);
-        }
-        void remove(SQL_EmployeeDataStruct data)
-        {
-            SQL_DeleteEmployee(data.employee_id);
-        }
 
 
         // public void static AddToDatatbase operator +(
+    }
+}
+
+
+public class  EmployeeManagementSystem
+{
+    static Database database;
+    public static Database.SQL_EmployeeDataStruct current_user;
+
+    public EmployeeManagementSystem()
+    {
+        if (database == null)
+            database = new Database();
+    }
+
+    public void login(string? username,string? password)
+    {
+        current_user = database.login(username.ToLower().Trim(), password.ToLower().Trim());
+
+    }
+    public static void InsertRequestData(string request_type,string StartDate,string EndDate)
+    {
+        database.SQL_InsertRequestData(current_user.employee_id, request_type, StartDate, EndDate);
+
+    }
+
+    public static void InsertRequestData(long employee_id, string request_type, string StartDate, string EndDate)
+    {
+        database.SQL_InsertRequestData(employee_id, request_type, StartDate, EndDate);
+
     }
 }

@@ -22,7 +22,7 @@ namespace CS106;
 /// 
 public partial class MainWindow : Window
 {
-        public static Database sql_database = new Database();
+        public static EmployeeManagementSystem ManagementSystem = new EmployeeManagementSystem();
 
     public MainWindow()
     {
