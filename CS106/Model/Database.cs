@@ -754,4 +754,27 @@ public class  EmployeeManagementSystem
         database.SQL_InsertRequestData(employee_id, request_type, StartDate, EndDate);
 
     }
+
+    public static List<Database.SQL_RequestDataStruct> GetRequest()
+    {
+        
+        return database.SQL_SelectAllRequest();
+    }
+
+
+    public static List<Database.SQL_RequestDataStruct> GetRequest(long ID)
+    {
+
+        var requestlist = database.SQL_SelectAllRequest();
+        List<Database.SQL_RequestDataStruct> request = (List<SQL_Database.SQL_RequestDataStruct>)(from item in requestlist
+                                                                                                  where item.employee_id == ID
+                                                                                                  select item);
+        return request;
+    }
+
+    public static void UpdateRequest()
+    {
+        //Database.SQL_RequestDataStruct 
+        //database.SQL_UpdateRequest();
+    }
 }

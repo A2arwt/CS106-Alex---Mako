@@ -30,5 +30,9 @@ namespace CS106
         {
             NavigationService.Navigate(new AdminLeaveRequest());
         }
+        private void LeaveRequestManagement(object sender, RoutedEventArgs e)
+        {
+            NavigationService.Navigate(new ManageLeaveRequest());
+        }
     }
 }

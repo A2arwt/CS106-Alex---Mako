@@ -12,6 +12,7 @@
         <StackPanel Orientation="Vertical" Margin="0,0,690,0">
             <Button Content="Admin" ></Button>
             <Button Content="Leave Request" Click="LeaveRequest" ></Button>
+            <Button Content="Leave Request Management" Click="LeaveRequestManagement" ></Button> 
             <Button Content="Salary Details"></Button>
             <Button Content="Personal Details"></Button>
             <Button Content="Company events/News"></Button>
