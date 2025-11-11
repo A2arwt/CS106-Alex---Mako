@@ -40,7 +40,7 @@ namespace CS106
                 }
                 else
                     NavigationService.Navigate(new UserMune()); 
-                }
+            }
         }
     }
 }
