@@ -356,23 +356,23 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\makom\\.nuget\\packages\\": {},
+    "D:\\Users\\270621423\\.nuget\\packages\\": {},
     "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\makom\\Documents\\GitHub\\CS106-Alex---Mako\\CS106\\CS106.csproj",
+      "projectUniqueName": "D:\\Users\\270621423\\OneDrive - UP Education\\Documents\\GitHub\\CS106-Alex---Mako\\CS106\\CS106.csproj",
       "projectName": "CS106",
-      "projectPath": "C:\\Users\\makom\\Documents\\GitHub\\CS106-Alex---Mako\\CS106\\CS106.csproj",
-      "packagesPath": "C:\\Users\\makom\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\makom\\Documents\\GitHub\\CS106-Alex---Mako\\CS106\\obj\\",
+      "projectPath": "D:\\Users\\270621423\\OneDrive - UP Education\\Documents\\GitHub\\CS106-Alex---Mako\\CS106\\CS106.csproj",
+      "packagesPath": "D:\\Users\\270621423\\.nuget\\packages\\",
+      "outputPath": "D:\\Users\\270621423\\OneDrive - UP Education\\Documents\\GitHub\\CS106-Alex---Mako\\CS106\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
       ],
       "configFilePaths": [
-        "C:\\Users\\makom\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "D:\\Users\\270621423\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
@@ -426,6 +426,12 @@
         ],
         "assetTargetFallback": true,
         "warn": true,
+        "downloadDependencies": [
+          {
+            "name": "Microsoft.Net.Sdk.Compilers.Toolset",
+            "version": "[9.0.307, 9.0.307]"
+          }
+        ],
         "frameworkReferences": {
           "Microsoft.NETCore.App": {
             "privateAssets": "all"
@@ -434,7 +440,7 @@
             "privateAssets": "none"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.306/PortableRuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.307/PortableRuntimeIdentifierGraph.json"
       }
     }
   }

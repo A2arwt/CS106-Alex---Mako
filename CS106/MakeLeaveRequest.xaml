@@ -9,11 +9,11 @@
       Title="AdminLeaveRequest">
 
     <Grid>
-        <DatePicker x:Name="StartDate" HorizontalAlignment="Left" Margin="143,191,0,0" VerticalAlignment="Top"/>
-        <DatePicker x:Name="EndDate" HorizontalAlignment="Left" Margin="135,250,0,0" VerticalAlignment="Top"/>
+        <DatePicker x:Name="StartDate" HorizontalAlignment="Center"  VerticalAlignment="Top"/>
+        <DatePicker x:Name="EndDate" HorizontalAlignment="Center"  VerticalAlignment="Center"/>
 
-        <Button Content="Submit" HorizontalAlignment="Left" Margin="143,300,0,0" VerticalAlignment="Top" Height="30" Width="94" Click="Submit"/>
-        <TextBox x:Name="Type" HorizontalAlignment="Left" Margin="155,136,0,0" TextWrapping="Wrap"  VerticalAlignment="Top" Width="120"/>
+        <Button Content="Submit" HorizontalAlignment="Center"  VerticalAlignment="Bottom" Height="30" Width="94" Click="Submit"/>
+        <TextBox x:Name="Type" HorizontalAlignment="Left"  TextWrapping="Wrap"  VerticalAlignment="Top" Width="120"/>
 
 
     </Grid>

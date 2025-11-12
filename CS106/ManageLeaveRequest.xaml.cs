@@ -1,4 +1,5 @@
-﻿using System;
+﻿using CS106.Model;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -96,7 +97,7 @@ namespace CS106
             TextBlock rep = (TextBlock)(stack.Children[3]);
             rep.Text = "acepted";
 
-
+             
             EmployeeManagementSystem.UpdateRequest(
                 long.Parse(((TextBlock)stack.Children[0]).Text), 
                 long.Parse(((TextBlock)stack.Children[1]).Text), 
