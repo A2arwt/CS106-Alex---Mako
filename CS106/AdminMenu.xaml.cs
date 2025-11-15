@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Globalization;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -12,6 +13,7 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
+using CS106.Model;
 
 namespace CS106
 {
@@ -23,6 +25,10 @@ namespace CS106
         public Menu()
         {
             InitializeComponent();
+            if(EmployeeManagementSystem.is_admin == false)
+            {
+                pagelist.Children.RemoveAt(6);
+            }
         }
 
 
@@ -30,9 +36,46 @@ namespace CS106
         {
             NavigationService.Navigate(new AdminLeaveRequest());
         }
+
+        private void PersonalDetails(object sender, RoutedEventArgs e)
+        {
+            NavigationService.Navigate(new PersonalDetails());
+        }
+        
         private void LeaveRequestManagement(object sender, RoutedEventArgs e)
         {
             NavigationService.Navigate(new ManageLeaveRequest());
+        }
+
+        private void SalaryDetails(object sender, RoutedEventArgs e)
+        {
+            NavigationService.Navigate(new SalaryDetails());
+
+        }
+
+        private void CompanyInfo(object sender, RoutedEventArgs e)
+        {
+            NavigationService.Navigate(new CompanyInfo());
+            
+        }
+
+        private void Resignation(object sender, RoutedEventArgs e)
+        {
+            NavigationService.Navigate(new Resignation());
+
+        }
+
+        private void Logout(object sender, RoutedEventArgs e)
+        {
+            NavigationService.Navigate(new Logout());
+
+        }
+
+        private void ExitEmployee(object sender, RoutedEventArgs e)
+        {
+            
+            NavigationService.Navigate(new ExitEmployee());
+
         }
     }
 }

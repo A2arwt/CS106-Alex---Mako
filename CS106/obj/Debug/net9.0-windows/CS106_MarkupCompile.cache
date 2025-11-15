@@ -4,17 +4,17 @@
 winexe
 C#
 .cs
-D:\Users\270621423\OneDrive - UP Education\Documents\GitHub\CS106-Alex---Mako\CS106\obj\Debug\net9.0-windows\
+C:\Users\makom\Documents\GitHub\CS106-Alex---Mako\CS106\obj\Debug\net9.0-windows\
 CS106
 none
 false
 TRACE;DEBUG;NET;NET9_0;NETCOREAPP;WINDOWS;WINDOWS7_0;NET5_0_OR_GREATER;NET6_0_OR_GREATER;NET7_0_OR_GREATER;NET8_0_OR_GREATER;NET9_0_OR_GREATER;NETCOREAPP3_0_OR_GREATER;NETCOREAPP3_1_OR_GREATER;WINDOWS7_0_OR_GREATER
-D:\Users\270621423\OneDrive - UP Education\Documents\GitHub\CS106-Alex---Mako\CS106\App.xaml
-6-907990367
+C:\Users\makom\Documents\GitHub\CS106-Alex---Mako\CS106\App.xaml
+11-1163556025
 11148047712
-12814267880
-205-830625781
-AdminMenu.xaml;LoginPage.xaml;MainWindow.xaml;MakeLeaveRequest.xaml;ManageLeaveRequest.xaml;UserMune.xaml;
+171290176284
+205566319188
+AdminMenu.xaml;CompanyInfo.xaml;ExitEmployee.xaml;LoginPage.xaml;Logout.xaml;MainWindow.xaml;MakeLeaveRequest.xaml;ManageLeaveRequest.xaml;PersonalDetails.xaml;Resignation.xaml;SalaryDetails.xaml;
 
 False
 

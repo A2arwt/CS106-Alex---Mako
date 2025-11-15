@@ -2,6 +2,15 @@
 <Project ToolsVersion="Current" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <PropertyGroup />
   <ItemGroup>
+    <Compile Update="CompanyInfo.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="ExitEmployee.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Logout.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Update="MakeLeaveRequest.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
@@ -14,10 +23,13 @@
     <Compile Update="ManageLeaveRequest.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Update="UserMune.xaml.cs">
+    <Compile Update="PersonalDetails.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Update="view\UserControls\Menu.xaml.cs">
+    <Compile Update="Resignation.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="SalaryDetails.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
   </ItemGroup>

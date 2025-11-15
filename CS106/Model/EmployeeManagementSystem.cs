@@ -11,6 +11,7 @@ namespace CS106.Model
     {
         static Database? database { get; set; }
         public static Database.SQL_EmployeeDataStruct? current_user { get; set; }
+        public static bool is_admin =false;
 
         public EmployeeManagementSystem()
         {

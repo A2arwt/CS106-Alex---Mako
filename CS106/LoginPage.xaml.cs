@@ -33,13 +33,15 @@ namespace CS106
             MainWindow.ManagementSystem.login(Username.Text, Password.Password);
             if (EmployeeManagementSystem.current_user != null)
                {
-                if (EmployeeManagementSystem.current_user.username == "admin")
+                if (EmployeeManagementSystem.current_user.username == "admin" || EmployeeManagementSystem.current_user.job_title == "admin")
                 {
+
                     NavigationService.Navigate(new Menu());
+                    EmployeeManagementSystem.is_admin = true;
 
                 }
                 else
-                    NavigationService.Navigate(new UserMune()); 
+                    NavigationService.Navigate(new Menu());
             }
         }
     }

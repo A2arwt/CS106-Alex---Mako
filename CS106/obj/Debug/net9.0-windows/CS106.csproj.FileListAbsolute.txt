@@ -104,8 +104,6 @@ C:\Users\makom\Documents\GitHub\CS106-Alex---Mako\CS106\obj\Debug\net9.0-windows
 C:\Users\makom\Documents\GitHub\CS106-Alex---Mako\CS106\obj\Debug\net9.0-windows\LoginPage.baml
 C:\Users\makom\Documents\GitHub\CS106-Alex---Mako\CS106\obj\Debug\net9.0-windows\AdminMenu.g.cs
 C:\Users\makom\Documents\GitHub\CS106-Alex---Mako\CS106\obj\Debug\net9.0-windows\AdminMenu.baml
-C:\Users\makom\Documents\GitHub\CS106-Alex---Mako\CS106\obj\Debug\net9.0-windows\UserMune.g.cs
-C:\Users\makom\Documents\GitHub\CS106-Alex---Mako\CS106\obj\Debug\net9.0-windows\UserMune.baml
 D:\Users\270621423\OneDrive - UP Education\Documents\GitHub\CS106-Alex---Mako\CS106\obj\Debug\net9.0-windows\AdminMenu.g.cs
 D:\Users\270621423\OneDrive - UP Education\Documents\GitHub\CS106-Alex---Mako\CS106\obj\Debug\net9.0-windows\LoginPage.g.cs
 D:\Users\270621423\OneDrive - UP Education\Documents\GitHub\CS106-Alex---Mako\CS106\obj\Debug\net9.0-windows\MakeLeaveRequest.g.cs
@@ -120,3 +118,15 @@ C:\Users\makom\Documents\GitHub\CS106-Alex---Mako\CS106\obj\Debug\net9.0-windows
 C:\Users\makom\Documents\GitHub\CS106-Alex---Mako\CS106\obj\Debug\net9.0-windows\ManageLeaveRequest.g.cs
 C:\Users\makom\Documents\GitHub\CS106-Alex---Mako\CS106\obj\Debug\net9.0-windows\MakeLeaveRequest.baml
 C:\Users\makom\Documents\GitHub\CS106-Alex---Mako\CS106\obj\Debug\net9.0-windows\ManageLeaveRequest.baml
+C:\Users\makom\Documents\GitHub\CS106-Alex---Mako\CS106\obj\Debug\net9.0-windows\CompanyInfo.g.cs
+C:\Users\makom\Documents\GitHub\CS106-Alex---Mako\CS106\obj\Debug\net9.0-windows\ExitEmployee.g.cs
+C:\Users\makom\Documents\GitHub\CS106-Alex---Mako\CS106\obj\Debug\net9.0-windows\Logout.g.cs
+C:\Users\makom\Documents\GitHub\CS106-Alex---Mako\CS106\obj\Debug\net9.0-windows\PersonalDetails.g.cs
+C:\Users\makom\Documents\GitHub\CS106-Alex---Mako\CS106\obj\Debug\net9.0-windows\Resignation.g.cs
+C:\Users\makom\Documents\GitHub\CS106-Alex---Mako\CS106\obj\Debug\net9.0-windows\SalaryDetails.g.cs
+C:\Users\makom\Documents\GitHub\CS106-Alex---Mako\CS106\obj\Debug\net9.0-windows\CompanyInfo.baml
+C:\Users\makom\Documents\GitHub\CS106-Alex---Mako\CS106\obj\Debug\net9.0-windows\ExitEmployee.baml
+C:\Users\makom\Documents\GitHub\CS106-Alex---Mako\CS106\obj\Debug\net9.0-windows\Logout.baml
+C:\Users\makom\Documents\GitHub\CS106-Alex---Mako\CS106\obj\Debug\net9.0-windows\PersonalDetails.baml
+C:\Users\makom\Documents\GitHub\CS106-Alex---Mako\CS106\obj\Debug\net9.0-windows\Resignation.baml
+C:\Users\makom\Documents\GitHub\CS106-Alex---Mako\CS106\obj\Debug\net9.0-windows\SalaryDetails.baml

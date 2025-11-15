@@ -9,16 +9,32 @@
       Title="Menu">
 
     <Grid>
-        <StackPanel Orientation="Vertical" Margin="0,0,690,0">
-            <Button Content="Admin" ></Button>
-            <Button Content="Leave Request" Click="LeaveRequest" ></Button>
-            <Button Content="Leave Request Management" Click="LeaveRequestManagement" ></Button> 
-            <Button Content="Salary Details"></Button>
-            <Button Content="Personal Details"></Button>
-            <Button Content="Company events/News"></Button>
-            <Button Content="Resignation"></Button>
-            <Button Content="logout"></Button>
-        </StackPanel>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="30*"></ColumnDefinition>
+            <ColumnDefinition Width="40*"></ColumnDefinition>
+            <ColumnDefinition Width="30*"></ColumnDefinition>
+        </Grid.ColumnDefinitions>
+
+        <Grid x:Name="pagelist">
+            <Grid.RowDefinitions >
+                <RowDefinition></RowDefinition>
+                <RowDefinition></RowDefinition>
+                <RowDefinition></RowDefinition>
+                <RowDefinition></RowDefinition>
+                <RowDefinition></RowDefinition>
+                <RowDefinition></RowDefinition>
+                <RowDefinition></RowDefinition>
+            </Grid.RowDefinitions>
+            <Button Grid.Row="0" Content="Leave Request" FontSize="32" Click="LeaveRequest"></Button>
+            <Button Grid.Row="1" Content="Salary Details" FontSize="32" Click="SalaryDetails"></Button>
+            <Button Grid.Row="2" Content="Personal Details" FontSize="32" Click="PersonalDetails"></Button>
+            <Button Grid.Row="3" Content="Company events/New" FontSize="32" Click="CompanyInfo"></Button>
+            <Button Grid.Row="4" Content="Resignation" FontSize="32" Click="Resignation"></Button>
+            <Button Grid.Row="5" Content="Logout" FontSize="32" Click="Logout"></Button>
+            <Button Grid.Row="6" Content="Edit Employee" FontSize="32" Click="ExitEmployee"></Button>
+        </Grid>
 
     </Grid>
+    
+    
 </Page>
