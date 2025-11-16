@@ -35,9 +35,8 @@ namespace CS106
                {
                 if (EmployeeManagementSystem.current_user.username == "admin" || EmployeeManagementSystem.current_user.job_title == "admin")
                 {
-
-                    NavigationService.Navigate(new Menu());
                     EmployeeManagementSystem.is_admin = true;
+                    NavigationService.Navigate(new Menu());
 
                 }
                 else

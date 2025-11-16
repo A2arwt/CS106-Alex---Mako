@@ -108,12 +108,10 @@ D:\Users\270621423\OneDrive - UP Education\Documents\GitHub\CS106-Alex---Mako\CS
 D:\Users\270621423\OneDrive - UP Education\Documents\GitHub\CS106-Alex---Mako\CS106\obj\Debug\net9.0-windows\LoginPage.g.cs
 D:\Users\270621423\OneDrive - UP Education\Documents\GitHub\CS106-Alex---Mako\CS106\obj\Debug\net9.0-windows\MakeLeaveRequest.g.cs
 D:\Users\270621423\OneDrive - UP Education\Documents\GitHub\CS106-Alex---Mako\CS106\obj\Debug\net9.0-windows\ManageLeaveRequest.g.cs
-D:\Users\270621423\OneDrive - UP Education\Documents\GitHub\CS106-Alex---Mako\CS106\obj\Debug\net9.0-windows\UserMune.g.cs
 D:\Users\270621423\OneDrive - UP Education\Documents\GitHub\CS106-Alex---Mako\CS106\obj\Debug\net9.0-windows\AdminMenu.baml
 D:\Users\270621423\OneDrive - UP Education\Documents\GitHub\CS106-Alex---Mako\CS106\obj\Debug\net9.0-windows\LoginPage.baml
 D:\Users\270621423\OneDrive - UP Education\Documents\GitHub\CS106-Alex---Mako\CS106\obj\Debug\net9.0-windows\MakeLeaveRequest.baml
 D:\Users\270621423\OneDrive - UP Education\Documents\GitHub\CS106-Alex---Mako\CS106\obj\Debug\net9.0-windows\ManageLeaveRequest.baml
-D:\Users\270621423\OneDrive - UP Education\Documents\GitHub\CS106-Alex---Mako\CS106\obj\Debug\net9.0-windows\UserMune.baml
 C:\Users\makom\Documents\GitHub\CS106-Alex---Mako\CS106\obj\Debug\net9.0-windows\MakeLeaveRequest.g.cs
 C:\Users\makom\Documents\GitHub\CS106-Alex---Mako\CS106\obj\Debug\net9.0-windows\ManageLeaveRequest.g.cs
 C:\Users\makom\Documents\GitHub\CS106-Alex---Mako\CS106\obj\Debug\net9.0-windows\MakeLeaveRequest.baml
@@ -133,3 +131,19 @@ C:\Users\makom\Documents\GitHub\CS106-Alex---Mako\CS106\obj\Debug\net9.0-windows
 C:\Users\makom\Documents\GitHub\CS106-Alex---Mako\CS106\obj\Debug\net9.0-windows\EditEmployee.baml
 C:\Users\makom\Documents\GitHub\CS106-Alex---Mako\CS106\obj\Debug\net9.0-windows\EditRoster.baml
 C:\Users\makom\Documents\GitHub\CS106-Alex---Mako\CS106\obj\Debug\net9.0-windows\AddRoster.g.cs
+D:\Users\270621423\OneDrive - UP Education\Documents\GitHub\CS106-Alex---Mako\CS106\obj\Debug\net9.0-windows\AddRoster.g.cs
+D:\Users\270621423\OneDrive - UP Education\Documents\GitHub\CS106-Alex---Mako\CS106\obj\Debug\net9.0-windows\CompanyInfo.g.cs
+D:\Users\270621423\OneDrive - UP Education\Documents\GitHub\CS106-Alex---Mako\CS106\obj\Debug\net9.0-windows\EditEmployee.g.cs
+D:\Users\270621423\OneDrive - UP Education\Documents\GitHub\CS106-Alex---Mako\CS106\obj\Debug\net9.0-windows\EditRoster.g.cs
+D:\Users\270621423\OneDrive - UP Education\Documents\GitHub\CS106-Alex---Mako\CS106\obj\Debug\net9.0-windows\Logout.g.cs
+D:\Users\270621423\OneDrive - UP Education\Documents\GitHub\CS106-Alex---Mako\CS106\obj\Debug\net9.0-windows\PersonalDetails.g.cs
+D:\Users\270621423\OneDrive - UP Education\Documents\GitHub\CS106-Alex---Mako\CS106\obj\Debug\net9.0-windows\Resignation.g.cs
+D:\Users\270621423\OneDrive - UP Education\Documents\GitHub\CS106-Alex---Mako\CS106\obj\Debug\net9.0-windows\SalaryDetails.g.cs
+D:\Users\270621423\OneDrive - UP Education\Documents\GitHub\CS106-Alex---Mako\CS106\obj\Debug\net9.0-windows\AddRoster.baml
+D:\Users\270621423\OneDrive - UP Education\Documents\GitHub\CS106-Alex---Mako\CS106\obj\Debug\net9.0-windows\CompanyInfo.baml
+D:\Users\270621423\OneDrive - UP Education\Documents\GitHub\CS106-Alex---Mako\CS106\obj\Debug\net9.0-windows\EditEmployee.baml
+D:\Users\270621423\OneDrive - UP Education\Documents\GitHub\CS106-Alex---Mako\CS106\obj\Debug\net9.0-windows\EditRoster.baml
+D:\Users\270621423\OneDrive - UP Education\Documents\GitHub\CS106-Alex---Mako\CS106\obj\Debug\net9.0-windows\Logout.baml
+D:\Users\270621423\OneDrive - UP Education\Documents\GitHub\CS106-Alex---Mako\CS106\obj\Debug\net9.0-windows\PersonalDetails.baml
+D:\Users\270621423\OneDrive - UP Education\Documents\GitHub\CS106-Alex---Mako\CS106\obj\Debug\net9.0-windows\Resignation.baml
+D:\Users\270621423\OneDrive - UP Education\Documents\GitHub\CS106-Alex---Mako\CS106\obj\Debug\net9.0-windows\SalaryDetails.baml

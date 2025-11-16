@@ -1,25 +1,33 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\makom\\Documents\\GitHub\\CS106-Alex---Mako\\CS106\\",
+  "WorkspaceRootPath": "D:\\Users\\270621423\\OneDrive - UP Education\\Documents\\GitHub\\CS106-Alex---Mako\\CS106\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{DB577B1B-092B-40FA-90EB-9E58DA041897}|CS106.csproj|c:\\users\\makom\\documents\\github\\cs106-alex---mako\\cs106\\editroster.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "AbsoluteMoniker": "D:0:0:{DB577B1B-092B-40FA-90EB-9E58DA041897}|CS106.csproj|d:\\users\\270621423\\onedrive - up education\\documents\\github\\cs106-alex---mako\\cs106\\loginpage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DB577B1B-092B-40FA-90EB-9E58DA041897}|CS106.csproj|solutionrelative:loginpage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DB577B1B-092B-40FA-90EB-9E58DA041897}|CS106.csproj|d:\\users\\270621423\\onedrive - up education\\documents\\github\\cs106-alex---mako\\cs106\\model\\sql_database.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DB577B1B-092B-40FA-90EB-9E58DA041897}|CS106.csproj|solutionrelative:model\\sql_database.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DB577B1B-092B-40FA-90EB-9E58DA041897}|CS106.csproj|d:\\users\\270621423\\onedrive - up education\\documents\\github\\cs106-alex---mako\\cs106\\editroster.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
       "RelativeMoniker": "D:0:0:{DB577B1B-092B-40FA-90EB-9E58DA041897}|CS106.csproj|solutionrelative:editroster.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{DB577B1B-092B-40FA-90EB-9E58DA041897}|CS106.csproj|c:\\users\\makom\\documents\\github\\cs106-alex---mako\\cs106\\editroster.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{DB577B1B-092B-40FA-90EB-9E58DA041897}|CS106.csproj|solutionrelative:editroster.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{DB577B1B-092B-40FA-90EB-9E58DA041897}|CS106.csproj|c:\\users\\makom\\documents\\github\\cs106-alex---mako\\cs106\\addroster.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{DB577B1B-092B-40FA-90EB-9E58DA041897}|CS106.csproj|solutionrelative:addroster.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{DB577B1B-092B-40FA-90EB-9E58DA041897}|CS106.csproj|c:\\users\\makom\\documents\\github\\cs106-alex---mako\\cs106\\addroster.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "AbsoluteMoniker": "D:0:0:{DB577B1B-092B-40FA-90EB-9E58DA041897}|CS106.csproj|d:\\users\\270621423\\onedrive - up education\\documents\\github\\cs106-alex---mako\\cs106\\addroster.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
       "RelativeMoniker": "D:0:0:{DB577B1B-092B-40FA-90EB-9E58DA041897}|CS106.csproj|solutionrelative:addroster.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{DB577B1B-092B-40FA-90EB-9E58DA041897}|CS106.csproj|c:\\users\\makom\\documents\\github\\cs106-alex---mako\\cs106\\editemployee.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "AbsoluteMoniker": "D:0:0:{DB577B1B-092B-40FA-90EB-9E58DA041897}|CS106.csproj|d:\\users\\270621423\\onedrive - up education\\documents\\github\\cs106-alex---mako\\cs106\\editroster.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DB577B1B-092B-40FA-90EB-9E58DA041897}|CS106.csproj|solutionrelative:editroster.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DB577B1B-092B-40FA-90EB-9E58DA041897}|CS106.csproj|d:\\users\\270621423\\onedrive - up education\\documents\\github\\cs106-alex---mako\\cs106\\addroster.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DB577B1B-092B-40FA-90EB-9E58DA041897}|CS106.csproj|solutionrelative:addroster.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DB577B1B-092B-40FA-90EB-9E58DA041897}|CS106.csproj|d:\\users\\270621423\\onedrive - up education\\documents\\github\\cs106-alex---mako\\cs106\\editemployee.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
       "RelativeMoniker": "D:0:0:{DB577B1B-092B-40FA-90EB-9E58DA041897}|CS106.csproj|solutionrelative:editemployee.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     }
   ],
@@ -30,27 +38,52 @@
       "DocumentGroups": [
         {
           "DockedHeight": 200,
-          "SelectedChildIndex": 3,
+          "SelectedChildIndex": 0,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 0,
+              "Title": "LoginPage.xaml.cs",
+              "DocumentMoniker": "D:\\Users\\270621423\\OneDrive - UP Education\\Documents\\GitHub\\CS106-Alex---Mako\\CS106\\LoginPage.xaml.cs",
+              "RelativeDocumentMoniker": "LoginPage.xaml.cs",
+              "ToolTip": "D:\\Users\\270621423\\OneDrive - UP Education\\Documents\\GitHub\\CS106-Alex---Mako\\CS106\\LoginPage.xaml.cs",
+              "RelativeToolTip": "LoginPage.xaml.cs",
+              "ViewState": "AgIAAA8AAAAAAAAAAAAAAB0AAABDAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-16T20:33:27.654Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "SQL_Database.cs",
+              "DocumentMoniker": "D:\\Users\\270621423\\OneDrive - UP Education\\Documents\\GitHub\\CS106-Alex---Mako\\CS106\\Model\\SQL_Database.cs",
+              "RelativeDocumentMoniker": "Model\\SQL_Database.cs",
+              "ToolTip": "D:\\Users\\270621423\\OneDrive - UP Education\\Documents\\GitHub\\CS106-Alex---Mako\\CS106\\Model\\SQL_Database.cs",
+              "RelativeToolTip": "Model\\SQL_Database.cs",
+              "ViewState": "AgIAAD0BAAAAAAAAAAAIwEcBAABMAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-16T20:30:21.206Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
               "Title": "EditEmployee.xaml",
-              "DocumentMoniker": "C:\\Users\\makom\\Documents\\GitHub\\CS106-Alex---Mako\\CS106\\EditEmployee.xaml",
+              "DocumentMoniker": "D:\\Users\\270621423\\OneDrive - UP Education\\Documents\\GitHub\\CS106-Alex---Mako\\CS106\\EditEmployee.xaml",
               "RelativeDocumentMoniker": "EditEmployee.xaml",
-              "ToolTip": "C:\\Users\\makom\\Documents\\GitHub\\CS106-Alex---Mako\\CS106\\EditEmployee.xaml",
+              "ToolTip": "D:\\Users\\270621423\\OneDrive - UP Education\\Documents\\GitHub\\CS106-Alex---Mako\\CS106\\EditEmployee.xaml",
               "RelativeToolTip": "EditEmployee.xaml",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2025-11-16T02:24:19.112Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-11-16T02:24:19.112Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 3,
               "Title": "AddRoster.xaml",
-              "DocumentMoniker": "C:\\Users\\makom\\Documents\\GitHub\\CS106-Alex---Mako\\CS106\\AddRoster.xaml",
+              "DocumentMoniker": "D:\\Users\\270621423\\OneDrive - UP Education\\Documents\\GitHub\\CS106-Alex---Mako\\CS106\\AddRoster.xaml",
               "RelativeDocumentMoniker": "AddRoster.xaml",
-              "ToolTip": "C:\\Users\\makom\\Documents\\GitHub\\CS106-Alex---Mako\\CS106\\AddRoster.xaml",
+              "ToolTip": "D:\\Users\\270621423\\OneDrive - UP Education\\Documents\\GitHub\\CS106-Alex---Mako\\CS106\\AddRoster.xaml",
               "RelativeToolTip": "AddRoster.xaml",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
               "WhenOpened": "2025-11-16T02:24:11.421Z",
@@ -58,24 +91,23 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 5,
               "Title": "AddRoster.xaml.cs",
-              "DocumentMoniker": "C:\\Users\\makom\\Documents\\GitHub\\CS106-Alex---Mako\\CS106\\AddRoster.xaml.cs",
+              "DocumentMoniker": "D:\\Users\\270621423\\OneDrive - UP Education\\Documents\\GitHub\\CS106-Alex---Mako\\CS106\\AddRoster.xaml.cs",
               "RelativeDocumentMoniker": "AddRoster.xaml.cs",
-              "ToolTip": "C:\\Users\\makom\\Documents\\GitHub\\CS106-Alex---Mako\\CS106\\AddRoster.xaml.cs",
+              "ToolTip": "D:\\Users\\270621423\\OneDrive - UP Education\\Documents\\GitHub\\CS106-Alex---Mako\\CS106\\AddRoster.xaml.cs",
               "RelativeToolTip": "AddRoster.xaml.cs",
               "ViewState": "AgIAABAAAAAAAgAAAAD8vyUAAAAvAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-16T02:24:05.095Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-11-16T02:24:05.095Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 2,
               "Title": "EditRoster.xaml",
-              "DocumentMoniker": "C:\\Users\\makom\\Documents\\GitHub\\CS106-Alex---Mako\\CS106\\EditRoster.xaml",
+              "DocumentMoniker": "D:\\Users\\270621423\\OneDrive - UP Education\\Documents\\GitHub\\CS106-Alex---Mako\\CS106\\EditRoster.xaml",
               "RelativeDocumentMoniker": "EditRoster.xaml",
-              "ToolTip": "C:\\Users\\makom\\Documents\\GitHub\\CS106-Alex---Mako\\CS106\\EditRoster.xaml",
+              "ToolTip": "D:\\Users\\270621423\\OneDrive - UP Education\\Documents\\GitHub\\CS106-Alex---Mako\\CS106\\EditRoster.xaml",
               "RelativeToolTip": "EditRoster.xaml",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
               "WhenOpened": "2025-11-16T00:21:06.961Z",
@@ -83,16 +115,15 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 4,
               "Title": "EditRoster.xaml.cs",
-              "DocumentMoniker": "C:\\Users\\makom\\Documents\\GitHub\\CS106-Alex---Mako\\CS106\\EditRoster.xaml.cs",
+              "DocumentMoniker": "D:\\Users\\270621423\\OneDrive - UP Education\\Documents\\GitHub\\CS106-Alex---Mako\\CS106\\EditRoster.xaml.cs",
               "RelativeDocumentMoniker": "EditRoster.xaml.cs",
-              "ToolTip": "C:\\Users\\makom\\Documents\\GitHub\\CS106-Alex---Mako\\CS106\\EditRoster.xaml.cs",
+              "ToolTip": "D:\\Users\\270621423\\OneDrive - UP Education\\Documents\\GitHub\\CS106-Alex---Mako\\CS106\\EditRoster.xaml.cs",
               "RelativeToolTip": "EditRoster.xaml.cs",
               "ViewState": "AgIAABgAAAAAcDMzMzPjvzAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-16T00:20:58.801Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-11-16T00:20:58.801Z"
             }
           ]
         }

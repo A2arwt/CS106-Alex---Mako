@@ -325,7 +325,7 @@ namespace CS106.Model
             using (SQLiteConnection sql_database = new SQLiteConnection("Data Source=database/CS106.db"))
             {
                 sql_database.Open();
-                using (var command = new SQLiteCommand("select * from request", sql_database))
+                using (var command = new SQLiteCommand("select * from roster", sql_database))
                 {
                     using (var result = command.ExecuteReader())
                     {
