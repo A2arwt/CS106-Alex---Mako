@@ -11,7 +11,7 @@
     <Grid >
         <TextBox x:Name="Username" Background="#bbe2f2" HorizontalAlignment="Center" Margin="0,200,0,0" TextWrapping="Wrap"  VerticalAlignment="Top" Width="232" Height="25"/>
         <PasswordBox x:Name="Password" Background="#bbe2f2" HorizontalAlignment="Center" Margin="0,242,0,0" VerticalAlignment="Top" Width="232" Height="22"/>
-        <Button Background="#bbe2f2" Content="Button" HorizontalAlignment="Left" Margin="443,282,0,0" VerticalAlignment="Top" Click="Button_Click" Height="23" Width="73"/>
-        <Image HorizontalAlignment="Left" Source=  Height="108" Margin="284,66,0,0" VerticalAlignment="Top" Width="235"/>
+        <Button Background="#bbe2f2" Content="Login" Margin="443,282,0,0" Click="Button_Click" Height="23" Width="73"/>
+        <Image HorizontalAlignment="Center" Source="D:\Users\270040396\Documents\GitHub\CS106-Alex---Mako\Assests\Style Guide\Logo 2 - Transparent.png"  Height="212"  VerticalAlignment="Top" Width="463"/>
     </Grid>
 </Page>

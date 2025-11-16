@@ -40,9 +40,11 @@
                 <RowDefinition></RowDefinition>
             </Grid.RowDefinitions>
             <Rectangle Fill="Blue" Panel.ZIndex="-1"></Rectangle>
-            <TextBlock x:Name="welcame_text" FontSize="40"></TextBlock>
+            <TextBlock x:Name="welcame_text" Margin="0,0,0,250" VerticalAlignment="Center" HorizontalAlignment="Center" FontSize="55"></TextBlock>
+            <TextBlock x:Name="welcome_text" Margin="0,0,0,150" VerticalAlignment="Center" HorizontalAlignment="Center" FontSize="55"></TextBlock>
             <Rectangle Fill="Blue" Panel.ZIndex="-1" Grid.Row="1" ></Rectangle>
-            <TextBlock FontSize="40" Grid.Row="1"> upcoming Events </TextBlock>
+            <TextBlock FontSize="40" TextDecorations="Underline" HorizontalAlignment="Center" Grid.Row="1"> Upcoming Events </TextBlock>
+            <TextBlock x:Name="events" Margin="0,0,0,-1000" VerticalAlignment="Center" HorizontalAlignment="Center" FontSize="40"></TextBlock>
         </Grid>
         <Grid Grid.Column="2">
             <TextBlock></TextBlock>

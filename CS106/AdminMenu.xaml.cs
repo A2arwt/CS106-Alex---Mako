@@ -26,8 +26,9 @@ namespace CS106
         public Menu()
         {
             InitializeComponent();
-            welcame_text.Text = "Welcame " + EmployeeManagementSystem.current_user.name + "!\n " +
-                "Employee ID:" + EmployeeManagementSystem.current_user.employee_id;
+            welcame_text.Text = "Welcome " + EmployeeManagementSystem.current_user.name + "!\n";
+            welcome_text.Text = "Employee ID:" + EmployeeManagementSystem.current_user.employee_id;
+            events.Text = "\nChristmas day - 25/11/2025 \n\n Boxing day - 26/12/2025 \n\n New Years day - 1/01/2026\n\n";
 
             if (EmployeeManagementSystem.is_admin == false)
             {
