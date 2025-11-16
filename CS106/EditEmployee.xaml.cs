@@ -43,11 +43,6 @@ namespace CS106
             NavigationService.Navigate(new ManageLeaveRequest());
         }
 
-        private void SalaryDetails(object sender, RoutedEventArgs e)
-        {
-            NavigationService.Navigate(new SalaryDetails());
-
-        }
 
         private void CompanyInfo(object sender, RoutedEventArgs e)
         {
@@ -70,6 +65,12 @@ namespace CS106
         private void Exit(object sender, RoutedEventArgs e)
         {
             NavigationService.Navigate(new Logout());
+
+        }
+
+        private void EditRoster(object sender, RoutedEventArgs e)
+        {
+            NavigationService.Navigate(new EditRoster());
 
         }
     }

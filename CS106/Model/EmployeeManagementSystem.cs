@@ -54,6 +54,20 @@ namespace CS106.Model
             return request;
         }
 
+        public static List<Database.SQL_RosterDataStruct> GetRoster()
+        {
+            return database.SQL_SelectAllRoster();
+        }
+
+        public static List<Database.SQL_RosterDataStruct> GetRoster(long ID)
+        {
+            var requestlist = database.SQL_SelectAllRoster();
+            List<Database.SQL_RosterDataStruct> request = (List<SQL_Database.SQL_RosterDataStruct>)(from item in requestlist
+                                                                                                      where item.employee_id == ID
+                                                                                                      select item);
+            return request;
+        }
+
         public static void UpdateRequest(long ID, long request_number, string type, string status, long total, long used, string start, string end)
         {
             Database.SQL_RequestDataStruct request = new SQL_Database.SQL_RequestDataStruct();
@@ -67,6 +81,21 @@ namespace CS106.Model
             request.leave_end_date = end;
             if (database != null)
                 database.SQL_UpdateRequest(request);
+        }
+
+        public static void AddRoster(long employee_id,string shift_date,double shift_start_time,double shift_finish_time)
+        {
+            Database.SQL_RosterDataStruct data = new SQL_Database.SQL_RosterDataStruct();
+            data.employee_id = employee_id;
+            data.shift_date = shift_date;
+            data.shift_start_time = shift_start_time;
+            data.shift_finish_time = shift_finish_time;
+            database.SQL_InsertRostertData(data);
+        }
+
+        public static List<Database.SQL_EmployeeDataStruct> GetEmployee()
+        {
+            return database.SQL_SelectAllEmployees();
         }
     }
 

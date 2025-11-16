@@ -25,7 +25,7 @@
                 <RowDefinition></RowDefinition>
             </Grid.RowDefinitions>
             <Button Grid.Row="0" Content="Manage Leave Request" FontSize="32" Click="LeaveRequestManagement"></Button>
-            <Button Grid.Row="1" Content="Manage Salary Details" FontSize="32" Click="SalaryDetails"></Button>
+            <Button Grid.Row="1" Content="Edit Roster" FontSize="32" Click="EditRoster"></Button>
             <Button Grid.Row="2" Content="Manage Employee Details" FontSize="32" Click="PersonalDetails"></Button>
             <Button Grid.Row="3" Content="Company events/New" FontSize="32" Click="CompanyInfo"></Button>
             <Button Grid.Row="5" Content="Logout" FontSize="32" Click="Logout"></Button>

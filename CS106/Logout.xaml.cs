@@ -23,7 +23,7 @@ namespace CS106
         public Logout()
         {
             InitializeComponent();
-            NavigationService.Navigate(new Resignation());
+            
 
         }
     }

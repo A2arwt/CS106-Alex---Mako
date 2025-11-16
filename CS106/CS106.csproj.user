@@ -2,10 +2,16 @@
 <Project ToolsVersion="Current" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <PropertyGroup />
   <ItemGroup>
+    <Compile Update="AddRoster.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Update="CompanyInfo.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Update="ExitEmployee.xaml.cs">
+    <Compile Update="EditRoster.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="EditEmployee.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
     <Compile Update="Logout.xaml.cs">

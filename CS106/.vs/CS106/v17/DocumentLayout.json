@@ -3,80 +3,24 @@
   "WorkspaceRootPath": "C:\\Users\\makom\\Documents\\GitHub\\CS106-Alex---Mako\\CS106\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{DB577B1B-092B-40FA-90EB-9E58DA041897}|CS106.csproj|c:\\users\\makom\\documents\\github\\cs106-alex---mako\\cs106\\personaldetails.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{DB577B1B-092B-40FA-90EB-9E58DA041897}|CS106.csproj|solutionrelative:personaldetails.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+      "AbsoluteMoniker": "D:0:0:{DB577B1B-092B-40FA-90EB-9E58DA041897}|CS106.csproj|c:\\users\\makom\\documents\\github\\cs106-alex---mako\\cs106\\editroster.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{DB577B1B-092B-40FA-90EB-9E58DA041897}|CS106.csproj|solutionrelative:editroster.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{DB577B1B-092B-40FA-90EB-9E58DA041897}|CS106.csproj|c:\\users\\makom\\documents\\github\\cs106-alex---mako\\cs106\\manageleaverequest.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{DB577B1B-092B-40FA-90EB-9E58DA041897}|CS106.csproj|solutionrelative:manageleaverequest.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+      "AbsoluteMoniker": "D:0:0:{DB577B1B-092B-40FA-90EB-9E58DA041897}|CS106.csproj|c:\\users\\makom\\documents\\github\\cs106-alex---mako\\cs106\\editroster.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DB577B1B-092B-40FA-90EB-9E58DA041897}|CS106.csproj|solutionrelative:editroster.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{DB577B1B-092B-40FA-90EB-9E58DA041897}|CS106.csproj|c:\\users\\makom\\documents\\github\\cs106-alex---mako\\cs106\\makeleaverequest.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{DB577B1B-092B-40FA-90EB-9E58DA041897}|CS106.csproj|solutionrelative:makeleaverequest.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+      "AbsoluteMoniker": "D:0:0:{DB577B1B-092B-40FA-90EB-9E58DA041897}|CS106.csproj|c:\\users\\makom\\documents\\github\\cs106-alex---mako\\cs106\\addroster.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DB577B1B-092B-40FA-90EB-9E58DA041897}|CS106.csproj|solutionrelative:addroster.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{DB577B1B-092B-40FA-90EB-9E58DA041897}|CS106.csproj|c:\\users\\makom\\documents\\github\\cs106-alex---mako\\cs106\\exitemployee.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{DB577B1B-092B-40FA-90EB-9E58DA041897}|CS106.csproj|solutionrelative:exitemployee.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+      "AbsoluteMoniker": "D:0:0:{DB577B1B-092B-40FA-90EB-9E58DA041897}|CS106.csproj|c:\\users\\makom\\documents\\github\\cs106-alex---mako\\cs106\\addroster.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{DB577B1B-092B-40FA-90EB-9E58DA041897}|CS106.csproj|solutionrelative:addroster.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{DB577B1B-092B-40FA-90EB-9E58DA041897}|CS106.csproj|c:\\users\\makom\\documents\\github\\cs106-alex---mako\\cs106\\companyinfo.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{DB577B1B-092B-40FA-90EB-9E58DA041897}|CS106.csproj|solutionrelative:companyinfo.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{DB577B1B-092B-40FA-90EB-9E58DA041897}|CS106.csproj|c:\\users\\makom\\documents\\github\\cs106-alex---mako\\cs106\\adminmenu.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{DB577B1B-092B-40FA-90EB-9E58DA041897}|CS106.csproj|solutionrelative:adminmenu.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{DB577B1B-092B-40FA-90EB-9E58DA041897}|CS106.csproj|c:\\users\\makom\\documents\\github\\cs106-alex---mako\\cs106\\adminmenu.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{DB577B1B-092B-40FA-90EB-9E58DA041897}|CS106.csproj|solutionrelative:adminmenu.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{DB577B1B-092B-40FA-90EB-9E58DA041897}|CS106.csproj|c:\\users\\makom\\documents\\github\\cs106-alex---mako\\cs106\\loginpage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{DB577B1B-092B-40FA-90EB-9E58DA041897}|CS106.csproj|solutionrelative:loginpage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{DB577B1B-092B-40FA-90EB-9E58DA041897}|CS106.csproj|c:\\users\\makom\\documents\\github\\cs106-alex---mako\\cs106\\logout.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{DB577B1B-092B-40FA-90EB-9E58DA041897}|CS106.csproj|solutionrelative:logout.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{DB577B1B-092B-40FA-90EB-9E58DA041897}|CS106.csproj|c:\\users\\makom\\documents\\github\\cs106-alex---mako\\cs106\\exitemployee.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{DB577B1B-092B-40FA-90EB-9E58DA041897}|CS106.csproj|solutionrelative:exitemployee.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{DB577B1B-092B-40FA-90EB-9E58DA041897}|CS106.csproj|c:\\users\\makom\\documents\\github\\cs106-alex---mako\\cs106\\logout.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{DB577B1B-092B-40FA-90EB-9E58DA041897}|CS106.csproj|solutionrelative:logout.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{DB577B1B-092B-40FA-90EB-9E58DA041897}|CS106.csproj|c:\\users\\makom\\documents\\github\\cs106-alex---mako\\cs106\\loginpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{DB577B1B-092B-40FA-90EB-9E58DA041897}|CS106.csproj|solutionrelative:loginpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{DB577B1B-092B-40FA-90EB-9E58DA041897}|CS106.csproj|c:\\users\\makom\\documents\\github\\cs106-alex---mako\\cs106\\makeleaverequest.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{DB577B1B-092B-40FA-90EB-9E58DA041897}|CS106.csproj|solutionrelative:makeleaverequest.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{DB577B1B-092B-40FA-90EB-9E58DA041897}|CS106.csproj|c:\\users\\makom\\documents\\github\\cs106-alex---mako\\cs106\\personaldetails.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{DB577B1B-092B-40FA-90EB-9E58DA041897}|CS106.csproj|solutionrelative:personaldetails.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{DB577B1B-092B-40FA-90EB-9E58DA041897}|CS106.csproj|c:\\users\\makom\\documents\\github\\cs106-alex---mako\\cs106\\resignation.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{DB577B1B-092B-40FA-90EB-9E58DA041897}|CS106.csproj|solutionrelative:resignation.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{DB577B1B-092B-40FA-90EB-9E58DA041897}|CS106.csproj|c:\\users\\makom\\documents\\github\\cs106-alex---mako\\cs106\\companyinfo.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{DB577B1B-092B-40FA-90EB-9E58DA041897}|CS106.csproj|solutionrelative:companyinfo.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{DB577B1B-092B-40FA-90EB-9E58DA041897}|CS106.csproj|c:\\users\\makom\\documents\\github\\cs106-alex---mako\\cs106\\salarydetails.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{DB577B1B-092B-40FA-90EB-9E58DA041897}|CS106.csproj|solutionrelative:salarydetails.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{DB577B1B-092B-40FA-90EB-9E58DA041897}|CS106.csproj|c:\\users\\makom\\documents\\github\\cs106-alex---mako\\cs106\\manageleaverequest.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{DB577B1B-092B-40FA-90EB-9E58DA041897}|CS106.csproj|solutionrelative:manageleaverequest.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{DB577B1B-092B-40FA-90EB-9E58DA041897}|CS106.csproj|c:\\users\\makom\\documents\\github\\cs106-alex---mako\\cs106\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{DB577B1B-092B-40FA-90EB-9E58DA041897}|CS106.csproj|solutionrelative:mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{DB577B1B-092B-40FA-90EB-9E58DA041897}|CS106.csproj|c:\\users\\makom\\documents\\github\\cs106-alex---mako\\cs106\\editemployee.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{DB577B1B-092B-40FA-90EB-9E58DA041897}|CS106.csproj|solutionrelative:editemployee.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     }
   ],
   "DocumentGroupContainers": [
@@ -86,245 +30,68 @@
       "DocumentGroups": [
         {
           "DockedHeight": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 3,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "PersonalDetails.xaml",
-              "DocumentMoniker": "C:\\Users\\makom\\Documents\\GitHub\\CS106-Alex---Mako\\CS106\\PersonalDetails.xaml",
-              "RelativeDocumentMoniker": "PersonalDetails.xaml",
-              "ToolTip": "C:\\Users\\makom\\Documents\\GitHub\\CS106-Alex---Mako\\CS106\\PersonalDetails.xaml",
-              "RelativeToolTip": "PersonalDetails.xaml",
+              "DocumentIndex": 4,
+              "Title": "EditEmployee.xaml",
+              "DocumentMoniker": "C:\\Users\\makom\\Documents\\GitHub\\CS106-Alex---Mako\\CS106\\EditEmployee.xaml",
+              "RelativeDocumentMoniker": "EditEmployee.xaml",
+              "ToolTip": "C:\\Users\\makom\\Documents\\GitHub\\CS106-Alex---Mako\\CS106\\EditEmployee.xaml",
+              "RelativeToolTip": "EditEmployee.xaml",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2025-11-15T17:59:26.15Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "ManageLeaveRequest.xaml",
-              "DocumentMoniker": "C:\\Users\\makom\\Documents\\GitHub\\CS106-Alex---Mako\\CS106\\ManageLeaveRequest.xaml",
-              "RelativeDocumentMoniker": "ManageLeaveRequest.xaml",
-              "ToolTip": "C:\\Users\\makom\\Documents\\GitHub\\CS106-Alex---Mako\\CS106\\ManageLeaveRequest.xaml",
-              "RelativeToolTip": "ManageLeaveRequest.xaml",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2025-11-15T17:59:02.939Z",
+              "WhenOpened": "2025-11-16T02:24:19.112Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 3,
-              "Title": "ExitEmployee.xaml",
-              "DocumentMoniker": "C:\\Users\\makom\\Documents\\GitHub\\CS106-Alex---Mako\\CS106\\ExitEmployee.xaml",
-              "RelativeDocumentMoniker": "ExitEmployee.xaml",
-              "ToolTip": "C:\\Users\\makom\\Documents\\GitHub\\CS106-Alex---Mako\\CS106\\ExitEmployee.xaml",
-              "RelativeToolTip": "ExitEmployee.xaml",
+              "Title": "AddRoster.xaml",
+              "DocumentMoniker": "C:\\Users\\makom\\Documents\\GitHub\\CS106-Alex---Mako\\CS106\\AddRoster.xaml",
+              "RelativeDocumentMoniker": "AddRoster.xaml",
+              "ToolTip": "C:\\Users\\makom\\Documents\\GitHub\\CS106-Alex---Mako\\CS106\\AddRoster.xaml",
+              "RelativeToolTip": "AddRoster.xaml",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2025-11-15T17:58:35.254Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "AdminMenu.xaml",
-              "DocumentMoniker": "C:\\Users\\makom\\Documents\\GitHub\\CS106-Alex---Mako\\CS106\\AdminMenu.xaml",
-              "RelativeDocumentMoniker": "AdminMenu.xaml",
-              "ToolTip": "C:\\Users\\makom\\Documents\\GitHub\\CS106-Alex---Mako\\CS106\\AdminMenu.xaml",
-              "RelativeToolTip": "AdminMenu.xaml",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2025-11-15T17:40:28.99Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "CompanyInfo.xaml",
-              "DocumentMoniker": "C:\\Users\\makom\\Documents\\GitHub\\CS106-Alex---Mako\\CS106\\CompanyInfo.xaml",
-              "RelativeDocumentMoniker": "CompanyInfo.xaml",
-              "ToolTip": "C:\\Users\\makom\\Documents\\GitHub\\CS106-Alex---Mako\\CS106\\CompanyInfo.xaml",
-              "RelativeToolTip": "CompanyInfo.xaml",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2025-11-15T17:39:24.846Z",
+              "WhenOpened": "2025-11-16T02:24:11.421Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 2,
-              "Title": "MakeLeaveRequest.xaml",
-              "DocumentMoniker": "C:\\Users\\makom\\Documents\\GitHub\\CS106-Alex---Mako\\CS106\\MakeLeaveRequest.xaml",
-              "RelativeDocumentMoniker": "MakeLeaveRequest.xaml",
-              "ToolTip": "C:\\Users\\makom\\Documents\\GitHub\\CS106-Alex---Mako\\CS106\\MakeLeaveRequest.xaml",
-              "RelativeToolTip": "MakeLeaveRequest.xaml",
+              "Title": "AddRoster.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\makom\\Documents\\GitHub\\CS106-Alex---Mako\\CS106\\AddRoster.xaml.cs",
+              "RelativeDocumentMoniker": "AddRoster.xaml.cs",
+              "ToolTip": "C:\\Users\\makom\\Documents\\GitHub\\CS106-Alex---Mako\\CS106\\AddRoster.xaml.cs",
+              "RelativeToolTip": "AddRoster.xaml.cs",
+              "ViewState": "AgIAABAAAAAAAgAAAAD8vyUAAAAvAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-16T02:24:05.095Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "EditRoster.xaml",
+              "DocumentMoniker": "C:\\Users\\makom\\Documents\\GitHub\\CS106-Alex---Mako\\CS106\\EditRoster.xaml",
+              "RelativeDocumentMoniker": "EditRoster.xaml",
+              "ToolTip": "C:\\Users\\makom\\Documents\\GitHub\\CS106-Alex---Mako\\CS106\\EditRoster.xaml",
+              "RelativeToolTip": "EditRoster.xaml",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2025-11-15T17:38:39.016Z",
+              "WhenOpened": "2025-11-16T00:21:06.961Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "Logout.xaml.cs",
-              "DocumentMoniker": "C:\\Users\\makom\\Documents\\GitHub\\CS106-Alex---Mako\\CS106\\Logout.xaml.cs",
-              "RelativeDocumentMoniker": "Logout.xaml.cs",
-              "ToolTip": "C:\\Users\\makom\\Documents\\GitHub\\CS106-Alex---Mako\\CS106\\Logout.xaml.cs",
-              "RelativeToolTip": "Logout.xaml.cs",
-              "ViewState": "AgIAAAsAAADANjMzMzMrwBkAAAA6AAAAAAAAAA==",
+              "DocumentIndex": 1,
+              "Title": "EditRoster.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\makom\\Documents\\GitHub\\CS106-Alex---Mako\\CS106\\EditRoster.xaml.cs",
+              "RelativeDocumentMoniker": "EditRoster.xaml.cs",
+              "ToolTip": "C:\\Users\\makom\\Documents\\GitHub\\CS106-Alex---Mako\\CS106\\EditRoster.xaml.cs",
+              "RelativeToolTip": "EditRoster.xaml.cs",
+              "ViewState": "AgIAABgAAAAAcDMzMzPjvzAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-15T17:13:32.623Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "LoginPage.xaml.cs",
-              "DocumentMoniker": "C:\\Users\\makom\\Documents\\GitHub\\CS106-Alex---Mako\\CS106\\LoginPage.xaml.cs",
-              "RelativeDocumentMoniker": "LoginPage.xaml.cs",
-              "ToolTip": "C:\\Users\\makom\\Documents\\GitHub\\CS106-Alex---Mako\\CS106\\LoginPage.xaml.cs",
-              "RelativeToolTip": "LoginPage.xaml.cs",
-              "ViewState": "AgIAABgAAACgNDMzMzMiwCcAAAA9AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-15T17:42:42.533Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 14,
-              "Title": "Resignation.xaml.cs",
-              "DocumentMoniker": "C:\\Users\\makom\\Documents\\GitHub\\CS106-Alex---Mako\\CS106\\Resignation.xaml.cs",
-              "RelativeDocumentMoniker": "Resignation.xaml.cs",
-              "ToolTip": "C:\\Users\\makom\\Documents\\GitHub\\CS106-Alex---Mako\\CS106\\Resignation.xaml.cs",
-              "RelativeToolTip": "Resignation.xaml.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAASAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-15T17:46:47.73Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "AdminMenu.xaml.cs",
-              "DocumentMoniker": "C:\\Users\\makom\\Documents\\GitHub\\CS106-Alex---Mako\\CS106\\AdminMenu.xaml.cs",
-              "RelativeDocumentMoniker": "AdminMenu.xaml.cs",
-              "ToolTip": "C:\\Users\\makom\\Documents\\GitHub\\CS106-Alex---Mako\\CS106\\AdminMenu.xaml.cs",
-              "RelativeToolTip": "AdminMenu.xaml.cs",
-              "ViewState": "AgIAACUAAABAZmZmZmYuwEkAAAA+AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-15T17:40:36.432Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "ExitEmployee.xaml.cs",
-              "DocumentMoniker": "C:\\Users\\makom\\Documents\\GitHub\\CS106-Alex---Mako\\CS106\\ExitEmployee.xaml.cs",
-              "RelativeDocumentMoniker": "ExitEmployee.xaml.cs",
-              "ToolTip": "C:\\Users\\makom\\Documents\\GitHub\\CS106-Alex---Mako\\CS106\\ExitEmployee.xaml.cs",
-              "RelativeToolTip": "ExitEmployee.xaml.cs",
-              "ViewState": "AgIAADAAAADgMzMzMzMBwDsAAAA6AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-15T17:41:55.588Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 11,
-              "Title": "LoginPage.xaml",
-              "DocumentMoniker": "C:\\Users\\makom\\Documents\\GitHub\\CS106-Alex---Mako\\CS106\\LoginPage.xaml",
-              "RelativeDocumentMoniker": "LoginPage.xaml",
-              "ToolTip": "C:\\Users\\makom\\Documents\\GitHub\\CS106-Alex---Mako\\CS106\\LoginPage.xaml",
-              "RelativeToolTip": "LoginPage.xaml",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2025-11-15T17:42:39.66Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 10,
-              "Title": "Logout.xaml",
-              "DocumentMoniker": "C:\\Users\\makom\\Documents\\GitHub\\CS106-Alex---Mako\\CS106\\Logout.xaml",
-              "RelativeDocumentMoniker": "Logout.xaml",
-              "ToolTip": "C:\\Users\\makom\\Documents\\GitHub\\CS106-Alex---Mako\\CS106\\Logout.xaml",
-              "RelativeToolTip": "Logout.xaml",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2025-11-15T17:54:23.332Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 13,
-              "Title": "PersonalDetails.xaml.cs",
-              "DocumentMoniker": "C:\\Users\\makom\\Documents\\GitHub\\CS106-Alex---Mako\\CS106\\PersonalDetails.xaml.cs",
-              "RelativeDocumentMoniker": "PersonalDetails.xaml.cs",
-              "ToolTip": "C:\\Users\\makom\\Documents\\GitHub\\CS106-Alex---Mako\\CS106\\PersonalDetails.xaml.cs",
-              "RelativeToolTip": "PersonalDetails.xaml.cs",
-              "ViewState": "AgIAAAAAAABwZmZmZiYwwA4AAAAcAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-15T17:45:56.852Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 12,
-              "Title": "MakeLeaveRequest.xaml.cs",
-              "DocumentMoniker": "C:\\Users\\makom\\Documents\\GitHub\\CS106-Alex---Mako\\CS106\\MakeLeaveRequest.xaml.cs",
-              "RelativeDocumentMoniker": "MakeLeaveRequest.xaml.cs",
-              "ToolTip": "C:\\Users\\makom\\Documents\\GitHub\\CS106-Alex---Mako\\CS106\\MakeLeaveRequest.xaml.cs",
-              "RelativeToolTip": "MakeLeaveRequest.xaml.cs",
-              "ViewState": "AgIAAEIAAAAAAAAAAAAcwFcAAAAJAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-15T17:44:35.365Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 15,
-              "Title": "CompanyInfo.xaml.cs",
-              "DocumentMoniker": "C:\\Users\\makom\\Documents\\GitHub\\CS106-Alex---Mako\\CS106\\CompanyInfo.xaml.cs",
-              "RelativeDocumentMoniker": "CompanyInfo.xaml.cs",
-              "ToolTip": "C:\\Users\\makom\\Documents\\GitHub\\CS106-Alex---Mako\\CS106\\CompanyInfo.xaml.cs",
-              "RelativeToolTip": "CompanyInfo.xaml.cs",
-              "ViewState": "AgIAACwAAAAAAAAAAIA9wDcAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-15T17:39:34.331Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 16,
-              "Title": "SalaryDetails.xaml.cs",
-              "DocumentMoniker": "C:\\Users\\makom\\Documents\\GitHub\\CS106-Alex---Mako\\CS106\\SalaryDetails.xaml.cs",
-              "RelativeDocumentMoniker": "SalaryDetails.xaml.cs",
-              "ToolTip": "C:\\Users\\makom\\Documents\\GitHub\\CS106-Alex---Mako\\CS106\\SalaryDetails.xaml.cs",
-              "RelativeToolTip": "SalaryDetails.xaml.cs",
-              "ViewState": "AgIAACIAAADgAAAAAEA8wDEAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-15T17:47:22.033Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 17,
-              "Title": "ManageLeaveRequest.xaml.cs",
-              "DocumentMoniker": "C:\\Users\\makom\\Documents\\GitHub\\CS106-Alex---Mako\\CS106\\ManageLeaveRequest.xaml.cs",
-              "RelativeDocumentMoniker": "ManageLeaveRequest.xaml.cs",
-              "ToolTip": "C:\\Users\\makom\\Documents\\GitHub\\CS106-Alex---Mako\\CS106\\ManageLeaveRequest.xaml.cs",
-              "RelativeToolTip": "ManageLeaveRequest.xaml.cs",
-              "ViewState": "AgIAAJ8AAAAAAAAAAAAcwLQAAAAJAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-15T17:45:18.382Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 18,
-              "Title": "MainWindow.xaml.cs",
-              "DocumentMoniker": "C:\\Users\\makom\\Documents\\GitHub\\CS106-Alex---Mako\\CS106\\MainWindow.xaml.cs",
-              "RelativeDocumentMoniker": "MainWindow.xaml.cs",
-              "ToolTip": "C:\\Users\\makom\\Documents\\GitHub\\CS106-Alex---Mako\\CS106\\MainWindow.xaml.cs",
-              "RelativeToolTip": "MainWindow.xaml.cs",
-              "ViewState": "AgIAABQAAAAANDMzMzMbwAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-15T17:44:22.78Z",
+              "WhenOpened": "2025-11-16T00:20:58.801Z",
               "EditorCaption": ""
             }
           ]

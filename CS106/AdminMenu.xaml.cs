@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using System.Globalization;
 using System.Linq;
@@ -25,10 +26,45 @@ namespace CS106
         public Menu()
         {
             InitializeComponent();
-            if(EmployeeManagementSystem.is_admin == false)
+            welcame_text.Text = "Welcame " + EmployeeManagementSystem.current_user.name + "!\n " +
+                "Employee ID:" + EmployeeManagementSystem.current_user.employee_id;
+
+            if (EmployeeManagementSystem.is_admin == false)
             {
                 pagelist.Children.RemoveAt(6);
             }
+
+            var request = EmployeeManagementSystem.GetRoster();
+            for (int i = 0; i < request.Count; i++)
+            {
+                StackPanel stack = new StackPanel();
+                stack.Orientation = Orientation.Horizontal;
+
+
+                TextBlock ID = new TextBlock();
+                ID.Text = request[i].employee_id.ToString();
+                ID.Background = new SolidColorBrush(Color.FromArgb(0, 0xbb, 0xe2, 0xf2));
+                stack.Children.Add(ID);
+
+                TextBlock request_number = new TextBlock();
+                request_number.Text = request[i].shift_date.ToString();
+                request_number.Background = new SolidColorBrush(Color.FromArgb(0, 0xbb, 0xe2, 0xf2));
+                stack.Children.Add(request_number);
+
+
+
+                TextBlock type = new TextBlock();
+                type.Text = request[i].shift_start_time.ToString();
+                type.Background = new SolidColorBrush(Color.FromArgb(0, 0xbb, 0xe2, 0xf2));
+                stack.Children.Add(type);
+
+                TextBlock status = new TextBlock();
+                status.Text = request[i].shift_finish_time.ToString();
+                stack.Children.Add(status);
+
+                shift_stack.Children.Add(stack);
+            }
+
         }
 
 

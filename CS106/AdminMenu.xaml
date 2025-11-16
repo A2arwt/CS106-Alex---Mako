@@ -34,6 +34,22 @@
             <Button Grid.Row="6" Content="Edit Employee" FontSize="32" Click="ExitEmployee"></Button>
         </Grid>
 
+        <Grid Grid.Column="1">
+            <Grid.RowDefinitions>
+                <RowDefinition></RowDefinition>
+                <RowDefinition></RowDefinition>
+            </Grid.RowDefinitions>
+            <Rectangle Fill="Blue" Panel.ZIndex="-1"></Rectangle>
+            <TextBlock x:Name="welcame_text" FontSize="40"></TextBlock>
+            <Rectangle Fill="Blue" Panel.ZIndex="-1" Grid.Row="1" ></Rectangle>
+            <TextBlock FontSize="40" Grid.Row="1"> upcoming Events </TextBlock>
+        </Grid>
+        <Grid Grid.Column="2">
+            <TextBlock></TextBlock>
+            <StackPanel x:Name="shift_stack"></StackPanel>
+
+        </Grid>
+
     </Grid>
     
     
