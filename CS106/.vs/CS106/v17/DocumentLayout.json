@@ -3,20 +3,32 @@
   "WorkspaceRootPath": "D:\\Users\\270040396\\Documents\\GitHub\\CS106-Alex---Mako\\CS106\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{DB577B1B-092B-40FA-90EB-9E58DA041897}|CS106.csproj|d:\\users\\270040396\\documents\\github\\cs106-alex---mako\\cs106\\loginpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{DB577B1B-092B-40FA-90EB-9E58DA041897}|CS106.csproj|solutionrelative:loginpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{DB577B1B-092B-40FA-90EB-9E58DA041897}|CS106.csproj|d:\\users\\270040396\\documents\\github\\cs106-alex---mako\\cs106\\loginpage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{DB577B1B-092B-40FA-90EB-9E58DA041897}|CS106.csproj|solutionrelative:loginpage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{DB577B1B-092B-40FA-90EB-9E58DA041897}|CS106.csproj|d:\\users\\270040396\\documents\\github\\cs106-alex---mako\\cs106\\adminmenu.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
       "RelativeMoniker": "D:0:0:{DB577B1B-092B-40FA-90EB-9E58DA041897}|CS106.csproj|solutionrelative:adminmenu.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{DB577B1B-092B-40FA-90EB-9E58DA041897}|CS106.csproj|d:\\users\\270040396\\documents\\github\\cs106-alex---mako\\cs106\\adminmenu.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{DB577B1B-092B-40FA-90EB-9E58DA041897}|CS106.csproj|solutionrelative:adminmenu.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DB577B1B-092B-40FA-90EB-9E58DA041897}|CS106.csproj|d:\\users\\270040396\\documents\\github\\cs106-alex---mako\\cs106\\loginpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{DB577B1B-092B-40FA-90EB-9E58DA041897}|CS106.csproj|solutionrelative:loginpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DB577B1B-092B-40FA-90EB-9E58DA041897}|CS106.csproj|d:\\users\\270040396\\documents\\github\\cs106-alex---mako\\cs106\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{DB577B1B-092B-40FA-90EB-9E58DA041897}|CS106.csproj|solutionrelative:mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DB577B1B-092B-40FA-90EB-9E58DA041897}|CS106.csproj|d:\\users\\270040396\\documents\\github\\cs106-alex---mako\\cs106\\resignation.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{DB577B1B-092B-40FA-90EB-9E58DA041897}|CS106.csproj|solutionrelative:resignation.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DB577B1B-092B-40FA-90EB-9E58DA041897}|CS106.csproj|d:\\users\\270040396\\documents\\github\\cs106-alex---mako\\cs106\\companyinfo.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{DB577B1B-092B-40FA-90EB-9E58DA041897}|CS106.csproj|solutionrelative:companyinfo.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DB577B1B-092B-40FA-90EB-9E58DA041897}|CS106.csproj|d:\\users\\270040396\\documents\\github\\cs106-alex---mako\\cs106\\loginpage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DB577B1B-092B-40FA-90EB-9E58DA041897}|CS106.csproj|solutionrelative:loginpage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{DB577B1B-092B-40FA-90EB-9E58DA041897}|CS106.csproj|d:\\users\\270040396\\documents\\github\\cs106-alex---mako\\cs106\\editemployee.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
@@ -50,11 +62,35 @@
       "DocumentGroups": [
         {
           "DockedHeight": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 2,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 4,
+              "Title": "Resignation.xaml",
+              "DocumentMoniker": "D:\\Users\\270040396\\Documents\\GitHub\\CS106-Alex---Mako\\CS106\\Resignation.xaml",
+              "RelativeDocumentMoniker": "Resignation.xaml",
+              "ToolTip": "D:\\Users\\270040396\\Documents\\GitHub\\CS106-Alex---Mako\\CS106\\Resignation.xaml",
+              "RelativeToolTip": "Resignation.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-11-17T21:54:17.344Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "MainWindow.xaml",
+              "DocumentMoniker": "D:\\Users\\270040396\\Documents\\GitHub\\CS106-Alex---Mako\\CS106\\MainWindow.xaml",
+              "RelativeDocumentMoniker": "MainWindow.xaml",
+              "ToolTip": "D:\\Users\\270040396\\Documents\\GitHub\\CS106-Alex---Mako\\CS106\\MainWindow.xaml",
+              "RelativeToolTip": "MainWindow.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-11-17T20:35:20.95Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
               "Title": "AdminMenu.xaml",
               "DocumentMoniker": "D:\\Users\\270040396\\Documents\\GitHub\\CS106-Alex---Mako\\CS106\\AdminMenu.xaml",
               "RelativeDocumentMoniker": "AdminMenu.xaml",
@@ -66,7 +102,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 2,
               "Title": "LoginPage.xaml",
               "DocumentMoniker": "D:\\Users\\270040396\\Documents\\GitHub\\CS106-Alex---Mako\\CS106\\LoginPage.xaml",
               "RelativeDocumentMoniker": "LoginPage.xaml",
@@ -78,20 +114,32 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 5,
+              "Title": "CompanyInfo.xaml",
+              "DocumentMoniker": "D:\\Users\\270040396\\Documents\\GitHub\\CS106-Alex---Mako\\CS106\\CompanyInfo.xaml",
+              "RelativeDocumentMoniker": "CompanyInfo.xaml",
+              "ToolTip": "D:\\Users\\270040396\\Documents\\GitHub\\CS106-Alex---Mako\\CS106\\CompanyInfo.xaml",
+              "RelativeToolTip": "CompanyInfo.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-11-17T21:54:41.752Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
               "Title": "AdminMenu.xaml.cs",
               "DocumentMoniker": "D:\\Users\\270040396\\Documents\\GitHub\\CS106-Alex---Mako\\CS106\\AdminMenu.xaml.cs",
               "RelativeDocumentMoniker": "AdminMenu.xaml.cs",
               "ToolTip": "D:\\Users\\270040396\\Documents\\GitHub\\CS106-Alex---Mako\\CS106\\AdminMenu.xaml.cs",
               "RelativeToolTip": "AdminMenu.xaml.cs",
-              "ViewState": "AgIAAAwAAAAAAAAAAAAAACMAAAANAAAAAAAAAA==",
+              "ViewState": "AgIAAAwAAAAAAAAAAAAAAAwAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-11-16T22:53:19.161Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 6,
               "Title": "LoginPage.xaml.cs",
               "DocumentMoniker": "D:\\Users\\270040396\\Documents\\GitHub\\CS106-Alex---Mako\\CS106\\LoginPage.xaml.cs",
               "RelativeDocumentMoniker": "LoginPage.xaml.cs",
@@ -99,12 +147,11 @@
               "RelativeToolTip": "LoginPage.xaml.cs",
               "ViewState": "AgIAABEAAAAAAAAAAAAnwCUAAAA9AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-16T20:33:27.654Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-11-16T20:33:27.654Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 8,
               "Title": "SQL_Database.cs",
               "DocumentMoniker": "D:\\Users\\270040396\\Documents\\GitHub\\CS106-Alex---Mako\\CS106\\Model\\SQL_Database.cs",
               "RelativeDocumentMoniker": "Model\\SQL_Database.cs",
@@ -116,7 +163,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 7,
               "Title": "EditEmployee.xaml",
               "DocumentMoniker": "D:\\Users\\270040396\\Documents\\GitHub\\CS106-Alex---Mako\\CS106\\EditEmployee.xaml",
               "RelativeDocumentMoniker": "EditEmployee.xaml",
@@ -127,7 +174,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 9,
               "Title": "AddRoster.xaml",
               "DocumentMoniker": "D:\\Users\\270040396\\Documents\\GitHub\\CS106-Alex---Mako\\CS106\\AddRoster.xaml",
               "RelativeDocumentMoniker": "AddRoster.xaml",
@@ -138,7 +185,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 11,
               "Title": "AddRoster.xaml.cs",
               "DocumentMoniker": "D:\\Users\\270040396\\Documents\\GitHub\\CS106-Alex---Mako\\CS106\\AddRoster.xaml.cs",
               "RelativeDocumentMoniker": "AddRoster.xaml.cs",
@@ -150,7 +197,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 10,
               "Title": "EditRoster.xaml",
               "DocumentMoniker": "D:\\Users\\270040396\\Documents\\GitHub\\CS106-Alex---Mako\\CS106\\EditRoster.xaml",
               "RelativeDocumentMoniker": "EditRoster.xaml",
@@ -161,7 +208,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 12,
               "Title": "EditRoster.xaml.cs",
               "DocumentMoniker": "D:\\Users\\270040396\\Documents\\GitHub\\CS106-Alex---Mako\\CS106\\EditRoster.xaml.cs",
               "RelativeDocumentMoniker": "EditRoster.xaml.cs",

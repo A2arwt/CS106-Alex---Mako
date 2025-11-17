@@ -5,7 +5,10 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:CS106"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
+        BorderBrush="#0468BF"
+        BorderThickness="20"
+        Margin="0"
+        Title="MainWindow" Height="auto" Width="auto">
     <Grid Background="#0468BF">
         <Frame x:Name="main_frame" NavigationUIVisibility="Hidden"></Frame>
 

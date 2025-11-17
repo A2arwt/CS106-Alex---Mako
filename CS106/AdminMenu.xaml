@@ -15,42 +15,48 @@
             <ColumnDefinition Width="30*"></ColumnDefinition>
         </Grid.ColumnDefinitions>
 
-        <Grid x:Name="pagelist">
-            <Grid.RowDefinitions >
-                <RowDefinition></RowDefinition>
-                <RowDefinition></RowDefinition>
-                <RowDefinition></RowDefinition>
-                <RowDefinition></RowDefinition>
-                <RowDefinition></RowDefinition>
-                <RowDefinition></RowDefinition>
-                <RowDefinition></RowDefinition>
-            </Grid.RowDefinitions>
-            <Button Grid.Row="0" Content="Leave Request" FontSize="32" Click="LeaveRequest"></Button>
-            <Button Grid.Row="1" Content="Salary Details" FontSize="32" Click="SalaryDetails"></Button>
-            <Button Grid.Row="2" Content="Personal Details" FontSize="32" Click="PersonalDetails"></Button>
-            <Button Grid.Row="3" Content="Company events/New" FontSize="32" Click="CompanyInfo"></Button>
-            <Button Grid.Row="4" Content="Resignation" FontSize="32" Click="Resignation"></Button>
-            <Button Grid.Row="5" Content="Logout" FontSize="32" Click="Logout"></Button>
-            <Button Grid.Row="6" Content="Edit Employee" FontSize="32" Click="ExitEmployee"></Button>
-        </Grid>
+        <Border BorderBrush="Black" BorderThickness="2" CornerRadius="1">
+            <Grid x:Name="pagelist">
+                <Grid.RowDefinitions >
+                    <RowDefinition></RowDefinition>
+                    <RowDefinition></RowDefinition>
+                    <RowDefinition></RowDefinition>
+                    <RowDefinition></RowDefinition>
+                    <RowDefinition></RowDefinition>
+                    <RowDefinition></RowDefinition>
+                    <RowDefinition></RowDefinition>
+                </Grid.RowDefinitions>
+                <Button Grid.Row="0" Content="Leave Request" FontSize="32" Click="LeaveRequest"></Button>
+                <Button Grid.Row="1" Content="Salary Details" FontSize="32" Click="SalaryDetails"></Button>
+                <Button Grid.Row="2" Content="Personal Details" FontSize="32" Click="PersonalDetails"></Button>
+                <Button Grid.Row="3" Content="Company events/New" FontSize="32" Click="CompanyInfo"></Button>
+                <Button Grid.Row="4" Content="Resignation" FontSize="32" Click="Resignation"></Button>
+                <Button Grid.Row="5" Content="Logout" FontSize="32" Click="Logout"></Button>
+                <Button Grid.Row="6" Content="Edit Employee" FontSize="32" Click="ExitEmployee"></Button>
+            </Grid>
+        </Border>
 
-        <Grid Grid.Column="1">
+        <Border Grid.Column="1" BorderBrush="Black" BorderThickness="2" CornerRadius="1" Margin="10">
+        <Grid>
             <Grid.RowDefinitions>
                 <RowDefinition></RowDefinition>
                 <RowDefinition></RowDefinition>
             </Grid.RowDefinitions>
-            <Rectangle Fill="Blue" Panel.ZIndex="-1"></Rectangle>
-            <TextBlock x:Name="welcame_text" Margin="0,0,0,250" VerticalAlignment="Center" HorizontalAlignment="Center" FontSize="55"></TextBlock>
-            <TextBlock x:Name="welcome_text" Margin="0,0,0,150" VerticalAlignment="Center" HorizontalAlignment="Center" FontSize="55"></TextBlock>
-            <Rectangle Fill="Blue" Panel.ZIndex="-1" Grid.Row="1" ></Rectangle>
-            <TextBlock FontSize="40" TextDecorations="Underline" HorizontalAlignment="Center" Grid.Row="1"> Upcoming Events </TextBlock>
-            <TextBlock x:Name="events" Margin="0,0,0,-1000" VerticalAlignment="Center" HorizontalAlignment="Center" FontSize="40"></TextBlock>
+            <Rectangle Fill="#BBE2F2" Stroke="Black" StrokeThickness="2" Panel.ZIndex="-1"></Rectangle>
+                <TextBlock x:Name="welcame_text" VerticalAlignment="Center" Margin="0,0,0,50" HorizontalAlignment="Center" FontSize="30" TextWrapping="Wrap"></TextBlock>
+                <TextBlock x:Name="welcome_text" VerticalAlignment="Center" HorizontalAlignment="Center" FontSize="30" TextWrapping="Wrap"></TextBlock>
+                <Rectangle Fill="#BBE2F2" Stroke="Black" StrokeThickness="2" Panel.ZIndex="-1" Grid.Row="1" ></Rectangle>
+                <TextBlock FontSize="30" TextDecorations="Underline" HorizontalAlignment="Center" Grid.Row="1">Upcoming Events</TextBlock>
+                <TextBlock x:Name="events" Grid.Row="1" VerticalAlignment="Center" HorizontalAlignment="Center" FontSize="30" TextWrapping="Wrap"></TextBlock>
         </Grid>
-        <Grid Grid.Column="2">
-            <TextBlock></TextBlock>
-            <StackPanel x:Name="shift_stack"></StackPanel>
+        </Border>
+        <Border Grid.Column="2" BorderBrush="Black" BorderThickness="2" CornerRadius="1" Margin="10">
+            <Grid>
+               <!-- <TextBlock></TextBlock> -->
+                <StackPanel x:Name="shift_stack"></StackPanel>
 
-        </Grid>
+            </Grid>
+        </Border>
 
     </Grid>
     
