@@ -17,6 +17,46 @@
         </Grid.ColumnDefinitions>
 
         <userControls:AdminMune></userControls:AdminMune>
+
+        <Grid Grid.Column="1">
+            <Grid.RowDefinitions>
+                <RowDefinition></RowDefinition>
+                <RowDefinition></RowDefinition>
+                <RowDefinition></RowDefinition>
+                <RowDefinition></RowDefinition>
+                <RowDefinition></RowDefinition>
+                <RowDefinition></RowDefinition>
+                <RowDefinition></RowDefinition>
+                <RowDefinition></RowDefinition>
+            </Grid.RowDefinitions>
+            <ListView x:Name="workers_list" Grid.Row="0" ></ListView>
+            <Button Content="select" FontSize="28" Click="Select" Grid.Row="1"></Button>
+            <TextBlock x:Name="id" Grid.Row="2" ></TextBlock>
+            <TextBlock x:Name="job_title" Grid.Row="3" ></TextBlock>
+            <TextBlock x:Name="pay_rate" Grid.Row="4" ></TextBlock>
+            <TextBlock x:Name="hire_date" Grid.Row="5" ></TextBlock>
+            <TextBlock x:Name="total_leave" Grid.Row="6" ></TextBlock>
+            <TextBlock x:Name="leave_used" Grid.Row="7" ></TextBlock>
+        </Grid>
+        
+        
+        <Grid Grid.Column="2">
+            <Grid.RowDefinitions>
+                <RowDefinition></RowDefinition>
+                <RowDefinition></RowDefinition>
+                <RowDefinition></RowDefinition>
+                <RowDefinition></RowDefinition>
+                <RowDefinition></RowDefinition>
+                <RowDefinition></RowDefinition>
+                <RowDefinition></RowDefinition>
+                <RowDefinition></RowDefinition>
+            </Grid.RowDefinitions>
+            <TextBox x:Name="new_job_title" Grid.Row="1" ></TextBox>
+            <TextBox x:Name="new_pay_rate" Grid.Row="2" ></TextBox>
+            <TextBox x:Name="new_hire_date" Grid.Row="3" ></TextBox>
+            <TextBox x:Name="new_total_leave" Grid.Row="4" ></TextBox>
+            <TextBox x:Name="new_leave_used" Grid.Row="5" ></TextBox>
+        </Grid>
         
     </Grid>
 </Page>
