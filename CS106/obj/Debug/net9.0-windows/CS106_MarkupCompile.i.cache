@@ -10,11 +10,11 @@ none
 false
 TRACE;DEBUG;NET;NET9_0;NETCOREAPP;WINDOWS;WINDOWS7_0;NET5_0_OR_GREATER;NET6_0_OR_GREATER;NET7_0_OR_GREATER;NET8_0_OR_GREATER;NET9_0_OR_GREATER;NETCOREAPP3_0_OR_GREATER;NETCOREAPP3_1_OR_GREATER;WINDOWS7_0_OR_GREATER
 D:\Users\270621423\OneDrive - UP Education\Documents\GitHub\CS106-Alex---Mako\CS106\App.xaml
-131934450199
+151370863667
 11148047712
-21339079801
+231759763631
 205-830625781
-AddRoster.xaml;AdminMenu.xaml;CompanyInfo.xaml;EditEmployee.xaml;EditRoster.xaml;LoginPage.xaml;Logout.xaml;MainWindow.xaml;MakeLeaveRequest.xaml;ManageLeaveRequest.xaml;PersonalDetails.xaml;Resignation.xaml;SalaryDetails.xaml;
+AddRoster.xaml;CompanyInfo.xaml;EditEmployee.xaml;EditRoster.xaml;Homepage.xaml;LoginPage.xaml;Logout.xaml;MainWindow.xaml;MakeLeaveRequest.xaml;ManageLeaveRequest.xaml;PersonalDetails.xaml;Resignation.xaml;SalaryDetails.xaml;view\UserControls\AdminMune.xaml;view\UserControls\Mune.xaml;
 
 True
 

@@ -64,6 +64,7 @@ namespace CS106.Model
         public class SQL_RosterDataStruct
         {
             public long employee_id { get; set; }
+            public long roster_id { get; set; }
             public string? shift_date { get; set; }
             public double shift_start_time { get; set; }
             public double shift_finish_time { get; set; }
@@ -196,9 +197,22 @@ namespace CS106.Model
             using (SQLiteConnection sql_database = new SQLiteConnection("Data Source=database/CS106.db"))
             {
                 sql_database.Open();
-                using (var command = new SQLiteCommand("delete from employee where employee_id = @employee_id", sql_database))
+                using (var command = new SQLiteCommand("delete  from employee where employee_id = @employee_id", sql_database))
                 {
                     command.Parameters.AddWithValue("@employee_id", employee_id);
+                    command.ExecuteNonQuery();
+                }
+            }
+        }
+
+        public void SQL_DeleteRoster(long roster_id)
+        {
+            using (SQLiteConnection sql_database = new SQLiteConnection("Data Source=database/CS106.db"))
+            {
+                sql_database.Open();
+                using (var command = new SQLiteCommand("delete  from roster where roster_id = @roster_id", sql_database))
+                {
+                    command.Parameters.AddWithValue("@roster_id", roster_id);
                     command.ExecuteNonQuery();
                 }
             }
@@ -333,7 +347,8 @@ namespace CS106.Model
                         {
                             SQL_RosterDataStruct i = new SQL_RosterDataStruct();
                             i.employee_id = (long)result["employee_id"];
-                            i.shift_date = (string)result["shift_date"];
+                            i.roster_id = (long)result["roster_id"];
+                            i.shift_date = (string)result["shift_data"];
                             i.shift_start_time = (double)result["shift_start_time"];
                             i.shift_finish_time = (double)result["shift_finish_time"];
                             data.Add(i);
@@ -544,9 +559,9 @@ namespace CS106.Model
             {
                 sql_database.Open();
                 bool Is_user_real = false;
-                using (var command = new SQLiteCommand("select employee_id from employee where employee_id = @employee_id", sql_database))
+                using (var command = new SQLiteCommand("select employee_id from roster where roster_id = @roster_id", sql_database))
                 {
-                    command.Parameters.AddWithValue("@employee_id", data.employee_id);
+                    command.Parameters.AddWithValue("@roster_id", data.roster_id);
                     using (var result = command.ExecuteReader())
                     {
                         if (result.Read())
@@ -557,9 +572,9 @@ namespace CS106.Model
                 }
 
                 if (Is_user_real)
-                    using (var command = new SQLiteCommand("update roster set shift_date = @shift_date, shift_start_time = @shift_start_time, shift_finish_time = @shift_finish_time\" +\r\n                        \"where employee_id = @employee_id", sql_database))
+                    using (var command = new SQLiteCommand("update roster set shift_data = @shift_date, shift_start_time = @shift_start_time, shift_finish_time = @shift_finish_time where roster_id = @roster_id", sql_database))
                     {
-                        command.Parameters.AddWithValue("@employee_id", data.employee_id);
+                        command.Parameters.AddWithValue("@roster_id", data.roster_id);
                         command.Parameters.AddWithValue("@shift_date", data.shift_date);
                         command.Parameters.AddWithValue("@shift_start_time", data.shift_start_time);
                         command.Parameters.AddWithValue("@shift_finish_time", data.shift_finish_time);
@@ -734,7 +749,7 @@ namespace CS106.Model
             using (SQLiteConnection sql_database = new SQLiteConnection("Data Source=database/CS106.db"))
             {
                 sql_database.Open();
-                using (var command = new SQLiteCommand("insert into roster(employee_id,shift_date,shift_start_time,shift_finish_time)" +
+                using (var command = new SQLiteCommand("insert into roster(employee_id,shift_data,shift_start_time,shift_finish_time)" +
                                                                 " VALUES(@employee_id,@shift_date,@shift_start_time,@shift_finish_time)", sql_database))
                 {
                     command.Parameters.AddWithValue("@employee_id", data.employee_id);

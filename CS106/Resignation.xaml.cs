@@ -25,10 +25,7 @@ namespace CS106
         public Resignation()
         {
             InitializeComponent();
-            if (EmployeeManagementSystem.is_admin == false)
-            {
-                pagelist.Children.RemoveAt(6);
-            }
+        
         }
 
 

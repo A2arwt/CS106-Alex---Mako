@@ -92,10 +92,34 @@ namespace CS106.Model
             data.shift_finish_time = shift_finish_time;
             database.SQL_InsertRostertData(data);
         }
+        public static void UpdateRoster(long roster_id,string shift_date,double shift_start_time,double shift_finish_time)
+        {
+            Database.SQL_RosterDataStruct data = new SQL_Database.SQL_RosterDataStruct();
+            data.roster_id = roster_id;
+            data.shift_date = shift_date;
+            data.shift_start_time = shift_start_time;
+            data.shift_finish_time = shift_finish_time;
+            database.SQL_UpdateRoster(data);
+        }
+
+        
+        public static void DeleteRoster(long roster_id)
+        {
+            database.SQL_DeleteRoster(roster_id);
+        }
+
 
         public static List<Database.SQL_EmployeeDataStruct> GetEmployee()
         {
             return database.SQL_SelectAllEmployees();
+        }
+        public static List<Database.SQL_EmployeeDataStruct>? GetEmployee(long ID)
+        {
+            var requestlist = database.SQL_SelectAllEmployees();
+            var request = (from item in requestlist
+                         where item.employee_id == ID
+                           select item);
+            return requestlist;
         }
     }
 

@@ -87,10 +87,7 @@ namespace CS106
 
                 Stack.Children.Add(stack);
             }
-            if (EmployeeManagementSystem.is_admin == false)
-            {
-                pagelist.Children.RemoveAt(6);
-            }
+
         }
 
         void AgreeRequest(object sender, RoutedEventArgs e)

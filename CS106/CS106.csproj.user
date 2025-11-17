@@ -23,7 +23,7 @@
     <Compile Update="LoginPage.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Update="AdminMenu.xaml.cs">
+    <Compile Update="Homepage.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
     <Compile Update="ManageLeaveRequest.xaml.cs">
@@ -36,6 +36,12 @@
       <SubType>Code</SubType>
     </Compile>
     <Compile Update="SalaryDetails.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="view\UserControls\AdminMune.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="view\UserControls\Mune.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
   </ItemGroup>

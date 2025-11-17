@@ -4,6 +4,7 @@
       xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
       xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
       xmlns:local="clr-namespace:CS106"
+      xmlns:userControls="clr-namespace:CS106.view.UserControls"
       mc:Ignorable="d" 
       d:DesignHeight="450" d:DesignWidth="800"
       Title="CompanyInfo">
@@ -15,23 +16,6 @@
             <ColumnDefinition Width="30*"></ColumnDefinition>
         </Grid.ColumnDefinitions>
 
-        <Grid x:Name="pagelist">
-            <Grid.RowDefinitions >
-                <RowDefinition></RowDefinition>
-                <RowDefinition></RowDefinition>
-                <RowDefinition></RowDefinition>
-                <RowDefinition></RowDefinition>
-                <RowDefinition></RowDefinition>
-                <RowDefinition></RowDefinition>
-                <RowDefinition></RowDefinition>
-            </Grid.RowDefinitions>
-            <Button Grid.Row="0" Content="Leave Request" FontSize="32" Click="LeaveRequest"></Button>
-            <Button Grid.Row="1" Content="Salary Details" FontSize="32" Click="SalaryDetails"></Button>
-            <Button Grid.Row="2" Content="Personal Details" FontSize="32" Click="PersonalDetails"></Button>
-            <Button Grid.Row="3" Content="Company events/New" FontSize="32" ></Button>
-            <Button Grid.Row="4" Content="Resignation" FontSize="32" Click="Resignation"></Button>
-            <Button Grid.Row="5" Content="Logout" FontSize="32" Click="Logout"></Button>
-            <Button Grid.Row="6" Content="Edit Employee" FontSize="32" Click="ExitEmployee"></Button>
-        </Grid>
+        <userControls:Mune></userControls:Mune>
     </Grid>
 </Page>

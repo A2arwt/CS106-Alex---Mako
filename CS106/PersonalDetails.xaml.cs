@@ -24,10 +24,7 @@ namespace CS106
         public PersonalDetails()
         {
             InitializeComponent();
-            if (EmployeeManagementSystem.is_admin == false)
-            {
-                pagelist.Children.RemoveAt(6);
-            } 
+          
         }
 
 

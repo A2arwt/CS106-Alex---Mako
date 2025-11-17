@@ -26,10 +26,7 @@ namespace CS106
         {
             InitializeComponent();
 
-            if (EmployeeManagementSystem.is_admin == false)
-            {
-                pagelist.Children.RemoveAt(6);
-            }
+  
         }
 
         private void Submit(object sender, RoutedEventArgs e)
