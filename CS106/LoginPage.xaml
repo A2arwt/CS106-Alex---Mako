@@ -9,9 +9,56 @@
       Title="LoginPage">
 
     <Grid >
-        <TextBox x:Name="Username" Background="#bbe2f2" HorizontalAlignment="Center" Margin="0,200,0,0" TextWrapping="Wrap"  VerticalAlignment="Top" Width="232" Height="25"/>
-        <PasswordBox x:Name="Password" Background="#bbe2f2" HorizontalAlignment="Center" Margin="0,242,0,0" VerticalAlignment="Top" Width="232" Height="22"/>
-        <Button Background="#bbe2f2" Content="Login" Margin="443,282,0,0" Click="Button_Click" Height="23" Width="73"/>
-        <Image HorizontalAlignment="Center" Source="D:\Users\270040396\Documents\GitHub\CS106-Alex---Mako\Assests\Style Guide\Logo 2 - Transparent.png"  Height="212"  VerticalAlignment="Top" Width="463"/>
+        <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="*" />
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="*" />
+            </Grid.RowDefinitions>
+
+            <StackPanel Grid.Row="1" Margin="40">
+                <Grid Width="400">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="*" />
+                        <ColumnDefinition Width="Auto" />
+                        <ColumnDefinition Width="*" />
+                    </Grid.ColumnDefinitions>
+                    <Image Grid.Column="1"
+                     Source="D:\Users\270040396\Documents\GitHub\CS106-Alex---Mako\Assests\Style Guide\Logo 2.2 - Transparent.png"
+                     Height="212"
+                     Width="221"
+                     Stretch="Uniform"
+                     HorizontalAlignment="Center"
+                     Margin="0,5,0,10"/>
+                </Grid>
+
+                <TextBox x:Name="Username"
+                 Background="#bbe2f2"
+                 Width="400"
+                 Height="35"
+                 HorizontalAlignment="Center"/>
+
+                <PasswordBox x:Name="Password"
+                 Background="#bbe2f2"
+                 Height="35"
+                 Width="400"
+                 Margin="0 10 0 0"
+                 HorizontalAlignment="Center"/>
+
+                <Grid Margin="0,20,0,0" Width="400">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="*" />
+                        <ColumnDefinition Width="Auto" />
+                    </Grid.ColumnDefinitions>
+
+                    <Button Content="Login"
+                    Grid.Column="1"
+                    Background="#bbe2f2"
+                    Width="100"
+                    Height="30"
+                    Click="Button_Click"/>
+                </Grid>
+            </StackPanel>
+        </Grid>
     </Grid>
 </Page>
