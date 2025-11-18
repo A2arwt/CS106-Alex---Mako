@@ -24,54 +24,7 @@ namespace CS106
         public SalaryDetails()
         {
             InitializeComponent();
-            if (EmployeeManagementSystem.is_admin == false)
-            {
-                pagelist.Children.RemoveAt(6);
-            }
-        }
-
-
-
-        private void LeaveRequest(object sender, RoutedEventArgs e)
-        {
-            NavigationService.Navigate(new AdminLeaveRequest());
-        }
-
-        private void PersonalDetails(object sender, RoutedEventArgs e)
-        {
-            NavigationService.Navigate(new PersonalDetails());
-        }
-
-        private void LeaveRequestManagement(object sender, RoutedEventArgs e)
-        {
-            NavigationService.Navigate(new ManageLeaveRequest());
-        }
-
-
-
-        private void CompanyInfo(object sender, RoutedEventArgs e)
-        {
-            NavigationService.Navigate(new CompanyInfo());
-
-        }
-
-        private void Resignation(object sender, RoutedEventArgs e)
-        {
-            NavigationService.Navigate(new Resignation());
-
-        }
-
-        private void Logout(object sender, RoutedEventArgs e)
-        {
-            NavigationService.Navigate(new Logout());
-
-        }
-
-        private void ExitEmployee(object sender, RoutedEventArgs e)
-        {
-
-            NavigationService.Navigate(new ExitEmployee());
-
+            
         }
     }
 }

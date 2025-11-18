@@ -25,54 +25,11 @@ namespace CS106
         public Resignation()
         {
             InitializeComponent();
-            if (EmployeeManagementSystem.is_admin == false)
-            {
-                pagelist.Children.RemoveAt(6);
-            }
+          
         }
 
 
 
-        private void LeaveRequest(object sender, RoutedEventArgs e)
-        {
-            NavigationService.Navigate(new AdminLeaveRequest());
-        }
-
-        private void PersonalDetails(object sender, RoutedEventArgs e)
-        {
-            NavigationService.Navigate(new PersonalDetails());
-        }
-
-        private void LeaveRequestManagement(object sender, RoutedEventArgs e)
-        {
-            NavigationService.Navigate(new ManageLeaveRequest());
-        }
-
-        private void SalaryDetails(object sender, RoutedEventArgs e)
-        {
-            NavigationService.Navigate(new SalaryDetails());
-
-        }
-
-        private void CompanyInfo(object sender, RoutedEventArgs e)
-        {
-            NavigationService.Navigate(new CompanyInfo());
-
-        }
-
-        
-
-        private void Logout(object sender, RoutedEventArgs e)
-        {
-            NavigationService.Navigate(new Logout());
-
-        }
-
-        private void ExitEmployee(object sender, RoutedEventArgs e)
-        {
-
-            NavigationService.Navigate(new ExitEmployee());
-
-        }
+      
     }
 }

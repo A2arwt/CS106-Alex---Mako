@@ -38,5 +38,11 @@
     <Compile Update="SalaryDetails.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
+    <Compile Update="view\UserControls\AdminMenu.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="view\UserControls\Menu.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
   </ItemGroup>
 </Project>

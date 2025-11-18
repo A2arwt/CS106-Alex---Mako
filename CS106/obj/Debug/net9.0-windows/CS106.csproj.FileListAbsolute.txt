@@ -222,3 +222,8 @@ D:\Users\270040396\Documents\GitHub\CS106-Alex---Mako\CS106\obj\Debug\net9.0-win
 D:\Users\270040396\Documents\GitHub\CS106-Alex---Mako\CS106\obj\Debug\net9.0-windows\CS106.pdb
 D:\Users\270040396\Documents\GitHub\CS106-Alex---Mako\CS106\obj\Debug\net9.0-windows\CS106.genruntimeconfig.cache
 D:\Users\270040396\Documents\GitHub\CS106-Alex---Mako\CS106\obj\Debug\net9.0-windows\ref\CS106.dll
+D:\Users\270621423\OneDrive - UP Education\Documents\GitHub\CS106-Alex---Mako\CS106\obj\Debug\net9.0-windows\view\UserControls\AdminMenu.g.cs
+D:\Users\270621423\OneDrive - UP Education\Documents\GitHub\CS106-Alex---Mako\CS106\obj\Debug\net9.0-windows\view\UserControls\Menu.g.cs
+D:\Users\270621423\OneDrive - UP Education\Documents\GitHub\CS106-Alex---Mako\CS106\obj\Debug\net9.0-windows\GeneratedInternalTypeHelper.g.cs
+D:\Users\270621423\OneDrive - UP Education\Documents\GitHub\CS106-Alex---Mako\CS106\obj\Debug\net9.0-windows\view\UserControls\AdminMenu.baml
+D:\Users\270621423\OneDrive - UP Education\Documents\GitHub\CS106-Alex---Mako\CS106\obj\Debug\net9.0-windows\view\UserControls\Menu.baml

@@ -5,6 +5,7 @@
       xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
       xmlns:local="clr-namespace:CS106"
       mc:Ignorable="d" 
+      xmlns:userControls="clr-namespace:CS106.view.UserControls"
       d:DesignHeight="450" d:DesignWidth="800"
       Title="Menu">
 
@@ -15,7 +16,7 @@
             <ColumnDefinition Width="30*"></ColumnDefinition>
         </Grid.ColumnDefinitions>
 
-        <Border BorderBrush="Black" BorderThickness="3" CornerRadius="1">
+        <!--<Border BorderBrush="Black" BorderThickness="3" CornerRadius="1">
             <Grid x:Name="pagelist">
                 <Grid.RowDefinitions >
                     <RowDefinition></RowDefinition>
@@ -35,8 +36,9 @@
                 <Button Grid.Row="6" BorderBrush="Black" BorderThickness="2" Background="#0468BF" Content="Edit Employee" FontSize="32" Click="ExitEmployee"></Button>
                 <Rectangle Grid.Row="6" Stroke="Black" StrokeThickness="2" Fill="Transparent"/>
             </Grid>
-        </Border>
+        </Border>-->
 
+        <userControls:Menu></userControls:Menu>
         <Border Grid.Column="1" BorderBrush="Black" BorderThickness="2" CornerRadius="1" Margin="10">
         <Grid>
             <Grid.RowDefinitions>

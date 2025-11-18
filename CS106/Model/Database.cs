@@ -9,12 +9,12 @@ using CS106.Model;
 
 namespace CS106.Model
 {
- 
+
     public class Database : SQL_Database
     {
-        
 
-        public void login(string username,string password)
+
+        public void login(string username, string password)
         {
             SQL_GetEmployee(username, password);
         }
@@ -32,6 +32,27 @@ namespace CS106.Model
             return (List<SQL_RequestDataStruct>)request;
         }
 
+        public  List<SQL_UserDataStruct> GetUser()
+        {
+            return SQL_SelectAllUser();
+        }
+        public  SQL_UserDataStruct GetUser(long ID)
+        {
+            var request = SQL_SelectAllUser();
+            var answer = (from item in request
+                         where item.employee_id == ID
+                          select item).SingleOrDefault();
+            return answer;
+        }
+
+        public void UpdateUser(SQL_UserDataStruct Data)
+        {
+        }
+        public void UpdateEmployee(SQL_EmployeeDataStruct Data)
+        {
+            SQL_UpdateEmployees(Data);
+
+        }
 
         // public void static AddToDatatbase operator +(
     }

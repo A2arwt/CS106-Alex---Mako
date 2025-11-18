@@ -30,10 +30,6 @@ namespace CS106
             welcome_text.Text = "Employee ID: " + EmployeeManagementSystem.current_user.employee_id;
             events.Text = "\nChristmas day - 25/11/2025 \n\n Boxing day - 26/12/2025 \n\n New Years day - 1/01/2026\n\n";
 
-            if (EmployeeManagementSystem.is_admin == false)
-            {
-                pagelist.Children.RemoveAt(6);
-            }
 
             var request = EmployeeManagementSystem.GetRoster();
             for (int i = 0; i < request.Count; i++)

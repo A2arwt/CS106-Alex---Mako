@@ -1,0 +1,36 @@
+﻿<UserControl x:Class="CS106.view.UserControls.Menu"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:CS106.view.UserControls"
+             mc:Ignorable="d" 
+             d:DesignHeight="450" d:DesignWidth="800">
+    <Grid>
+        
+
+
+        <Border BorderBrush="Black" BorderThickness="3" CornerRadius="1">
+            <Grid x:Name="pagelist">
+                <Grid.RowDefinitions >
+                    <RowDefinition></RowDefinition>
+                    <RowDefinition></RowDefinition>
+                    <RowDefinition></RowDefinition>
+                    <RowDefinition></RowDefinition>
+                    <RowDefinition></RowDefinition>
+                    <RowDefinition></RowDefinition>
+                    <RowDefinition></RowDefinition>
+                </Grid.RowDefinitions>
+                <Button Grid.Row="0" BorderBrush="Black" BorderThickness="2" Background="#0468BF" Content="Leave Request" FontSize="32" Click="LeaveRequest"></Button>
+                <Button Grid.Row="1" BorderBrush="Black" BorderThickness="2" Background="#0468BF" Content="Salary Details" FontSize="32" Click="SalaryDetails"></Button>
+                <Button Grid.Row="2" BorderBrush="Black" BorderThickness="2" Background="#0468BF" Content="Personal Details" FontSize="32" Click="PersonalDetails"></Button>
+                <Button Grid.Row="3" BorderBrush="Black" BorderThickness="2" Background="#0468BF" Content="Company events/New" FontSize="32" Click="ComanyEvent"></Button>
+                <Button Grid.Row="4" BorderBrush="Black" BorderThickness="2" Background="#0468BF" Content="Resignation" FontSize="32" Click="Resignation"></Button>
+                <Button Grid.Row="5" BorderBrush="Black" BorderThickness="2" Background="#0468BF" Content="Logout" FontSize="32" Click="Logout"></Button>
+                <Button Grid.Row="6" BorderBrush="Black" BorderThickness="2" Background="#0468BF" Content="Edit Employee" FontSize="32" Click="EditEmployee"></Button>
+
+            </Grid>
+        </Border>
+
+    </Grid>
+</UserControl>

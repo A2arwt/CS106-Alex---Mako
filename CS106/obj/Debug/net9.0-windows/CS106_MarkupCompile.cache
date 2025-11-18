@@ -4,17 +4,17 @@
 winexe
 C#
 .cs
-D:\Users\270040396\Documents\GitHub\CS106-Alex---Mako\CS106\obj\Debug\net9.0-windows\
+D:\Users\270621423\OneDrive - UP Education\Documents\GitHub\CS106-Alex---Mako\CS106\obj\Debug\net9.0-windows\
 CS106
 none
 false
 TRACE;DEBUG;NET;NET9_0;NETCOREAPP;WINDOWS;WINDOWS7_0;NET5_0_OR_GREATER;NET6_0_OR_GREATER;NET7_0_OR_GREATER;NET8_0_OR_GREATER;NET9_0_OR_GREATER;NETCOREAPP3_0_OR_GREATER;NETCOREAPP3_1_OR_GREATER;WINDOWS7_0_OR_GREATER
-D:\Users\270040396\Documents\GitHub\CS106-Alex---Mako\CS106\App.xaml
-131934450199
+D:\Users\270621423\OneDrive - UP Education\Documents\GitHub\CS106-Alex---Mako\CS106\App.xaml
+15-728178461
 11148047712
-19-1868138436
-2051873380573
-AddRoster.xaml;AdminMenu.xaml;CompanyInfo.xaml;EditEmployee.xaml;EditRoster.xaml;LoginPage.xaml;Logout.xaml;MainWindow.xaml;MakeLeaveRequest.xaml;ManageLeaveRequest.xaml;PersonalDetails.xaml;Resignation.xaml;SalaryDetails.xaml;
+21-744494133
+205-830625781
+AddRoster.xaml;AdminMenu.xaml;CompanyInfo.xaml;EditEmployee.xaml;EditRoster.xaml;LoginPage.xaml;Logout.xaml;MainWindow.xaml;MakeLeaveRequest.xaml;ManageLeaveRequest.xaml;PersonalDetails.xaml;Resignation.xaml;SalaryDetails.xaml;view\UserControls\AdminMenu.xaml;view\UserControls\Menu.xaml;
 
-False
+True
 

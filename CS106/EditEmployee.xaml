@@ -3,6 +3,7 @@
       xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
       xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
       xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:userControls="clr-namespace:CS106.view.UserControls"
       xmlns:local="clr-namespace:CS106"
       mc:Ignorable="d" 
       d:DesignHeight="450" d:DesignWidth="800"
@@ -15,8 +16,15 @@
             <ColumnDefinition Width="30*"></ColumnDefinition>
         </Grid.ColumnDefinitions>
 
-        <Grid x:Name="pagelist">
-            <Grid.RowDefinitions >
+        <userControls:AdminMenu></userControls:AdminMenu>
+
+        <Grid Grid.Column="1">
+            <Grid.RowDefinitions>
+                <RowDefinition></RowDefinition>
+                <RowDefinition></RowDefinition>
+                <RowDefinition></RowDefinition>
+                <RowDefinition></RowDefinition>
+                <RowDefinition></RowDefinition>
                 <RowDefinition></RowDefinition>
                 <RowDefinition></RowDefinition>
                 <RowDefinition></RowDefinition>
@@ -24,12 +32,60 @@
                 <RowDefinition></RowDefinition>
                 <RowDefinition></RowDefinition>
             </Grid.RowDefinitions>
-            <Button Grid.Row="0" Content="Manage Leave Request" FontSize="32" Click="LeaveRequestManagement"></Button>
-            <Button Grid.Row="1" Content="Edit Roster" FontSize="32" Click="EditRoster"></Button>
-            <Button Grid.Row="2" Content="Manage Employee Details" FontSize="32" Click="PersonalDetails"></Button>
-            <Button Grid.Row="3" Content="Company events/New" FontSize="32" Click="CompanyInfo"></Button>
-            <Button Grid.Row="5" Content="Logout" FontSize="32" Click="Logout"></Button>
-            <Button Grid.Row="4" Content="Exit Employee Management" FontSize="32" Click="Exit"></Button>
+            <ListView x:Name="workers_list" Grid.Row="0" ></ListView>
+            <Grid Grid.Row="1">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition></ColumnDefinition>
+                    <ColumnDefinition></ColumnDefinition>
+                </Grid.ColumnDefinitions>
+                <Button Content="Select" FontSize="28" Click="Select" Grid.Column="0"></Button>
+
+                <Button Content="Delete" FontSize="28" Click="Delete" Grid.Column="1"></Button>
+            </Grid>
+            <TextBlock x:Name="id" Grid.Row="2" ></TextBlock>
+            <TextBlock x:Name="name" Grid.Row="3" ></TextBlock>
+            <TextBlock x:Name="username" Grid.Row="4" ></TextBlock>
+            <TextBlock x:Name="password" Grid.Row="5" ></TextBlock>
+            <TextBlock x:Name="job_title" Grid.Row="6" ></TextBlock>
+            <TextBlock x:Name="pay_rate" Grid.Row="7" ></TextBlock>
+            <TextBlock x:Name="hire_date" Grid.Row="8" ></TextBlock>
+            <TextBlock x:Name="total_leave" Grid.Row="9" ></TextBlock>
+            <TextBlock x:Name="leave_used" Grid.Row="10" ></TextBlock>
+        </Grid>
+
+
+        <Grid Grid.Column="2">
+            <Grid.RowDefinitions>
+                <RowDefinition></RowDefinition>
+                <RowDefinition></RowDefinition>
+                <RowDefinition></RowDefinition>
+                <RowDefinition></RowDefinition>
+                <RowDefinition></RowDefinition>
+                <RowDefinition></RowDefinition>
+                <RowDefinition></RowDefinition>
+                <RowDefinition></RowDefinition>
+                <RowDefinition></RowDefinition>
+                <RowDefinition></RowDefinition>
+
+            </Grid.RowDefinitions>
+            <ListView x:Name="new_workers_list" Grid.Row="0" ></ListView>
+            <TextBox x:Name="new_name" Grid.Row="1" >name</TextBox>
+            <TextBox x:Name="new_email" Grid.Row="2" ></TextBox>
+            <TextBox x:Name="new_username" Grid.Row="3" ></TextBox>
+            <TextBox x:Name="new_password" Grid.Row="4" ></TextBox>
+            <TextBox x:Name="new_job_title" Grid.Row="5" ></TextBox>
+            <TextBox x:Name="new_pay_rate" Grid.Row="6" ></TextBox>
+            <DatePicker x:Name="new_hire_date" Grid.Row="7" ></DatePicker>
+            <TextBox x:Name="new_total_leave" Grid.Row="8" ></TextBox>
+            <TextBox x:Name="new_leave_used" Grid.Row="9" ></TextBox>
+            <Grid Grid.Row="10">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition></ColumnDefinition>
+                    <ColumnDefinition></ColumnDefinition>
+                </Grid.ColumnDefinitions>
+                <Button Content="Change" Grid.Column="0" FontSize="23" Click="Change"></Button>
+                <Button Content="Create" Grid.Column="1" FontSize="23" Click="Create"></Button>
+            </Grid>
         </Grid>
     </Grid>
 </Page>

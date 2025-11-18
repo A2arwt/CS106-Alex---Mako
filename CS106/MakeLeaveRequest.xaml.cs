@@ -26,10 +26,7 @@ namespace CS106
         {
             InitializeComponent();
 
-            if (EmployeeManagementSystem.is_admin == false)
-            {
-                pagelist.Children.RemoveAt(6);
-            }
+        
         }
 
         private void Submit(object sender, RoutedEventArgs e)
@@ -38,54 +35,6 @@ namespace CS106
             EmployeeManagementSystem.InsertRequestData(Type.Text, StartDate.Text, EndDate.Text);
         }
 
-
-
-
-        private void LeaveRequest(object sender, RoutedEventArgs e)
-        {
-            NavigationService.Navigate(new AdminLeaveRequest());
-        }
-
-        private void PersonalDetails(object sender, RoutedEventArgs e)
-        {
-            NavigationService.Navigate(new PersonalDetails());
-        }
-
-        private void LeaveRequestManagement(object sender, RoutedEventArgs e)
-        {
-            NavigationService.Navigate(new ManageLeaveRequest());
-        }
-
-        private void SalaryDetails(object sender, RoutedEventArgs e)
-        {
-            NavigationService.Navigate(new SalaryDetails());
-
-        }
-
-        private void CompanyInfo(object sender, RoutedEventArgs e)
-        {
-            NavigationService.Navigate(new CompanyInfo());
-
-        }
-
-        private void Resignation(object sender, RoutedEventArgs e)
-        {
-            NavigationService.Navigate(new Resignation());
-
-        }
-
-        private void Logout(object sender, RoutedEventArgs e)
-        {
-            NavigationService.Navigate(new Logout());
-
-        }
-
-        private void ExitEmployee(object sender, RoutedEventArgs e)
-        {
-
-            NavigationService.Navigate(new ExitEmployee());
-
-        }
 
     }
 }
