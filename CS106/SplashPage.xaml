@@ -1,0 +1,30 @@
+﻿<Page x:Class="CS106.SplashPage"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      Background="Transparent">
+
+    <Grid x:Name="LayoutRoot" Opacity="0">
+
+        <!-- Splash Image -->
+        <Image x:Name="SplashImage"
+               Source="D:\Users\270040396\Documents\GitHub\CS106-Alex---Mako\Assests\Style Guide\Logo 2.2 - Transparent.png"
+               Stretch="Uniform"
+               HorizontalAlignment="Center"
+               VerticalAlignment="Center"
+               Width="450"/>
+
+        <!-- Flash Text -->
+        <TextBlock x:Name="WelcomeText"
+                   Text="WELCOME TO THE FAMILY"
+                   FontSize="48"
+                   FontWeight="Black"
+                   Foreground="White"
+                   HorizontalAlignment="Center"
+                   VerticalAlignment="Center"
+                   TextAlignment="Center"/>
+
+
+    </Grid>
+
+
+</Page>

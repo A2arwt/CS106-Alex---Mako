@@ -1,4 +1,5 @@
-﻿using System;
+﻿using CS106.Model;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -12,7 +13,6 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
-using CS106.Model;
 
 namespace CS106
 {
@@ -32,15 +32,15 @@ namespace CS106
 
             MainWindow.ManagementSystem.login(Username.Text, Password.Password);
             if (EmployeeManagementSystem.current_user != null)
-               {
+            {
                 if (EmployeeManagementSystem.current_user.username == "admin" || EmployeeManagementSystem.current_user.job_title == "admin")
                 {
                     EmployeeManagementSystem.is_admin = true;
-                    NavigationService.Navigate(new Menu());
+                    NavigationService.Navigate(new SplashPage());
 
                 }
                 else
-                    NavigationService.Navigate(new Menu());
+                    NavigationService.Navigate(new SplashPage());
             }
         }
     }
