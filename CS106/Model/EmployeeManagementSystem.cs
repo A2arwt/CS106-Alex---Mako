@@ -127,14 +127,53 @@ namespace CS106.Model
         {
             return database.GetUser(ID);
         }
+
+        public static bool Does_user_exist(string  username)
+        {
+            var result = database.GetUser();
+            foreach(var i in result)
+            {
+                if (i.username == username)
+                    return true;
+            }
+            return false;
+        }
+        public static SQL_UserDataStruct? GetUser(string ID)
+        {
+             var result = database.GetUser();
+
+            foreach(var i in result)
+            {
+                if (i.username == ID)
+                    return i;
+            }    
+
+            return null;
+        }
         public static List<SQL_UserDataStruct> GetUsers()
         {
             return database.GetUser();
         }
         public static void UpdateUsers(SQL_UserDataStruct data)
         {
-             database.up;
+            database.UpdateUser(data) ;
         }
+
+        public static void UpdateEmployee(SQL_EmployeeDataStruct data)
+        {
+            database.SQL_UpdateEmployees(data);
+        }
+
+        public static void CreateEmployee(SQL_EmployeeDataStruct data)
+        {
+            database.SQL_CreateEmployee(data);
+        }
+
+        public static void DeleteEmployee(long employee_id)
+        {
+            database.SQL_DeleteEmployee(employee_id);
+        }
+
 
     }
 

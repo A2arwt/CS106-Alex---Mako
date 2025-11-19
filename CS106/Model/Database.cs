@@ -47,6 +47,7 @@ namespace CS106.Model
 
         public void UpdateUser(SQL_UserDataStruct Data)
         {
+            SQL_UpdateUser(Data);
         }
         public void UpdateEmployee(SQL_EmployeeDataStruct Data)
         {
@@ -54,7 +55,10 @@ namespace CS106.Model
 
         }
 
-        // public void static AddToDatatbase operator +(
+        public void CreateEmployee(SQL_EmployeeDataStruct data)
+        {
+            SQL_CreateEmployee(data);
+        }
     }
 }
 

@@ -31,6 +31,7 @@
                 <RowDefinition></RowDefinition>
                 <RowDefinition></RowDefinition>
                 <RowDefinition></RowDefinition>
+                <RowDefinition></RowDefinition>
             </Grid.RowDefinitions>
             <ListView x:Name="workers_list" Grid.Row="0" ></ListView>
             <Grid Grid.Row="1">
@@ -44,13 +45,14 @@
             </Grid>
             <TextBlock x:Name="id" Grid.Row="2" ></TextBlock>
             <TextBlock x:Name="name" Grid.Row="3" ></TextBlock>
-            <TextBlock x:Name="username" Grid.Row="4" ></TextBlock>
-            <TextBlock x:Name="password" Grid.Row="5" ></TextBlock>
-            <TextBlock x:Name="job_title" Grid.Row="6" ></TextBlock>
-            <TextBlock x:Name="pay_rate" Grid.Row="7" ></TextBlock>
-            <TextBlock x:Name="hire_date" Grid.Row="8" ></TextBlock>
-            <TextBlock x:Name="total_leave" Grid.Row="9" ></TextBlock>
-            <TextBlock x:Name="leave_used" Grid.Row="10" ></TextBlock>
+            <TextBlock x:Name="email" Grid.Row="4" ></TextBlock>
+            <TextBlock x:Name="username" Grid.Row="5" ></TextBlock>
+            <TextBlock x:Name="password" Grid.Row="6" ></TextBlock>
+            <TextBlock x:Name="job_title" Grid.Row="7" ></TextBlock>
+            <TextBlock x:Name="pay_rate" Grid.Row="8" ></TextBlock>
+            <TextBlock x:Name="hire_date" Grid.Row="9" ></TextBlock>
+            <TextBlock x:Name="total_leave" Grid.Row="10" ></TextBlock>
+            <TextBlock x:Name="leave_used" Grid.Row="11" ></TextBlock>
         </Grid>
 
 
@@ -66,18 +68,82 @@
                 <RowDefinition></RowDefinition>
                 <RowDefinition></RowDefinition>
                 <RowDefinition></RowDefinition>
+                <RowDefinition></RowDefinition>
 
             </Grid.RowDefinitions>
             <ListView x:Name="new_workers_list" Grid.Row="0" ></ListView>
-            <TextBox x:Name="new_name" Grid.Row="1" >name</TextBox>
-            <TextBox x:Name="new_email" Grid.Row="2" ></TextBox>
-            <TextBox x:Name="new_username" Grid.Row="3" ></TextBox>
-            <TextBox x:Name="new_password" Grid.Row="4" ></TextBox>
-            <TextBox x:Name="new_job_title" Grid.Row="5" ></TextBox>
-            <TextBox x:Name="new_pay_rate" Grid.Row="6" ></TextBox>
-            <DatePicker x:Name="new_hire_date" Grid.Row="7" ></DatePicker>
-            <TextBox x:Name="new_total_leave" Grid.Row="8" ></TextBox>
-            <TextBox x:Name="new_leave_used" Grid.Row="9" ></TextBox>
+            <Grid  Grid.Row="1">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="30*" ></ColumnDefinition>
+                    <ColumnDefinition Width="70*" ></ColumnDefinition>
+                </Grid.ColumnDefinitions>
+                <Label Content="Name" FontSize="21"></Label>
+                <TextBox x:Name="new_name" Grid.Column="1" ></TextBox>
+            </Grid>
+            <Grid  Grid.Row="2">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="30*" ></ColumnDefinition>
+                    <ColumnDefinition Width="70*" ></ColumnDefinition>
+                </Grid.ColumnDefinitions>
+                <Label Content="Email" FontSize="21"></Label>
+                <TextBox x:Name="new_email" Grid.Column="1" ></TextBox>
+            </Grid>
+            <Grid  Grid.Row="3">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="30*" ></ColumnDefinition>
+                    <ColumnDefinition Width="70*" ></ColumnDefinition>
+                </Grid.ColumnDefinitions>
+                <Label Content="Username" FontSize="21"></Label>
+                <TextBox x:Name="new_username" Grid.Column="1" ></TextBox>
+            </Grid>
+            <Grid  Grid.Row="4">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="30*" ></ColumnDefinition>
+                    <ColumnDefinition Width="70*" ></ColumnDefinition>
+                </Grid.ColumnDefinitions>
+                <Label Content="Password" FontSize="21"></Label>
+                <TextBox x:Name="new_password" Grid.Column="1" ></TextBox>
+            </Grid>
+            <Grid  Grid.Row="5">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="30*" ></ColumnDefinition>
+                    <ColumnDefinition Width="70*" ></ColumnDefinition>
+                </Grid.ColumnDefinitions>
+                <Label Content="Job Title" FontSize="21"></Label>
+                <TextBox x:Name="new_job_title" Grid.Column="1" ></TextBox>
+            </Grid>
+            <Grid  Grid.Row="6">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="30*" ></ColumnDefinition>
+                    <ColumnDefinition Width="70*" ></ColumnDefinition>
+                </Grid.ColumnDefinitions>
+                <Label Content="Pay rate" FontSize="21"></Label>
+                <TextBox x:Name="new_pay_rate" Grid.Column="1" ></TextBox>
+            </Grid>
+            <Grid  Grid.Row="7">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="30*" ></ColumnDefinition>
+                    <ColumnDefinition Width="70*" ></ColumnDefinition>
+                </Grid.ColumnDefinitions>
+                <Label Content="hire date" FontSize="21"></Label>
+                <DatePicker x:Name="new_hire_date" Grid.Column="1" ></DatePicker>
+            </Grid>
+            <Grid  Grid.Row="8">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="30*" ></ColumnDefinition>
+                    <ColumnDefinition Width="70*" ></ColumnDefinition>
+                </Grid.ColumnDefinitions>
+                <Label Content="Total Leave" FontSize="21"></Label>
+                <TextBox x:Name="new_total_leave" Grid.Column="1" ></TextBox>
+            </Grid>
+            <Grid  Grid.Row="9">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="30*" ></ColumnDefinition>
+                    <ColumnDefinition Width="70*" ></ColumnDefinition>
+                </Grid.ColumnDefinitions>
+                <Label Content="Leave usered" FontSize="21"></Label>
+                <TextBox x:Name="new_leave_used" Grid.Column="1" ></TextBox>
+            </Grid>
             <Grid Grid.Row="10">
                 <Grid.ColumnDefinitions>
                     <ColumnDefinition></ColumnDefinition>
