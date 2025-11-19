@@ -3,16 +3,16 @@
   "WorkspaceRootPath": "C:\\Users\\makom\\Documents\\GitHub\\CS106-Alex---Mako\\CS106\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{DB577B1B-092B-40FA-90EB-9E58DA041897}|CS106.csproj|c:\\users\\makom\\documents\\github\\cs106-alex---mako\\cs106\\editemployee.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{DB577B1B-092B-40FA-90EB-9E58DA041897}|CS106.csproj|solutionrelative:editemployee.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{DB577B1B-092B-40FA-90EB-9E58DA041897}|CS106.csproj|c:\\users\\makom\\documents\\github\\cs106-alex---mako\\cs106\\openmassage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DB577B1B-092B-40FA-90EB-9E58DA041897}|CS106.csproj|solutionrelative:openmassage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{DB577B1B-092B-40FA-90EB-9E58DA041897}|CS106.csproj|c:\\users\\makom\\documents\\github\\cs106-alex---mako\\cs106\\model\\sql_database.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{DB577B1B-092B-40FA-90EB-9E58DA041897}|CS106.csproj|solutionrelative:model\\sql_database.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{DB577B1B-092B-40FA-90EB-9E58DA041897}|CS106.csproj|c:\\users\\makom\\documents\\github\\cs106-alex---mako\\cs106\\openmassage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{DB577B1B-092B-40FA-90EB-9E58DA041897}|CS106.csproj|solutionrelative:openmassage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{DB577B1B-092B-40FA-90EB-9E58DA041897}|CS106.csproj|c:\\users\\makom\\documents\\github\\cs106-alex---mako\\cs106\\editemployee.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{DB577B1B-092B-40FA-90EB-9E58DA041897}|CS106.csproj|solutionrelative:editemployee.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+      "AbsoluteMoniker": "D:0:0:{DB577B1B-092B-40FA-90EB-9E58DA041897}|CS106.csproj|c:\\users\\makom\\documents\\github\\cs106-alex---mako\\cs106\\messages.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DB577B1B-092B-40FA-90EB-9E58DA041897}|CS106.csproj|solutionrelative:messages.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -26,46 +26,40 @@
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "SQL_Database.cs",
-              "DocumentMoniker": "C:\\Users\\makom\\Documents\\GitHub\\CS106-Alex---Mako\\CS106\\Model\\SQL_Database.cs",
-              "RelativeDocumentMoniker": "Model\\SQL_Database.cs",
-              "ToolTip": "C:\\Users\\makom\\Documents\\GitHub\\CS106-Alex---Mako\\CS106\\Model\\SQL_Database.cs",
-              "RelativeToolTip": "Model\\SQL_Database.cs",
-              "ViewState": "AgIAAHgCAADA0czMzMwfwIICAAAYAAAAAAAAAA==",
+              "DocumentIndex": 2,
+              "Title": "Messages.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\makom\\Documents\\GitHub\\CS106-Alex---Mako\\CS106\\Messages.xaml.cs",
+              "RelativeDocumentMoniker": "Messages.xaml.cs",
+              "ToolTip": "C:\\Users\\makom\\Documents\\GitHub\\CS106-Alex---Mako\\CS106\\Messages.xaml.cs*",
+              "RelativeToolTip": "Messages.xaml.cs*",
+              "ViewState": "AgIAABUAAABA2szMzMwXwBkAAAAPAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-19T11:24:17.465Z",
+              "WhenOpened": "2025-11-19T15:38:49.988Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "EditEmployee.xaml.cs",
-              "DocumentMoniker": "C:\\Users\\makom\\Documents\\GitHub\\CS106-Alex---Mako\\CS106\\EditEmployee.xaml.cs",
-              "RelativeDocumentMoniker": "EditEmployee.xaml.cs",
-              "ToolTip": "C:\\Users\\makom\\Documents\\GitHub\\CS106-Alex---Mako\\CS106\\EditEmployee.xaml.cs",
-              "RelativeToolTip": "EditEmployee.xaml.cs",
-              "ViewState": "AgIAAHwAAAAATTMzMzMPwJsAAAA9AAAAAAAAAA==",
+              "Title": "OpenMassage.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\makom\\Documents\\GitHub\\CS106-Alex---Mako\\CS106\\OpenMassage.xaml.cs",
+              "RelativeDocumentMoniker": "OpenMassage.xaml.cs",
+              "ToolTip": "C:\\Users\\makom\\Documents\\GitHub\\CS106-Alex---Mako\\CS106\\OpenMassage.xaml.cs",
+              "RelativeToolTip": "OpenMassage.xaml.cs",
+              "ViewState": "AgIAADQAAAAAzJmZmZn1v00AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-18T02:21:01.93Z",
+              "WhenOpened": "2025-11-19T15:28:28.846Z",
               "EditorCaption": ""
-            }
-          ]
-        },
-        {
-          "DockedWidth": 697,
-          "SelectedChildIndex": 0,
-          "Children": [
+            },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "EditEmployee.xaml",
-              "DocumentMoniker": "C:\\Users\\makom\\Documents\\GitHub\\CS106-Alex---Mako\\CS106\\EditEmployee.xaml",
-              "RelativeDocumentMoniker": "EditEmployee.xaml",
-              "ToolTip": "C:\\Users\\makom\\Documents\\GitHub\\CS106-Alex---Mako\\CS106\\EditEmployee.xaml",
-              "RelativeToolTip": "EditEmployee.xaml",
+              "DocumentIndex": 1,
+              "Title": "OpenMassage.xaml",
+              "DocumentMoniker": "C:\\Users\\makom\\Documents\\GitHub\\CS106-Alex---Mako\\CS106\\OpenMassage.xaml",
+              "RelativeDocumentMoniker": "OpenMassage.xaml",
+              "ToolTip": "C:\\Users\\makom\\Documents\\GitHub\\CS106-Alex---Mako\\CS106\\OpenMassage.xaml*",
+              "RelativeToolTip": "OpenMassage.xaml*",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2025-11-18T01:22:35.015Z",
+              "WhenOpened": "2025-11-19T14:09:05.363Z",
               "EditorCaption": ""
             }
           ]

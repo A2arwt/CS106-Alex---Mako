@@ -29,6 +29,7 @@ namespace CS106.Model
         public class SQL_MessageDataStruct
         {
             public long employee_id { get; set; }
+            public long message_pointer { get; set; }
             public string? reply_message { get; set; }
             public string? send_message { get; set; }
             public string? recieve_data { get; set; }
@@ -263,6 +264,7 @@ namespace CS106.Model
                         {
                             SQL_MessageDataStruct i = new SQL_MessageDataStruct();
                             i.employee_id = result["employee_id"] == DBNull.Value ? 0 : Convert.ToInt64(result["employee_id"]); ;
+                            i.message_pointer = result["message_id"] == DBNull.Value ? 0 : Convert.ToInt64(result["message_id"]); ;
                             i.recieve_data = result["recieve_data"] == DBNull.Value ? "" : result["recieve_data"].ToString();                       
                             i.reply_message = result["reply_message"] == DBNull.Value ? "" : result["reply_message"].ToString(); ;
                             i.send_message = result["send_message"] == DBNull.Value ? "" : result["send_message"].ToString();

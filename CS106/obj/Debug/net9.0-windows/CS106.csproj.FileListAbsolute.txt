@@ -233,3 +233,7 @@ C:\Users\makom\Documents\GitHub\CS106-Alex---Mako\CS106\obj\Debug\net9.0-windows
 C:\Users\makom\Documents\GitHub\CS106-Alex---Mako\CS106\obj\Debug\net9.0-windows\AddRoster.baml
 C:\Users\makom\Documents\GitHub\CS106-Alex---Mako\CS106\obj\Debug\net9.0-windows\view\UserControls\AdminMenu.baml
 C:\Users\makom\Documents\GitHub\CS106-Alex---Mako\CS106\obj\Debug\net9.0-windows\view\UserControls\Menu.baml
+C:\Users\makom\Documents\GitHub\CS106-Alex---Mako\CS106\obj\Debug\net9.0-windows\Messages.g.cs
+C:\Users\makom\Documents\GitHub\CS106-Alex---Mako\CS106\obj\Debug\net9.0-windows\OpenMassage.g.cs
+C:\Users\makom\Documents\GitHub\CS106-Alex---Mako\CS106\obj\Debug\net9.0-windows\Messages.baml
+C:\Users\makom\Documents\GitHub\CS106-Alex---Mako\CS106\obj\Debug\net9.0-windows\OpenMassage.baml

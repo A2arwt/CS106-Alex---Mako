@@ -174,6 +174,19 @@ namespace CS106.Model
             database.SQL_DeleteEmployee(employee_id);
         }
 
+        public static List<Database.SQL_MessageDataStruct> GetMessages()
+        {
+            return database.GetMessages();
+        }
+
+        public static void SendMessage()
+        {
+            
+             //database.SendMessage();
+            
+            
+        }
+
 
     }
 

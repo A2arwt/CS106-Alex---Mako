@@ -59,6 +59,23 @@ namespace CS106.Model
         {
             SQL_CreateEmployee(data);
         }
+
+        public  List<Database.SQL_MessageDataStruct> GetMessages()
+        {
+            return SQL_SelectAllMessages();
+        }
+
+        public  void SendMessage(long employee_id, string send_message, long message_pointer)
+        {
+
+            SQL_MessageDataStruct data = new SQL_MessageDataStruct();
+            data.employee_id = employee_id;
+            data.send_message = send_message;
+            data.message_pointer = message_pointer;
+            data.recieve_data = DateTime.Now.ToString("yyyy-MM-dd");
+
+             SQL_InsertMessageData(data);
+        }
     }
 }
 

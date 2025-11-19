@@ -21,10 +21,12 @@ namespace CS106
     /// </summary>
     public partial class PersonalDetails : Page
     {
+
         public PersonalDetails()
         {
             InitializeComponent();
             
+
         }
 
 
