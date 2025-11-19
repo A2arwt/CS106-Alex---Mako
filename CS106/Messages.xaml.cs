@@ -30,84 +30,163 @@ namespace CS106
             InitializeComponent();
 
             message_list = EmployeeManagementSystem.GetMessages();
-            foreach (var i in message_list)
+
+            // Get unique employee IDs who have messages
+            var uniqueEmployeeIds = message_list
+                .Select(m => m.employee_id)
+                .Distinct()
+                .ToList();
+
+            // Also include employees involved via message_pointer
+            var pointerEmployeeIds = message_list
+                .Where(m => m.message_pointer > 0)
+                .Select(m => m.message_pointer)
+                .Distinct()
+                .ToList();
+
+            uniqueEmployeeIds.AddRange(pointerEmployeeIds);
+            uniqueEmployeeIds = uniqueEmployeeIds.Distinct().ToList();
+
+            // Remove current user from the list if they're in it
+            uniqueEmployeeIds.Remove(EmployeeManagementSystem.current_user.employee_id);
+
+            foreach (var employeeId in uniqueEmployeeIds)
             {
-                var name = EmployeeManagementSystem.GetEmployee(i.employee_id).First();
-                var employee_list = EmployeeManagementSystem.GetEmployee(i.employee_id).First();
-                StackPanel stack = new StackPanel();
-                stack.Orientation = Orientation.Horizontal;
+                var employee = EmployeeManagementSystem.GetEmployee(employeeId).FirstOrDefault();
+                if (employee == null) continue;
 
-                
-
-                var request = (from item in message_list
-                               where item.employee_id == i.employee_id
-                               select item);
-                var sorted = request
-                    .OrderByDescending(e => DateTime.Parse(e.recieve_data))
+                // Get all messages for this conversation (both directions)
+                var conversationMessages = message_list
+                    .Where(m => m.employee_id == employeeId || m.message_pointer == employeeId)
+                    .OrderByDescending(m => DateTime.Parse(m.recieve_data))
                     .ToList();
 
-                Button chat = new Button();
-                chat.Content = i.employee_id + ": " + name.name + "\n" + sorted.First().send_message;
-                stack.Children.Add(chat);
+                if (conversationMessages.Count == 0) continue;
 
-                chat.Click += Chat;
-                chat.Tag = i.employee_id;
-                message_panel.Children.Add(stack);
+                var lastMessage = conversationMessages.First();
 
+                // Create conversation button
+                Border conversationBorder = new Border
+                {
+                    Background = new SolidColorBrush(Color.FromRgb(245, 245, 245)),
+                    BorderBrush = new SolidColorBrush(Color.FromRgb(200, 200, 200)),
+                    BorderThickness = new Thickness(1),
+                    Margin = new Thickness(5),
+                    CornerRadius = new CornerRadius(8),
+                    Cursor = Cursors.Hand
+                };
 
+                StackPanel conversationStack = new StackPanel
+                {
+                    Margin = new Thickness(10)
+                };
+
+                // Employee name
+                TextBlock nameBlock = new TextBlock
+                {
+                    Text = $"{employee.name} (ID: {employee.employee_id})",
+                    FontWeight = FontWeights.Bold,
+                    FontSize = 14,
+                    Foreground = new SolidColorBrush(Color.FromRgb(51, 51, 51))
+                };
+
+                // Last message preview
+                string messagePreview = lastMessage.send_message;
+                if (messagePreview.Length > 50)
+                    messagePreview = messagePreview.Substring(0, 50) + "...";
+
+                TextBlock messageBlock = new TextBlock
+                {
+                    Text = messagePreview,
+                    FontSize = 12,
+                    Foreground = new SolidColorBrush(Color.FromRgb(102, 102, 102)),
+                    Margin = new Thickness(0, 5, 0, 0),
+                    TextWrapping = TextWrapping.Wrap
+                };
+
+                // Date
+                TextBlock dateBlock = new TextBlock
+                {
+                    Text = DateTime.Parse(lastMessage.recieve_data).ToString("dd/MM/yyyy HH:mm"),
+                    FontSize = 10,
+                    Foreground = new SolidColorBrush(Color.FromRgb(153, 153, 153)),
+                    Margin = new Thickness(0, 3, 0, 0)
+                };
+
+                conversationStack.Children.Add(nameBlock);
+                conversationStack.Children.Add(messageBlock);
+                conversationStack.Children.Add(dateBlock);
+
+                conversationBorder.Child = conversationStack;
+                conversationBorder.Tag = employeeId;
+                conversationBorder.MouseDown += ConversationBorder_MouseDown;
+
+                // Hover effect
+                conversationBorder.MouseEnter += (s, e) =>
+                {
+                    conversationBorder.Background = new SolidColorBrush(Color.FromRgb(235, 235, 235));
+                };
+                conversationBorder.MouseLeave += (s, e) =>
+                {
+                    conversationBorder.Background = new SolidColorBrush(Color.FromRgb(245, 245, 245));
+                };
+
+                message_panel.Children.Add(conversationBorder);
             }
-            var employees = EmployeeManagementSystem.GetEmployee();
 
-            foreach (var i in employees)
+            // Employee list for starting new conversations
+            var allEmployees = EmployeeManagementSystem.GetEmployee();
+
+            foreach (var employee in allEmployees)
             {
-                var employee_list = EmployeeManagementSystem.GetEmployee(i.employee_id).First();
-                StackPanel stack = new StackPanel();
-                stack.Orientation = Orientation.Horizontal;
+                // Skip current user
+                if (employee.employee_id == EmployeeManagementSystem.current_user.employee_id)
+                    continue;
 
+                Border employeeBorder = new Border
+                {
+                    Background = new SolidColorBrush(Color.FromRgb(240, 248, 255)),
+                    BorderBrush = new SolidColorBrush(Color.FromRgb(173, 216, 230)),
+                    BorderThickness = new Thickness(1),
+                    Margin = new Thickness(5),
+                    CornerRadius = new CornerRadius(6),
+                    Cursor = Cursors.Hand
+                };
 
-                Button chat = new Button();
-                chat.Content = i.employee_id + ": " + i.name;
-                stack.Children.Add(chat);
+                TextBlock employeeBlock = new TextBlock
+                {
+                    Text = $"{employee.name} (ID: {employee.employee_id})",
+                    Margin = new Thickness(10, 8, 10, 8),
+                    FontSize = 13,
+                    Foreground = new SolidColorBrush(Color.FromRgb(51, 51, 51))
+                };
 
-                chat.Click += Chat;
-                chat.Tag = i.employee_id;
-                employee_panel.Children.Add(stack);
+                employeeBorder.Child = employeeBlock;
+                employeeBorder.Tag = employee.employee_id;
+                employeeBorder.MouseDown += ConversationBorder_MouseDown;
 
+                // Hover effect
+                employeeBorder.MouseEnter += (s, e) =>
+                {
+                    employeeBorder.Background = new SolidColorBrush(Color.FromRgb(225, 240, 255));
+                };
+                employeeBorder.MouseLeave += (s, e) =>
+                {
+                    employeeBorder.Background = new SolidColorBrush(Color.FromRgb(240, 248, 255));
+                };
 
+                employee_panel.Children.Add(employeeBorder);
             }
-
         }
 
-        private void Chat(object sender, RoutedEventArgs e)
+        private void ConversationBorder_MouseDown(object sender, MouseButtonEventArgs e)
         {
-            var btn = sender as Button;
-            ID = (long)btn.Tag;
-            NavigationService.Navigate(new OpenMassage());
-
-
+            var border = sender as Border;
+            if (border != null && border.Tag != null)
+            {
+                ID = (long)border.Tag;
+                NavigationService.Navigate(new OpenMassage());
+            }
         }
     }
 }
-//message_list = EmployeeManagementSystem.GetMessages();
-//foreach (var i in message_list)
-//{
-//    var name = EmployeeManagementSystem.GetEmployee(i.employee_id).First();
-//    var employee_list = EmployeeManagementSystem.GetEmployee(i.employee_id).First();
-
-//    var request = (from item in message_list
-//                   where item.employee_id == i.employee_id
-//                   select item);
-//    var sorted = request
-//        .OrderByDescending(e => DateTime.Parse(e.recieve_data))
-//        .ToList();
-
-
-//    foreach (var item in sorted)
-//    {
-//        message_panel.Items.Add(i.employee_id + ": " + name.name + "\n" + sorted.First().send_message);
-//        break;
-
-//    }
-
-//    //new_workers_list.Items.Add(i.employee_id + ": " + i.name);
-//}
