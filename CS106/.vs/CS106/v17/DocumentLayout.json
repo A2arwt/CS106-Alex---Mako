@@ -1,48 +1,49 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "D:\\Users\\270621423\\OneDrive - UP Education\\Documents\\GitHub\\CS106-Alex---Mako\\CS106\\",
+  "WorkspaceRootPath": "D:\\Users\\270040396\\Documents\\GitHub\\CS106-Alex---Mako\\CS106\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\Users\\270621423\\AppData\\Local\\Temp\\.vsdbgsrc\\435ce5af01503e573ea68056a0a47591de09e279ecce4fdbae453129ca79c9a1\\NavigationService.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{DB577B1B-092B-40FA-90EB-9E58DA041897}|CS106.csproj|d:\\users\\270621423\\onedrive - up education\\documents\\github\\cs106-alex---mako\\cs106\\openmassage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{DB577B1B-092B-40FA-90EB-9E58DA041897}|CS106.csproj|solutionrelative:openmassage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{DB577B1B-092B-40FA-90EB-9E58DA041897}|CS106.csproj|d:\\users\\270621423\\onedrive - up education\\documents\\github\\cs106-alex---mako\\cs106\\openmassage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{DB577B1B-092B-40FA-90EB-9E58DA041897}|CS106.csproj|solutionrelative:openmassage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{DB577B1B-092B-40FA-90EB-9E58DA041897}|CS106.csproj|d:\\users\\270621423\\onedrive - up education\\documents\\github\\cs106-alex---mako\\cs106\\messages.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{DB577B1B-092B-40FA-90EB-9E58DA041897}|CS106.csproj|solutionrelative:messages.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{DB577B1B-092B-40FA-90EB-9E58DA041897}|CS106.csproj|d:\\users\\270621423\\onedrive - up education\\documents\\github\\cs106-alex---mako\\cs106\\messages.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{DB577B1B-092B-40FA-90EB-9E58DA041897}|CS106.csproj|solutionrelative:messages.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{DB577B1B-092B-40FA-90EB-9E58DA041897}|CS106.csproj|d:\\users\\270621423\\onedrive - up education\\documents\\github\\cs106-alex---mako\\cs106\\loginpage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{DB577B1B-092B-40FA-90EB-9E58DA041897}|CS106.csproj|solutionrelative:loginpage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{DB577B1B-092B-40FA-90EB-9E58DA041897}|CS106.csproj|d:\\users\\270621423\\onedrive - up education\\documents\\github\\cs106-alex---mako\\cs106\\splashpage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{DB577B1B-092B-40FA-90EB-9E58DA041897}|CS106.csproj|solutionrelative:splashpage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{DB577B1B-092B-40FA-90EB-9E58DA041897}|CS106.csproj|d:\\users\\270621423\\onedrive - up education\\documents\\github\\cs106-alex---mako\\cs106\\splashpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "AbsoluteMoniker": "D:0:0:{DB577B1B-092B-40FA-90EB-9E58DA041897}|CS106.csproj|d:\\users\\270040396\\documents\\github\\cs106-alex---mako\\cs106\\splashpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
       "RelativeMoniker": "D:0:0:{DB577B1B-092B-40FA-90EB-9E58DA041897}|CS106.csproj|solutionrelative:splashpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{DB577B1B-092B-40FA-90EB-9E58DA041897}|CS106.csproj|d:\\users\\270621423\\onedrive - up education\\documents\\github\\cs106-alex---mako\\cs106\\model\\sql_database.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{DB577B1B-092B-40FA-90EB-9E58DA041897}|CS106.csproj|d:\\users\\270040396\\documents\\github\\cs106-alex---mako\\cs106\\splashpage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DB577B1B-092B-40FA-90EB-9E58DA041897}|CS106.csproj|solutionrelative:splashpage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DB577B1B-092B-40FA-90EB-9E58DA041897}|CS106.csproj|d:\\users\\270040396\\documents\\github\\cs106-alex---mako\\cs106\\loginpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{DB577B1B-092B-40FA-90EB-9E58DA041897}|CS106.csproj|solutionrelative:loginpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DB577B1B-092B-40FA-90EB-9E58DA041897}|CS106.csproj|d:\\users\\270040396\\documents\\github\\cs106-alex---mako\\cs106\\loginpage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DB577B1B-092B-40FA-90EB-9E58DA041897}|CS106.csproj|solutionrelative:loginpage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DB577B1B-092B-40FA-90EB-9E58DA041897}|CS106.csproj|d:\\users\\270040396\\documents\\github\\cs106-alex---mako\\cs106\\openmassage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{DB577B1B-092B-40FA-90EB-9E58DA041897}|CS106.csproj|solutionrelative:openmassage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DB577B1B-092B-40FA-90EB-9E58DA041897}|CS106.csproj|d:\\users\\270040396\\documents\\github\\cs106-alex---mako\\cs106\\openmassage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DB577B1B-092B-40FA-90EB-9E58DA041897}|CS106.csproj|solutionrelative:openmassage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DB577B1B-092B-40FA-90EB-9E58DA041897}|CS106.csproj|d:\\users\\270040396\\documents\\github\\cs106-alex---mako\\cs106\\messages.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{DB577B1B-092B-40FA-90EB-9E58DA041897}|CS106.csproj|solutionrelative:messages.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DB577B1B-092B-40FA-90EB-9E58DA041897}|CS106.csproj|d:\\users\\270040396\\documents\\github\\cs106-alex---mako\\cs106\\messages.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DB577B1B-092B-40FA-90EB-9E58DA041897}|CS106.csproj|solutionrelative:messages.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DB577B1B-092B-40FA-90EB-9E58DA041897}|CS106.csproj|d:\\users\\270040396\\documents\\github\\cs106-alex---mako\\cs106\\model\\sql_database.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{DB577B1B-092B-40FA-90EB-9E58DA041897}|CS106.csproj|solutionrelative:model\\sql_database.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{DB577B1B-092B-40FA-90EB-9E58DA041897}|CS106.csproj|d:\\users\\270621423\\onedrive - up education\\documents\\github\\cs106-alex---mako\\cs106\\model\\database.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{DB577B1B-092B-40FA-90EB-9E58DA041897}|CS106.csproj|d:\\users\\270040396\\documents\\github\\cs106-alex---mako\\cs106\\model\\database.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{DB577B1B-092B-40FA-90EB-9E58DA041897}|CS106.csproj|solutionrelative:model\\database.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{DB577B1B-092B-40FA-90EB-9E58DA041897}|CS106.csproj|d:\\users\\270621423\\onedrive - up education\\documents\\github\\cs106-alex---mako\\cs106\\model\\employeemanagementsystem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{DB577B1B-092B-40FA-90EB-9E58DA041897}|CS106.csproj|d:\\users\\270040396\\documents\\github\\cs106-alex---mako\\cs106\\model\\employeemanagementsystem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{DB577B1B-092B-40FA-90EB-9E58DA041897}|CS106.csproj|solutionrelative:model\\employeemanagementsystem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
@@ -53,101 +54,98 @@
       "DocumentGroups": [
         {
           "DockedWidth": 849,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 5,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "NavigationService.cs",
-              "DocumentMoniker": "D:\\Users\\270621423\\AppData\\Local\\Temp\\.vsdbgsrc\\435ce5af01503e573ea68056a0a47591de09e279ecce4fdbae453129ca79c9a1\\NavigationService.cs",
-              "RelativeDocumentMoniker": "..\\..\\..\\..\\..\\AppData\\Local\\Temp\\.vsdbgsrc\\435ce5af01503e573ea68056a0a47591de09e279ecce4fdbae453129ca79c9a1\\NavigationService.cs",
-              "ToolTip": "D:\\Users\\270621423\\AppData\\Local\\Temp\\.vsdbgsrc\\435ce5af01503e573ea68056a0a47591de09e279ecce4fdbae453129ca79c9a1\\NavigationService.cs [Read Only]",
-              "RelativeToolTip": "..\\..\\..\\..\\..\\AppData\\Local\\Temp\\.vsdbgsrc\\435ce5af01503e573ea68056a0a47591de09e279ecce4fdbae453129ca79c9a1\\NavigationService.cs [Read Only]",
-              "ViewState": "AgIAAAoEAAAAAAAAAAAiwB0EAAADAAAAAQAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-19T21:25:39.452Z",
-              "EditorCaption": " [Read Only]"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "OpenMassage.xaml",
-              "DocumentMoniker": "D:\\Users\\270621423\\OneDrive - UP Education\\Documents\\GitHub\\CS106-Alex---Mako\\CS106\\OpenMassage.xaml",
-              "RelativeDocumentMoniker": "OpenMassage.xaml",
-              "ToolTip": "D:\\Users\\270621423\\OneDrive - UP Education\\Documents\\GitHub\\CS106-Alex---Mako\\CS106\\OpenMassage.xaml",
-              "RelativeToolTip": "OpenMassage.xaml",
+              "DocumentIndex": 2,
+              "Title": "LoginPage.xaml",
+              "DocumentMoniker": "D:\\Users\\270040396\\Documents\\GitHub\\CS106-Alex---Mako\\CS106\\LoginPage.xaml",
+              "RelativeDocumentMoniker": "LoginPage.xaml",
+              "ToolTip": "D:\\Users\\270040396\\Documents\\GitHub\\CS106-Alex---Mako\\CS106\\LoginPage.xaml",
+              "RelativeToolTip": "LoginPage.xaml",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2025-11-19T21:24:24.429Z",
+              "WhenOpened": "2025-11-19T21:35:07.904Z",
               "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "Messages.xaml",
-              "DocumentMoniker": "D:\\Users\\270621423\\OneDrive - UP Education\\Documents\\GitHub\\CS106-Alex---Mako\\CS106\\Messages.xaml",
-              "RelativeDocumentMoniker": "Messages.xaml",
-              "ToolTip": "D:\\Users\\270621423\\OneDrive - UP Education\\Documents\\GitHub\\CS106-Alex---Mako\\CS106\\Messages.xaml",
-              "RelativeToolTip": "Messages.xaml",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2025-11-19T21:21:58.959Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "LoginPage.xaml.cs",
-              "DocumentMoniker": "D:\\Users\\270621423\\OneDrive - UP Education\\Documents\\GitHub\\CS106-Alex---Mako\\CS106\\LoginPage.xaml.cs",
-              "RelativeDocumentMoniker": "LoginPage.xaml.cs",
-              "ToolTip": "D:\\Users\\270621423\\OneDrive - UP Education\\Documents\\GitHub\\CS106-Alex---Mako\\CS106\\LoginPage.xaml.cs",
-              "RelativeToolTip": "LoginPage.xaml.cs",
-              "ViewState": "AgIAABMAAAAAAAAAAAAcwC8AAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-19T21:10:51.262Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "SplashPage.xaml.cs",
-              "DocumentMoniker": "D:\\Users\\270621423\\OneDrive - UP Education\\Documents\\GitHub\\CS106-Alex---Mako\\CS106\\SplashPage.xaml.cs",
-              "RelativeDocumentMoniker": "SplashPage.xaml.cs",
-              "ToolTip": "D:\\Users\\270621423\\OneDrive - UP Education\\Documents\\GitHub\\CS106-Alex---Mako\\CS106\\SplashPage.xaml.cs",
-              "RelativeToolTip": "SplashPage.xaml.cs",
-              "ViewState": "AgIAACkAAAAAAAAAAAAcwD8AAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-19T21:10:20.395Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "SplashPage.xaml",
-              "DocumentMoniker": "D:\\Users\\270621423\\OneDrive - UP Education\\Documents\\GitHub\\CS106-Alex---Mako\\CS106\\SplashPage.xaml",
-              "RelativeDocumentMoniker": "SplashPage.xaml",
-              "ToolTip": "D:\\Users\\270621423\\OneDrive - UP Education\\Documents\\GitHub\\CS106-Alex---Mako\\CS106\\SplashPage.xaml",
-              "RelativeToolTip": "SplashPage.xaml",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2025-11-19T21:10:01.701Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 4,
+              "Title": "OpenMassage.xaml",
+              "DocumentMoniker": "D:\\Users\\270040396\\Documents\\GitHub\\CS106-Alex---Mako\\CS106\\OpenMassage.xaml",
+              "RelativeDocumentMoniker": "OpenMassage.xaml",
+              "ToolTip": "D:\\Users\\270040396\\Documents\\GitHub\\CS106-Alex---Mako\\CS106\\OpenMassage.xaml",
+              "RelativeToolTip": "OpenMassage.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-11-19T21:24:24.429Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Messages.xaml",
+              "DocumentMoniker": "D:\\Users\\270040396\\Documents\\GitHub\\CS106-Alex---Mako\\CS106\\Messages.xaml",
+              "RelativeDocumentMoniker": "Messages.xaml",
+              "ToolTip": "D:\\Users\\270040396\\Documents\\GitHub\\CS106-Alex---Mako\\CS106\\Messages.xaml",
+              "RelativeToolTip": "Messages.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-11-19T21:21:58.959Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "LoginPage.xaml.cs",
+              "DocumentMoniker": "D:\\Users\\270040396\\Documents\\GitHub\\CS106-Alex---Mako\\CS106\\LoginPage.xaml.cs",
+              "RelativeDocumentMoniker": "LoginPage.xaml.cs",
+              "ToolTip": "D:\\Users\\270040396\\Documents\\GitHub\\CS106-Alex---Mako\\CS106\\LoginPage.xaml.cs",
+              "RelativeToolTip": "LoginPage.xaml.cs",
+              "ViewState": "AgIAAAoAAAAAAAAAAAAcwC8AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-19T21:10:51.262Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "SplashPage.xaml.cs",
+              "DocumentMoniker": "D:\\Users\\270040396\\Documents\\GitHub\\CS106-Alex---Mako\\CS106\\SplashPage.xaml.cs",
+              "RelativeDocumentMoniker": "SplashPage.xaml.cs",
+              "ToolTip": "D:\\Users\\270040396\\Documents\\GitHub\\CS106-Alex---Mako\\CS106\\SplashPage.xaml.cs",
+              "RelativeToolTip": "SplashPage.xaml.cs",
+              "ViewState": "AgIAACkAAAAAAAAAAAAcwD8AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-19T21:10:20.395Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "SplashPage.xaml",
+              "DocumentMoniker": "D:\\Users\\270040396\\Documents\\GitHub\\CS106-Alex---Mako\\CS106\\SplashPage.xaml",
+              "RelativeDocumentMoniker": "SplashPage.xaml",
+              "ToolTip": "D:\\Users\\270040396\\Documents\\GitHub\\CS106-Alex---Mako\\CS106\\SplashPage.xaml",
+              "RelativeToolTip": "SplashPage.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-11-19T21:10:01.701Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
               "Title": "Messages.xaml.cs",
-              "DocumentMoniker": "D:\\Users\\270621423\\OneDrive - UP Education\\Documents\\GitHub\\CS106-Alex---Mako\\CS106\\Messages.xaml.cs",
+              "DocumentMoniker": "D:\\Users\\270040396\\Documents\\GitHub\\CS106-Alex---Mako\\CS106\\Messages.xaml.cs",
               "RelativeDocumentMoniker": "Messages.xaml.cs",
-              "ToolTip": "D:\\Users\\270621423\\OneDrive - UP Education\\Documents\\GitHub\\CS106-Alex---Mako\\CS106\\Messages.xaml.cs",
+              "ToolTip": "D:\\Users\\270040396\\Documents\\GitHub\\CS106-Alex---Mako\\CS106\\Messages.xaml.cs",
               "RelativeToolTip": "Messages.xaml.cs",
               "ViewState": "AgIAAJgAAAAAAAAAAAAuwL8AAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-19T20:26:33.201Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-11-19T20:26:33.201Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 8,
               "Title": "SQL_Database.cs",
-              "DocumentMoniker": "D:\\Users\\270621423\\OneDrive - UP Education\\Documents\\GitHub\\CS106-Alex---Mako\\CS106\\Model\\SQL_Database.cs",
+              "DocumentMoniker": "D:\\Users\\270040396\\Documents\\GitHub\\CS106-Alex---Mako\\CS106\\Model\\SQL_Database.cs",
               "RelativeDocumentMoniker": "Model\\SQL_Database.cs",
-              "ToolTip": "D:\\Users\\270621423\\OneDrive - UP Education\\Documents\\GitHub\\CS106-Alex---Mako\\CS106\\Model\\SQL_Database.cs",
+              "ToolTip": "D:\\Users\\270040396\\Documents\\GitHub\\CS106-Alex---Mako\\CS106\\Model\\SQL_Database.cs",
               "RelativeToolTip": "Model\\SQL_Database.cs",
               "ViewState": "AgIAAHgCAAAAAAAAAAAhwJkCAABYAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -155,24 +153,23 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 5,
               "Title": "OpenMassage.xaml.cs",
-              "DocumentMoniker": "D:\\Users\\270621423\\OneDrive - UP Education\\Documents\\GitHub\\CS106-Alex---Mako\\CS106\\OpenMassage.xaml.cs",
+              "DocumentMoniker": "D:\\Users\\270040396\\Documents\\GitHub\\CS106-Alex---Mako\\CS106\\OpenMassage.xaml.cs",
               "RelativeDocumentMoniker": "OpenMassage.xaml.cs",
-              "ToolTip": "D:\\Users\\270621423\\OneDrive - UP Education\\Documents\\GitHub\\CS106-Alex---Mako\\CS106\\OpenMassage.xaml.cs",
+              "ToolTip": "D:\\Users\\270040396\\Documents\\GitHub\\CS106-Alex---Mako\\CS106\\OpenMassage.xaml.cs",
               "RelativeToolTip": "OpenMassage.xaml.cs",
               "ViewState": "AgIAAG8AAAAAAAAAAAAuwJYAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-19T20:05:10.896Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-11-19T20:05:10.896Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 9,
               "Title": "Database.cs",
-              "DocumentMoniker": "D:\\Users\\270621423\\OneDrive - UP Education\\Documents\\GitHub\\CS106-Alex---Mako\\CS106\\Model\\Database.cs",
+              "DocumentMoniker": "D:\\Users\\270040396\\Documents\\GitHub\\CS106-Alex---Mako\\CS106\\Model\\Database.cs",
               "RelativeDocumentMoniker": "Model\\Database.cs",
-              "ToolTip": "D:\\Users\\270621423\\OneDrive - UP Education\\Documents\\GitHub\\CS106-Alex---Mako\\CS106\\Model\\Database.cs",
+              "ToolTip": "D:\\Users\\270040396\\Documents\\GitHub\\CS106-Alex---Mako\\CS106\\Model\\Database.cs",
               "RelativeToolTip": "Model\\Database.cs",
               "ViewState": "AgIAADMAAAAAAAAAAAArwEUAAAAaAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -182,9 +179,9 @@
               "$type": "Document",
               "DocumentIndex": 10,
               "Title": "EmployeeManagementSystem.cs",
-              "DocumentMoniker": "D:\\Users\\270621423\\OneDrive - UP Education\\Documents\\GitHub\\CS106-Alex---Mako\\CS106\\Model\\EmployeeManagementSystem.cs",
+              "DocumentMoniker": "D:\\Users\\270040396\\Documents\\GitHub\\CS106-Alex---Mako\\CS106\\Model\\EmployeeManagementSystem.cs",
               "RelativeDocumentMoniker": "Model\\EmployeeManagementSystem.cs",
-              "ToolTip": "D:\\Users\\270621423\\OneDrive - UP Education\\Documents\\GitHub\\CS106-Alex---Mako\\CS106\\Model\\EmployeeManagementSystem.cs",
+              "ToolTip": "D:\\Users\\270040396\\Documents\\GitHub\\CS106-Alex---Mako\\CS106\\Model\\EmployeeManagementSystem.cs",
               "RelativeToolTip": "Model\\EmployeeManagementSystem.cs",
               "ViewState": "AgIAAKgAAAAAAAAAAADgv70AAAAaAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",

@@ -61,7 +61,7 @@ namespace CS106.view.UserControls {
                 return;
             }
             _contentLoaded = true;
-            System.Uri resourceLocater = new System.Uri("/CS106;component/view/usercontrols/menu.xaml", System.UriKind.Relative);
+            System.Uri resourceLocater = new System.Uri("/CS106;V1.0.0.0;component/view/usercontrols/menu.xaml", System.UriKind.Relative);
             
             #line 1 "..\..\..\..\..\view\UserControls\Menu.xaml"
             System.Windows.Application.LoadComponent(this, resourceLocater);

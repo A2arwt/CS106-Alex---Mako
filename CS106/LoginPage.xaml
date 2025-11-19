@@ -19,7 +19,7 @@
             <StackPanel Grid.Row="1" Margin="40" HorizontalAlignment="Center">
 
                 <!-- Logo -->
-                <Image Source="D:\Users\270040396\Documents\GitHub\CS106-Alex---Mako\Assests\Style Guide\Logo 2.2 - Transparent.png"
+                <Image Source="D:\Users\270040396\Documents\GitHub\CS106-Alex---Mako\CS106\Assests\Style Guide\Logo 2.2 - Transparent.png"
                  Height="212"
                  Width="221"
                  Stretch="Uniform"

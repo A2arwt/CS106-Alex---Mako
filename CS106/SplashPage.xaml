@@ -7,7 +7,7 @@
 
         <!-- Splash Image -->
         <Image x:Name="SplashImage"
-               Source="D:\Users\270040396\Documents\GitHub\CS106-Alex---Mako\Assests\Style Guide\Logo 2.2 - Transparent.png"
+               Source="D:\Users\270040396\Documents\GitHub\CS106-Alex---Mako\CS106\Assests\Style Guide\Logo 2.2 - Transparent.png"
                Stretch="Uniform"
                HorizontalAlignment="Center"
                VerticalAlignment="Center"
