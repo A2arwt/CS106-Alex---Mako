@@ -52,7 +52,7 @@ namespace CS106
 
                 chat.Click += Chat;
                 chat.Tag = i.employee_id;
-                message_panel.Children.Add(chat);
+                message_panel.Children.Add(stack);
 
 
             }

@@ -17,5 +17,6 @@
         </Grid.ColumnDefinitions>
 
         <userControls:Menu></userControls:Menu>
+        <Button Grid.Column="1" Click="Message"></Button>
     </Grid>
 </Page>

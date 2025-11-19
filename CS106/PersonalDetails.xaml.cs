@@ -29,8 +29,10 @@ namespace CS106
 
         }
 
+        private void Message(object sender, RoutedEventArgs e)
+        {
+            NavigationService.Navigate(new Messages());
 
-
-        
+        }
     }
 }

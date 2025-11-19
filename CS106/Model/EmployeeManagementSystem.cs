@@ -11,7 +11,7 @@ namespace CS106.Model
     public class EmployeeManagementSystem
     {
         static Database? database { get; set; }
-        public static Database.SQL_EmployeeDataStruct? current_user { get; set; }
+        public static Database.SQL_EmployeeDataStruct current_user { get; set; }
         public static bool is_admin = false;
 
         public EmployeeManagementSystem()
@@ -179,10 +179,15 @@ namespace CS106.Model
             return database.GetMessages();
         }
 
-        public static void SendMessage()
+        public static void SendMessage(long employee_id, string send_message, long message_pointer)
         {
-            
-             //database.SendMessage();
+            //Database.SQL_MessageDataStruct data = new SQL_MessageDataStruct();
+            SQL_MessageDataStruct data = new SQL_MessageDataStruct();
+            data.employee_id = employee_id;
+            data.send_message = send_message;
+            data.message_pointer = message_pointer;
+            data.recieve_data = DateTime.Now.ToString("yyyy-MM-dd");
+            database.SendMessage(data);
             
             
         }

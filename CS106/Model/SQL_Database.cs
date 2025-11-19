@@ -264,8 +264,8 @@ namespace CS106.Model
                         {
                             SQL_MessageDataStruct i = new SQL_MessageDataStruct();
                             i.employee_id = result["employee_id"] == DBNull.Value ? 0 : Convert.ToInt64(result["employee_id"]); ;
-                            i.message_pointer = result["message_id"] == DBNull.Value ? 0 : Convert.ToInt64(result["message_id"]); ;
-                            i.recieve_data = result["recieve_data"] == DBNull.Value ? "" : result["recieve_data"].ToString();                       
+                            i.message_pointer = result["message_pointer"] == DBNull.Value ? 0 : Convert.ToInt64(result["message_pointer"]); ;
+                            i.recieve_data = result["recieve_date"] == DBNull.Value ? "" : result["recieve_date"].ToString();                       
                             i.reply_message = result["reply_message"] == DBNull.Value ? "" : result["reply_message"].ToString(); ;
                             i.send_message = result["send_message"] == DBNull.Value ? "" : result["send_message"].ToString();
                             data.Add(i);
@@ -656,11 +656,12 @@ namespace CS106.Model
             using (SQLiteConnection sql_database = new SQLiteConnection("Data Source=database/CS106.db"))
             {
                 sql_database.Open();
-                using (var command = new SQLiteCommand("insert into messages(employee_id,reply_message,send_message,recieve_data)" +
-                                                            " VALUES(@employee_id,@reply_message,@send_message,@recieve_data)", sql_database))
+                using (var command = new SQLiteCommand("insert into messages(employee_id,reply_message,send_message,recieve_date,message_pointer)" +
+                                                            " VALUES(@employee_id,@reply_message,@send_message,@recieve_data,@message_pointer)", sql_database))
                 {
                     command.Parameters.AddWithValue("@employee_id", data.employee_id);
                     command.Parameters.AddWithValue("@reply_message", data.reply_message);
+                    command.Parameters.AddWithValue("@message_pointer", data.message_pointer);
                     command.Parameters.AddWithValue("@send_message", data.send_message);
                     command.Parameters.AddWithValue("@recieve_data", data.recieve_data);
                     command.ExecuteNonQuery();

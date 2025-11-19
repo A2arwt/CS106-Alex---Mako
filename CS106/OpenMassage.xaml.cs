@@ -28,12 +28,11 @@ namespace CS106
             message_list = EmployeeManagementSystem.GetMessages();
 
  
-                StackPanel stack = new StackPanel();
-                stack.Orientation = Orientation.Horizontal;
+                
 
 
 
-                var request = (from item in message_list
+                var request = (from item in message_list /// maybe admin
                                where item.employee_id == Messages.ID 
                                select item);
 
@@ -51,11 +50,13 @@ namespace CS106
 
             foreach(var i in sorted)
             {
+                StackPanel stack = new StackPanel();
+                stack.Orientation = Orientation.Horizontal;
                 Button chat = new Button();
                 chat.Content = i.employee_id + ": " + 
-                    EmployeeManagementSystem.GetEmployee(i.employee_id).First().name+ "\n" + i.send_message;
+                EmployeeManagementSystem.GetEmployee(i.employee_id).First().name+ "\n" + i.send_message;
                 stack.Children.Add(chat);
-                message_panel.Children.Add(chat);
+                message_panel.Children.Add(stack);
 
             }
 
@@ -71,10 +72,15 @@ namespace CS106
             StackPanel stack = new StackPanel();
             stack.Orientation = Orientation.Horizontal;
             Button chat = new Button();
-            chat.Content = EmployeeManagementSystem.current_user.employee_id + EmployeeManagementSystem.current_user.name +": " + message.Text;
+            chat.Content = EmployeeManagementSystem.current_user.employee_id +": "+ EmployeeManagementSystem.current_user.name +") " + message.Text;
             stack.Children.Add(chat);
-            message_panel.Children.Add(chat);
-            EmployeeManagementSystem.SendMessage();
+            message_panel.Children.Add(stack);
+            //-1 if it's user sending the message and it the employe ID if ir's admin sending the message. it'll be ordered by the date
+            EmployeeManagementSystem.SendMessage(EmployeeManagementSystem.current_user.employee_id, message.Text, Messages.ID);
+            message.Text = "";
+
+
+
         }
     }
 }
