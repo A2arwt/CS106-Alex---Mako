@@ -17,15 +17,40 @@
         </Grid.ColumnDefinitions>
 
         <userControls:Menu></userControls:Menu>
+        
 
 
         <DatePicker x:Name="StartDate" Grid.Column="1" HorizontalAlignment="Center"  VerticalAlignment="Top"/>
-        <DatePicker x:Name="EndDate" Grid.Column="1" HorizontalAlignment="Center"  VerticalAlignment="Center"/>
+        <DatePicker x:Name="EndDate" Grid.Column="1" Margin="0,0,0,50" HorizontalAlignment="Center"  VerticalAlignment="Center"/>
 
         <Button Content="Submit" Grid.Column="1" HorizontalAlignment="Center"  VerticalAlignment="Bottom" Height="30" Width="94" Click="Submit"/>
-        <TextBox x:Name="Type" Grid.Column="1" HorizontalAlignment="Center" VerticalAlignment="Top" TextWrapping="Wrap"  Width="120" Margin="0,254,0,0"/>
-
-
+        <Grid Grid.Column="1">
+            <ComboBox x:Name="LeaveTypeCombo"
+                        Width="200"
+                        
+                        Height="25"
+                        FontSize="20"
+  
+                        HorizontalAlignment="Center" 
+                        SelectionChanged="LeaveTypeCombo_SelectionChanged">
+                <ComboBoxItem Content="Annual Leave"/>
+                <ComboBoxItem Content="Sick Leave"/>
+                <ComboBoxItem Content="Bereavement Leave"/>
+                <ComboBoxItem Content="Maternity Leave"/>
+                <ComboBoxItem Content="Paternity Leave"/>
+                <ComboBoxItem Content="Unpaid Leave"/>
+            </ComboBox>
+        </Grid>
+        
+        <Border Grid.Column="2" BorderBrush="Black" BorderThickness="2" CornerRadius="1" Margin="10">
+            <Grid Margin="0,0,0,213" >
+                
+                <Rectangle Fill="#BBE2F2" Stroke="Black" StrokeThickness="2" Panel.ZIndex="-1"></Rectangle>
+                <TextBlock FontSize="30" TextDecorations="Underline" HorizontalAlignment="Center" Grid.Row="1">Available leave</TextBlock>
+                <ListView Background="Transparent" x:Name="shift_stack"></ListView>
+            </Grid>
+        </Border>
 
     </Grid>
+    
 </Page>

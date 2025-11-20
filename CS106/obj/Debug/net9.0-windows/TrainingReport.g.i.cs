@@ -102,7 +102,7 @@ namespace CS106 {
                 return;
             }
             _contentLoaded = true;
-            System.Uri resourceLocater = new System.Uri("/CS106;V1.0.0.0;component/trainingreport.xaml", System.UriKind.Relative);
+            System.Uri resourceLocater = new System.Uri("/CS106;component/trainingreport.xaml", System.UriKind.Relative);
             
             #line 1 "..\..\..\TrainingReport.xaml"
             System.Windows.Application.LoadComponent(this, resourceLocater);

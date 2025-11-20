@@ -25,10 +25,15 @@ namespace CS106.view.UserControls
         public Menu()
         {
             InitializeComponent();
-            if (EmployeeManagementSystem.is_admin == false)
+            if (!EmployeeManagementSystem.is_admin)
             {
-                pagelist.Children.RemoveAt(6);
+                foreach (UIElement child in pagelist.Children)
+                {
+                    if (Grid.GetRow(child) == 6)
+                        child.Visibility = Visibility.Collapsed;
+                }
             }
+
         }
 
         private void LeaveRequest(object sender, RoutedEventArgs e)
@@ -78,5 +83,7 @@ namespace CS106.view.UserControls
             var nav = NavigationService.GetNavigationService(this);
             nav.Navigate(new CS106.Menu());
         }
+
+       
     }
 }

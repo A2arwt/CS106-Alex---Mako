@@ -31,10 +31,13 @@ namespace CS106
 
         private void Submit(object sender, RoutedEventArgs e)
         {
-
-            EmployeeManagementSystem.InsertRequestData(Type.Text, StartDate.Text, EndDate.Text);
+            string leaveType = (LeaveTypeCombo.SelectedItem as ComboBoxItem)?.Content.ToString();
+            EmployeeManagementSystem.InsertRequestData(leaveType, StartDate.Text, EndDate.Text);
         }
 
+        private void LeaveTypeCombo_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        {
 
+        }
     }
 }

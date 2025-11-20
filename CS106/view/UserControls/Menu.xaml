@@ -29,7 +29,7 @@
                 <Button Grid.Row="4" BorderBrush="Black" BorderThickness="2" Background="#0468BF" Content="Company events/New" FontSize="32" Click="ComanyEvent"></Button>
                 <Button Grid.Row="5" BorderBrush="Black" BorderThickness="2" Background="#0468BF" Content="Resignation" FontSize="32" Click="Resignation"></Button>
                 <Button Grid.Row="7" BorderBrush="Black" BorderThickness="2" Background="#0468BF" Content="Logout" FontSize="32" Click="Logout"></Button>
-                <Button Grid.Row="6" BorderBrush="Black" BorderThickness="2" Background="#0468BF" Content="Edit Employee" FontSize="32" Click="EditEmployee"></Button>
+                <Button x:Name="EditButton" Grid.Row="6" BorderBrush="Black" BorderThickness="2" Background="#0468BF" Content="Edit Employee" FontSize="32" Click="EditEmployee"></Button>
 
             </Grid>
         </Border>

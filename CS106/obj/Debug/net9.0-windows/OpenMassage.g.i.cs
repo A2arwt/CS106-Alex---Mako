@@ -70,7 +70,7 @@ namespace CS106 {
                 return;
             }
             _contentLoaded = true;
-            System.Uri resourceLocater = new System.Uri("/CS106;V1.0.0.0;component/openmassage.xaml", System.UriKind.Relative);
+            System.Uri resourceLocater = new System.Uri("/CS106;component/openmassage.xaml", System.UriKind.Relative);
             
             #line 1 "..\..\..\OpenMassage.xaml"
             System.Windows.Application.LoadComponent(this, resourceLocater);

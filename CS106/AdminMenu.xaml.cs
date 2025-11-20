@@ -1,4 +1,6 @@
-﻿using System;
+﻿using CS106.Model;
+using CS106.view.UserControls;
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using System.Globalization;
@@ -14,7 +16,7 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
-using CS106.Model;
+
 
 namespace CS106
 {

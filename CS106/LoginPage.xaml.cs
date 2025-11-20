@@ -39,8 +39,11 @@ namespace CS106
                     NavigationService.Navigate(new SplashPage());
 
                 }
-                else
-                    NavigationService.Navigate(new SplashPage());
+                else { 
+                    EmployeeManagementSystem.is_admin = false;
+                NavigationService.Navigate(new SplashPage());
+                }
+                
             }
         }
     }
