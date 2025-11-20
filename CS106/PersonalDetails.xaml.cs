@@ -25,7 +25,7 @@ namespace CS106
         public PersonalDetails()
         {
             InitializeComponent();
-            
+
 
         }
 

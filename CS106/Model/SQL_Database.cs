@@ -40,6 +40,7 @@ namespace CS106.Model
         public class SQL_PreformanceReviewDataStruct
         {
             public long employee_id { get; set; }
+            public long review_id { get; set; }
             public string? review_data { get; set; }
             public string? feedback { get; set; }
             public long review_score { get; set; }
@@ -76,10 +77,10 @@ namespace CS106.Model
         public class SQL_TrainingReportDataStruct
         {
             public long employee_id { get; set; }
+            public long training_id { get; set; }
             public string? training_course { get; set; }
             public string? data_aquired { get; set; }
             public string? status { get; set; }
-            public long leave_used { get; set; }
             public string? date_expired { get; set; }
 
 
@@ -114,7 +115,7 @@ namespace CS106.Model
                     {
                         if (result.Read())
                         {
-                            ID = (long)result[0];
+                            ID = (long)result["employee_id"];
                         }
                     }
                 }
@@ -129,13 +130,13 @@ namespace CS106.Model
                         if (result.Read())
                         {
                             EmployeeManagementSystem.current_user = new SQL_EmployeeDataStruct();
-                            EmployeeManagementSystem.current_user.employee_id = result["employee_id"] == DBNull.Value ? 0: Convert.ToInt64(result["employee_id"]);
+                            EmployeeManagementSystem.current_user.employee_id = result["employee_id"] == DBNull.Value ? -1 : Convert.ToInt64(result["employee_id"]);
                             EmployeeManagementSystem.current_user.username = result["username"] == DBNull.Value ? "" : result["username"].ToString();
                             EmployeeManagementSystem.current_user.name = result["name"] == DBNull.Value ? "" : result["name"].ToString();
                             EmployeeManagementSystem.current_user.job_title = result["job_title"] == DBNull.Value ? "" : result["job_title"].ToString();
-                            EmployeeManagementSystem.current_user.pay_rate = result["pay_rate"] == DBNull.Value ? 0 : Convert.ToDouble(result["pay_rate"]);
-                            EmployeeManagementSystem.current_user.total_leave = result["total_leave"] == DBNull.Value ? 0 : Convert.ToInt64(result["total_leave"]);
-                            EmployeeManagementSystem.current_user.leave_used = result["leave_used"] == DBNull.Value ? 0 : Convert.ToInt64(result["leave_used"]);
+                            EmployeeManagementSystem.current_user.pay_rate = result["pay_rate"] == DBNull.Value ? -1 : Convert.ToDouble(result["pay_rate"]);
+                            EmployeeManagementSystem.current_user.total_leave = result["total_leave"] == DBNull.Value ? -1 : Convert.ToInt64(result["total_leave"]);
+                            EmployeeManagementSystem.current_user.leave_used = result["leave_used"] == DBNull.Value ? -1 : Convert.ToInt64(result["leave_used"]);
                             EmployeeManagementSystem.current_user.hire_date = result["hire_date"] == DBNull.Value ? DateTime.Now.ToString() : result["hire_date"].ToString();
                         }
                     }
@@ -176,7 +177,7 @@ namespace CS106.Model
                     {
                         if (result.Read())
                         {
-                            employee_id = result["employee_id"] == DBNull.Value ? 0 : Convert.ToInt64(result["employee_id"]);
+                            employee_id = result["employee_id"] == DBNull.Value ? -1 : Convert.ToInt64(result["employee_id"]);
                         }
                     }
 
@@ -232,13 +233,13 @@ namespace CS106.Model
                         while (result.Read())
                         {
                             SQL_EmployeeDataStruct i = new SQL_EmployeeDataStruct();
-                            i.employee_id = result["employee_id"] == DBNull.Value ? 0 : Convert.ToInt64(result["employee_id"]); ;
+                            i.employee_id = result["employee_id"] == DBNull.Value ? -1 : Convert.ToInt64(result["employee_id"]); ;
                             i.username = result["username"] == DBNull.Value ? "" : result["username"].ToString();
                             i.name = result["name"] == DBNull.Value ? "" : result["name"].ToString();
                             i.job_title = result["job_title"] == DBNull.Value ? "" : result["job_title"].ToString();
-                            i.pay_rate = result["pay_rate"] == DBNull.Value ? 0 : Convert.ToDouble(result["pay_rate"]);
-                            i.total_leave = result["total_leave"] == DBNull.Value ? 0 : Convert.ToInt64(result["total_leave"]); ;
-                            i.leave_used = result["leave_used"] == DBNull.Value ? 0 : Convert.ToInt64(result["leave_used"]); ;
+                            i.pay_rate = result["pay_rate"] == DBNull.Value ? -1 : Convert.ToDouble(result["pay_rate"]);
+                            i.total_leave = result["total_leave"] == DBNull.Value ? -1 : Convert.ToInt64(result["total_leave"]); ;
+                            i.leave_used = result["leave_used"] == DBNull.Value ? -1 : Convert.ToInt64(result["leave_used"]); ;
                             i.hire_date = result["hire_date"] == DBNull.Value ? "" : result["hire_date"].ToString();
                             data.Add(i);
                         }
@@ -263,9 +264,9 @@ namespace CS106.Model
                         while (result.Read())
                         {
                             SQL_MessageDataStruct i = new SQL_MessageDataStruct();
-                            i.employee_id = result["employee_id"] == DBNull.Value ? 0 : Convert.ToInt64(result["employee_id"]); ;
-                            i.message_pointer = result["message_pointer"] == DBNull.Value ? 0 : Convert.ToInt64(result["message_pointer"]); ;
-                            i.recieve_data = result["recieve_date"] == DBNull.Value ? "" : result["recieve_date"].ToString();                       
+                            i.employee_id = result["employee_id"] == DBNull.Value ? -1 : Convert.ToInt64(result["employee_id"]); ;
+                            i.message_pointer = result["message_pointer"] == DBNull.Value ? -1 : Convert.ToInt64(result["message_pointer"]); ;
+                            i.recieve_data = result["recieve_date"] == DBNull.Value ? "" : result["recieve_date"].ToString();
                             i.reply_message = result["reply_message"] == DBNull.Value ? "" : result["reply_message"].ToString(); ;
                             i.send_message = result["send_message"] == DBNull.Value ? "" : result["send_message"].ToString();
                             data.Add(i);
@@ -282,17 +283,18 @@ namespace CS106.Model
             using (SQLiteConnection sql_database = new SQLiteConnection("Data Source=database/CS106.db"))
             {
                 sql_database.Open();
-                using (var command = new SQLiteCommand("select * from roster", sql_database))
+                using (var command = new SQLiteCommand("select * from preformance_review", sql_database))
                 {
                     using (var result = command.ExecuteReader())
                     {
                         while (result.Read())
                         {
                             SQL_PreformanceReviewDataStruct i = new SQL_PreformanceReviewDataStruct();
-                            i.employee_id = result["employee_id"] == DBNull.Value ? 0 : Convert.ToInt64(result["employee_id"]); ;
-                            i.review_data = result["review_data"] == DBNull.Value ? "" : result["review_data"].ToString();                       
-                                i.feedback = result["feedback"] == DBNull.Value ? "" : result["feedback"].ToString();
-                            i.review_score = result["review_score"] == DBNull.Value ? 0 : Convert.ToInt64(result["review_score"]) ;
+                            i.employee_id = result["employee_id"] == DBNull.Value ? -1 : Convert.ToInt64(result["employee_id"]); ;
+                            i.review_id = result["review_id"] == DBNull.Value ? -1 : Convert.ToInt64(result["review_id"]); ;
+                            i.review_data = result["review_date"] == DBNull.Value ? "" : result["review_date"].ToString();
+                            i.feedback = result["feedback"] == DBNull.Value ? "" : result["feedback"].ToString();
+                            i.review_score = result["review_score"] == DBNull.Value ? -1 : Convert.ToInt64(result["review_score"]);
                             data.Add(i);
                         }
                     }
@@ -314,12 +316,12 @@ namespace CS106.Model
                         while (result.Read())
                         {
                             SQL_RequestDataStruct i = new SQL_RequestDataStruct();
-                            i.employee_id = result["employee_id"] == DBNull.Value ? 0 : Convert.ToInt64(result["employee_id"]);
-                            i.request_number = result["request_number"] == DBNull.Value ? 0 : Convert.ToInt64(result["request_number"]);
+                            i.employee_id = result["employee_id"] == DBNull.Value ? -1 : Convert.ToInt64(result["employee_id"]);
+                            i.request_number = result["request_number"] == DBNull.Value ? -1 : Convert.ToInt64(result["request_number"]);
                             i.request_type = result["request_type"] == DBNull.Value ? "" : result["request_type"].ToString();
                             i.leave_status = result["leave_status"] == DBNull.Value ? "" : result["leave_status"].ToString();
-                            i.total_leave = result["total_leave"] == DBNull.Value ? 0 : Convert.ToInt64(result["total_leave"]);
-                            i.leave_used = result["leave_used"] == DBNull.Value ? 0 : Convert.ToInt64(result["leave_used"]); ;
+                            i.total_leave = result["total_leave"] == DBNull.Value ? -1 : Convert.ToInt64(result["total_leave"]);
+                            i.leave_used = result["leave_used"] == DBNull.Value ? -1 : Convert.ToInt64(result["leave_used"]); ;
                             i.leave_start_date = result["leave_start_date"] == DBNull.Value ? "" : result["leave_start_date"].ToString();
                             i.leave_end_date = result["leave_end_date"] == DBNull.Value ? "" : result["leave_end_date"].ToString(); ;
                             data.Add(i);
@@ -346,11 +348,11 @@ namespace CS106.Model
                         while (result.Read())
                         {
                             SQL_RosterDataStruct i = new SQL_RosterDataStruct();
-                            i.employee_id = result["employee_id"] == DBNull.Value ? 0 : Convert.ToInt64(result["employee_id"]);
-                            i.roster_id =   result["roster_id"] == DBNull.Value ? 0 : Convert.ToInt64(result["roster_id"]);
+                            i.employee_id = result["employee_id"] == DBNull.Value ? -1 : Convert.ToInt64(result["employee_id"]);
+                            i.roster_id = result["roster_id"] == DBNull.Value ? -1 : Convert.ToInt64(result["roster_id"]);
                             i.shift_date = result["shift_data"] == DBNull.Value ? "" : result["shift_data"].ToString(); ;
-                            i.shift_start_time = result["shift_start_time"] == DBNull.Value ? 0 : Convert.ToDouble(result["shift_start_time"]);
-                            i.shift_finish_time = result["shift_finish_time"] == DBNull.Value ? 0 : Convert.ToDouble(result["shift_finish_time"]);
+                            i.shift_start_time = result["shift_start_time"] == DBNull.Value ? -1 : Convert.ToDouble(result["shift_start_time"]);
+                            i.shift_finish_time = result["shift_finish_time"] == DBNull.Value ? -1 : Convert.ToDouble(result["shift_finish_time"]);
                             data.Add(i);
                         }
                     }
@@ -368,18 +370,19 @@ namespace CS106.Model
             using (SQLiteConnection sql_database = new SQLiteConnection("Data Source=database/CS106.db"))
             {
                 sql_database.Open();
-                using (var command = new SQLiteCommand("select * from request", sql_database))
+                using (var command = new SQLiteCommand("select * from training_report", sql_database))
                 {
                     using (var result = command.ExecuteReader())
                     {
                         while (result.Read())
                         {
                             SQL_TrainingReportDataStruct i = new SQL_TrainingReportDataStruct();
-                            i.employee_id = result["employee_id"] == DBNull.Value ? 0 : Convert.ToInt64(result["employee_id"])  ;
-                            i.training_course = result["training_course"] == DBNull.Value ? "" : result["leave_status"].ToString(); ;
-                            i.data_aquired = result["data_aquired"] == DBNull.Value ? "" : result["data_aquired"].ToString(); ;
+                            i.employee_id = result["employee_id"] == DBNull.Value ? -1 : Convert.ToInt64(result["employee_id"]);
+                            i.training_id = result["training_id"] == DBNull.Value ? -1 : Convert.ToInt64(result["training_id"]);
+                            i.training_course = result["training_course"] == DBNull.Value ? "" : result["training_course"].ToString(); ;
+                            i.data_aquired = result["date_aquired"] == DBNull.Value ? "" : result["date_aquired"].ToString(); ;
                             i.status = result["status"] == DBNull.Value ? "" : result["status"].ToString(); ;
-                            i.date_expired = result["date_expired"] == DBNull.Value ? "" : result["date_expired"].ToString(); ;
+                            i.date_expired = result["data_expired"] == DBNull.Value ? "" : result["data_expired"].ToString(); ;
                             data.Add(i);
                         }
                     }
@@ -403,7 +406,7 @@ namespace CS106.Model
                         while (result.Read())
                         {
                             SQL_UserDataStruct i = new SQL_UserDataStruct();
-                            i.employee_id = result["employee_id"] == DBNull.Value ? 0 : Convert.ToInt64(result["employee_id"]);
+                            i.employee_id = result["employee_id"] == DBNull.Value ? -1 : Convert.ToInt64(result["employee_id"]);
                             i.email = result["email"] == DBNull.Value ? "" : result["email"].ToString();
                             i.username = result["username"] == DBNull.Value ? "" : result["username"].ToString();
                             i.password = result["password"] == DBNull.Value ? "" : result["password"].ToString();
@@ -479,27 +482,14 @@ namespace CS106.Model
             using (SQLiteConnection sql_database = new SQLiteConnection("Data Source=database/CS106.db"))
             {
                 sql_database.Open();
-                bool Is_user_real = false;
-                using (var command = new SQLiteCommand("select employee_id from employee where employee_id = @employee_id", sql_database))
+                using (var command = new SQLiteCommand("update preformance_review set review_date = @review_data, feedback = @feedback, review_score = @review_score where review_id = @review_id", sql_database))
                 {
-                    command.Parameters.AddWithValue("@employee_id", data.employee_id);
-                    using (var result = command.ExecuteReader())
-                    {
-                        if (result.Read())
-                        {
-                            Is_user_real = true;
-                        }
-                    }
+                    command.Parameters.AddWithValue("@review_id", data.review_id);
+                    command.Parameters.AddWithValue("@review_data", data.review_data);
+                    command.Parameters.AddWithValue("@feedback", data.feedback);
+                    command.Parameters.AddWithValue("@review_score", data.review_score);
+                    command.ExecuteNonQuery();
                 }
-                if (Is_user_real)
-                    using (var command = new SQLiteCommand("update preformance_review set review_data = @review_data, feedback = @feedback, review_score = @review_score\" +\r\n                       \"where employee_id = @employee_id", sql_database))
-                    {
-                        command.Parameters.AddWithValue("@employee_id", data.employee_id);
-                        command.Parameters.AddWithValue("@review_data", data.review_data);
-                        command.Parameters.AddWithValue("@feedback", data.feedback);
-                        command.Parameters.AddWithValue("@review_score", data.review_score);
-                        command.ExecuteNonQuery();
-                    }
             }
         }
         public void SQL_UpdateRequest(SQL_RequestDataStruct data)
@@ -576,29 +566,17 @@ namespace CS106.Model
             using (SQLiteConnection sql_database = new SQLiteConnection("Data Source=database/CS106.db"))
             {
                 sql_database.Open();
-                bool Is_user_real = true;
-                using (var command = new SQLiteCommand("select employee_id from employee where employee_id = @employee_id", sql_database))
+
+
+                using (var command = new SQLiteCommand("update training_report set training_course = @training_course, date_aquired = @date_aquired, status = @status, data_expired = @date_expired where training_id = @training_id", sql_database))
                 {
-                    command.Parameters.AddWithValue("@employee_id", data.employee_id);
-                    using (var result = command.ExecuteReader())
-                    {
-                        if (result.Read())
-                        {
-
-                        }
-                    }
-
+                    command.Parameters.AddWithValue("@training_id", data.training_id);
+                    command.Parameters.AddWithValue("@training_course", data.training_course);
+                    command.Parameters.AddWithValue("@date_aquired", data.data_aquired);
+                    command.Parameters.AddWithValue("@status", data.status);
+                    command.Parameters.AddWithValue("@date_expired", data.date_expired);
+                    command.ExecuteNonQuery();
                 }
-                if (Is_user_real)
-                    using (var command = new SQLiteCommand("update training_report set training_course = @training_course, data_aquired = @data_aquired, status = @status,\" +\r\n                                \"date_expired = @date_expired where employee_id = @employee_id", sql_database))
-                    {
-                        command.Parameters.AddWithValue("@employee_id", data.employee_id);
-                        command.Parameters.AddWithValue("@training_course", data.training_course);
-                        command.Parameters.AddWithValue("@data_aquired", data.data_aquired);
-                        command.Parameters.AddWithValue("@status", data.status);
-                        command.Parameters.AddWithValue("@date_expired", data.date_expired);
-                        command.ExecuteNonQuery();
-                    }
 
 
             }
@@ -622,7 +600,7 @@ namespace CS106.Model
                         break;
                     }
                 }
-                if(does_user_exist)
+                if (does_user_exist)
                 {
                     using (var command = new SQLiteCommand("update user set email = @email, password = @password where employee_id = @employee_id", sql_database))
                     {
@@ -643,7 +621,7 @@ namespace CS106.Model
                         command.ExecuteNonQuery();
                     }
                 }
-                
+
             }
         }
 
@@ -680,7 +658,7 @@ namespace CS106.Model
             {
                 sql_database.Open();
 
-                using (var command = new SQLiteCommand("insert into preformance_review(employee_id,review_data,feedback,review_score)" +
+                using (var command = new SQLiteCommand("insert into preformance_review(employee_id,review_date,feedback,review_score)" +
                                                             " VALUES(@employee_id,@review_data,@feedback,@review_score)", sql_database))
                 {
                     command.Parameters.AddWithValue("@employee_id", data.employee_id);
@@ -753,12 +731,12 @@ namespace CS106.Model
             using (SQLiteConnection sql_database = new SQLiteConnection("Data Source=database/CS106.db"))
             {
                 sql_database.Open();
-                using (var command = new SQLiteCommand("insert into training_report(employee_id,training_course,data_aquired,status,date_expired)" +
-                                                                " VALUES(@employee_id,@training_course,@data_aquired,@status,@date_expired)", sql_database))
+                using (var command = new SQLiteCommand("insert into training_report(employee_id,training_course,date_aquired,status,data_expired)" +
+                                                                " VALUES(@employee_id,@training_course,@date_aquired,@status,@date_expired)", sql_database))
                 {
                     command.Parameters.AddWithValue("@employee_id", data.employee_id);
                     command.Parameters.AddWithValue("@training_course", data.training_course);
-                    command.Parameters.AddWithValue("@data_aquired", data.data_aquired);
+                    command.Parameters.AddWithValue("@date_aquired", data.data_aquired);
                     command.Parameters.AddWithValue("@status", data.status);
                     command.Parameters.AddWithValue("@date_expired", data.date_expired);
                     command.ExecuteNonQuery();

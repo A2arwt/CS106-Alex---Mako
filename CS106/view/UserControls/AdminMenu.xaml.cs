@@ -53,13 +53,37 @@ namespace CS106.view.UserControls
         private void Exit(object sender, RoutedEventArgs e)
         {
             var nav = NavigationService.GetNavigationService(this);
-            nav.Navigate(new Menu());
+            nav.Navigate(new AdminMenu());
         }
 
         private void Message(object sender, RoutedEventArgs e)
         {
             var nav = NavigationService.GetNavigationService(this);
             nav.Navigate(new Messages());
+        }
+
+        private void Preformance_review(object sender, RoutedEventArgs e)
+        {
+            var nav = NavigationService.GetNavigationService(this);
+            nav.Navigate(new preformance_review());
+        }
+
+        private void TrainingReport(object sender, RoutedEventArgs e)
+        {
+            var nav = NavigationService.GetNavigationService(this);
+            nav.Navigate(new TrainingReport());
+        }
+
+        private void Logout(object sender, RoutedEventArgs e)
+        {
+            var nav = NavigationService.GetNavigationService(this);
+            nav.Navigate(new CS106.LoginPage());
+        }
+
+        private void Home(object sender, RoutedEventArgs e)
+        {
+            var nav = NavigationService.GetNavigationService(this);
+            nav.Navigate(new CS106.Menu());
         }
     }
 }

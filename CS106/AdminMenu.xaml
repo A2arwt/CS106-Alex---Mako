@@ -57,7 +57,7 @@
             <Grid >
                 <Rectangle Fill="#BBE2F2" Stroke="Black" StrokeThickness="2" Panel.ZIndex="-1"></Rectangle>
                 <TextBlock FontSize="30" TextDecorations="Underline" HorizontalAlignment="Center" Grid.Row="1">Upcoming Shifts</TextBlock>
-                <StackPanel x:Name="shift_stack"></StackPanel>
+                <ListView Background="Transparent" x:Name="shift_stack"></ListView>
             </Grid>
         </Border>
 

@@ -1,6 +1,5 @@
 ﻿using CS106.Model;
 using System;
-using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -18,18 +17,17 @@ using System.Windows.Shapes;
 namespace CS106
 {
     /// <summary>
-    /// Interaction logic for preformance_review.xaml
+    /// Interaction logic for TrainingReport.xaml
     /// </summary>
-    public partial class preformance_review : Page
+    public partial class TrainingReport : Page
     {
-
         List<CS106.Model.Database.SQL_EmployeeDataStruct> employees;
 
-        public preformance_review()
+        public TrainingReport()
         {
             InitializeComponent();
             employees = EmployeeManagementSystem.GetEmployee();
-            var employees_review = EmployeeManagementSystem.GetPreformanceReview();
+            var employees_review = EmployeeManagementSystem.GetTrainingReport();
             foreach (var i in employees)
             {
                 employee_list.Items.Add(i.employee_id + ": " + i.name);
@@ -41,7 +39,7 @@ namespace CS106
                 stack.Orientation = Orientation.Vertical;
 
                 TextBlock ID = new TextBlock();
-                ID.Text = i.review_id.ToString() + ": ";
+                ID.Text = i.training_id.ToString() + ": ";
                 foreach (var item in EmployeeManagementSystem.GetEmployee(i.employee_id))
                 {
                     if (item.employee_id == i.employee_id)
@@ -57,19 +55,23 @@ namespace CS106
                 //stack.Children.Add(name);
 
 
-                TextBlock date = new TextBlock();
-                date.Text = "Review Date: " + i.review_data;
-                stack.Children.Add(date);
+                TextBlock training_course = new TextBlock();
+                training_course.Text = "Name: " + i.training_course;
+                stack.Children.Add(training_course);
 
 
-                TextBlock feedback = new TextBlock();
-                feedback.Text = "Feedback: " + i.feedback;
-                stack.Children.Add(feedback);
+                TextBlock data_aquired = new TextBlock();
+                data_aquired.Text = "Date Aquired: " + i.data_aquired;
+                stack.Children.Add(data_aquired);
 
 
-                TextBlock score = new TextBlock();
-                score.Text = "Review score: " + i.review_score.ToString();
-                stack.Children.Add(score);
+                TextBlock status = new TextBlock();
+                status.Text = "Status: " + i.status;
+                stack.Children.Add(status);
+
+                TextBlock date_expired = new TextBlock();
+                date_expired.Text = "date_expired: " + i.date_expired;
+                stack.Children.Add(date_expired);
 
 
                 review_list.Items.Add(stack);
@@ -79,7 +81,7 @@ namespace CS106
 
         private void Create(object sender, RoutedEventArgs e)
         {
-            var data = new SQL_Database.SQL_PreformanceReviewDataStruct();
+            var data = new SQL_Database.SQL_TrainingReportDataStruct();
             if (employee_list.SelectedItem == null)
             {
                 MessageBox.Show("select a user");
@@ -92,43 +94,44 @@ namespace CS106
                 return;
             }
             data.employee_id = long.Parse(id.Substring(0, id.IndexOf(":")));
-            data.review_data = review_date.SelectedDate.ToString();
-            if (string.IsNullOrWhiteSpace(data.review_data))
+
+
+            data.data_aquired = date_aquired.SelectedDate.ToString();
+            if (string.IsNullOrWhiteSpace(data.data_aquired))
             {
-                MessageBox.Show("Enter review date");
-                return;
-            }
-            data.feedback = feedback.Text;
-            if (string.IsNullOrWhiteSpace(data.feedback))
-            {
-                MessageBox.Show("Enter feedback");
-                return;
-            }
-            if (string.IsNullOrWhiteSpace(review_score.Text))
-            {
-                MessageBox.Show("Enter review score");
+                MessageBox.Show("Enter acquired date");
                 return;
             }
 
-            if (string.IsNullOrWhiteSpace(data.review_score.ToString()))
+            data.date_expired = date_expired.SelectedDate.ToString();
+            if (string.IsNullOrWhiteSpace(data.date_expired))
             {
-                MessageBox.Show("Enter review score");
+                data.date_expired = "N/A";
+            }
+
+            data.status = status.Text;
+            if (string.IsNullOrWhiteSpace(data.status))
+            {
+                MessageBox.Show("Enter status");
                 return;
             }
-            if (!long.TryParse(review_score.Text.ToString(), out long answer))
+
+            data.training_course = training_course.Text;
+            if (string.IsNullOrWhiteSpace(data.training_course))
             {
-                MessageBox.Show("Enter review score");
+                MessageBox.Show("Enter Training Course");
                 return;
             }
-            data.review_score = long.Parse(review_score.Text);
-            EmployeeManagementSystem.CreatePreformanceReview(data);
-            NavigationService.Navigate(new preformance_review());
+
+
+            EmployeeManagementSystem.CreateTrainingReport(data);
+            NavigationService.Navigate(new TrainingReport());
         }
 
         private void Change(object sender, RoutedEventArgs e)
         {
-            var data = new SQL_Database.SQL_PreformanceReviewDataStruct();
-            var old_data = EmployeeManagementSystem.GetPreformanceReview();
+            var data = new SQL_Database.SQL_TrainingReportDataStruct();
+            var old_data = EmployeeManagementSystem.GetTrainingReport();
 
 
 
@@ -150,18 +153,18 @@ namespace CS106
             }
             if (long.TryParse(id.Substring(0, id.IndexOf(":")), out long answer))
             {
-                data.review_id = answer;
+                data.training_id = answer;
             }
             else
             {
-                MessageBox.Show("Select a review");
+                MessageBox.Show("Select training report");
                 return;
             }
-            SQL_Database.SQL_PreformanceReviewDataStruct userdata = null;
+            SQL_Database.SQL_TrainingReportDataStruct userdata = null;
 
             foreach (var i in old_data)
             {
-                if (i.review_id == data.review_id)
+                if (i.training_id == data.training_id)
                 {
                     userdata = i;
                     data.employee_id = i.employee_id;
@@ -169,38 +172,54 @@ namespace CS106
             }
             if (userdata == null)
             {
-                MessageBox.Show("Select a User");
+                MessageBox.Show("Select a training report");
                 return;
             }
 
 
 
             data.employee_id = userdata.employee_id;
-            if (review_date.SelectedDate == null)
+            if (date_aquired.SelectedDate == null)
             {
-                data.review_data = userdata.review_data;
+                data.data_aquired = userdata.data_aquired;
 
             }
             else
-                data.review_data = review_date.SelectedDate.ToString();
+                data.data_aquired = date_aquired.SelectedDate.ToString();
 
-            if (string.IsNullOrWhiteSpace(feedback.Text))
+            data.employee_id = userdata.employee_id;
+            if (date_expired.SelectedDate == null)
             {
-                data.feedback = userdata.feedback;
+                data.date_expired = userdata.date_expired;
+
             }
             else
-                data.feedback = feedback.Text;
+                data.date_expired = date_expired.SelectedDate.ToString();
 
 
-            if (string.IsNullOrWhiteSpace(review_score.Text) && !long.TryParse(review_score.Text.ToString(), out long _answer))
+
+
+            if (string.IsNullOrWhiteSpace(training_course.Text))
             {
-                data.review_score = userdata.review_score;
+                data.training_course = userdata.training_course;
             }
             else
-                data.review_score = long.Parse(review_score.Text);
+                data.training_course = training_course.Text;
 
-            EmployeeManagementSystem.UpdatePreformanceReview(data);
-            NavigationService.Navigate(new preformance_review());
+
+            if (string.IsNullOrWhiteSpace(status.Text))
+            {
+                data.status = userdata.status;
+            }
+            else
+                data.status = status.Text;
+
+
+
+
+            EmployeeManagementSystem.UpdateTrainingReport(data);
+            NavigationService.Navigate(new TrainingReport());
         }
+
     }
 }

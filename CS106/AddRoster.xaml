@@ -17,7 +17,7 @@
 
 
         <userControls:AdminMenu></userControls:AdminMenu>
-        
+
         <Grid Grid.Column="1">
 
             <Grid.RowDefinitions>

@@ -24,6 +24,18 @@ namespace CS106
         public AddRoster()
         {
             InitializeComponent();
+
+            var emp = EmployeeManagementSystem.GetEmployee();
+            foreach (var i in emp)
+            {
+                StackPanel stack = new StackPanel();
+
+
+                TextBlock name = new TextBlock();
+                name.Text = i.employee_id + ": " + i.name;
+                stack.Children.Add(name);
+                workers_list.Items.Add(stack);
+            }
         }
 
 

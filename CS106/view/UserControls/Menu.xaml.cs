@@ -64,13 +64,19 @@ namespace CS106.view.UserControls
         private void Logout(object sender, RoutedEventArgs e)
         {
             var nav = NavigationService.GetNavigationService(this);
-            nav.Navigate(new MainWindow());
+            nav.Navigate(new CS106.LoginPage());
         }
 
         private void EditEmployee(object sender, RoutedEventArgs e)
         {
             var nav = NavigationService.GetNavigationService(this);
             nav.Navigate(new ExitEmployee());
+        }
+
+        private void Home(object sender, RoutedEventArgs e)
+        {
+            var nav = NavigationService.GetNavigationService(this);
+            nav.Navigate(new CS106.Menu());
         }
     }
 }

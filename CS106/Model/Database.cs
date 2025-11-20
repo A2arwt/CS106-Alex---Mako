@@ -32,15 +32,15 @@ namespace CS106.Model
             return (List<SQL_RequestDataStruct>)request;
         }
 
-        public  List<SQL_UserDataStruct> GetUser()
+        public List<SQL_UserDataStruct> GetUser()
         {
             return SQL_SelectAllUser();
         }
-        public  SQL_UserDataStruct GetUser(long ID)
+        public SQL_UserDataStruct GetUser(long ID)
         {
             var request = SQL_SelectAllUser();
             var answer = (from item in request
-                         where item.employee_id == ID
+                          where item.employee_id == ID
                           select item).SingleOrDefault();
             return answer;
         }
@@ -60,14 +60,41 @@ namespace CS106.Model
             SQL_CreateEmployee(data);
         }
 
-        public  List<Database.SQL_MessageDataStruct> GetMessages()
+        public List<Database.SQL_MessageDataStruct> GetMessages()
         {
             return SQL_SelectAllMessages();
         }
 
-        public  void SendMessage(SQL_MessageDataStruct data)
+        public void SendMessage(SQL_MessageDataStruct data)
         {
-             SQL_InsertMessageData(data);
+            SQL_InsertMessageData(data);
+        }
+        public List<Database.SQL_PreformanceReviewDataStruct> GetPreformanceReview()
+        {
+            return SQL_SelectAllPreformanceReviews();
+        }
+        public void CreatePreformanceReview(SQL_PreformanceReviewDataStruct data)
+        {
+            SQL_InsertPreformanceReviewData(data);
+        }
+        public void UpdatePreformanceReview(SQL_PreformanceReviewDataStruct data)
+        {
+            SQL_UpdatePreformanceReviews(data);
+        }
+
+        public List<SQL_TrainingReportDataStruct> GetTrainingReport()
+        {
+            return SQL_SelectAllTrainingReport();
+        }
+
+        public void CreateTrainingReport(SQL_TrainingReportDataStruct data)
+        {
+            SQL_InsertTrainingReportData(data);
+        }
+
+        public void UpdateTrainingReport(SQL_TrainingReportDataStruct data)
+        {
+            SQL_UpdateTrainingReport(data);
         }
     }
 }

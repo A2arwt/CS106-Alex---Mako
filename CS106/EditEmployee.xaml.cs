@@ -63,7 +63,7 @@ namespace CS106
                 name.Text = "Name: " + result.name;
                 username.Text = "Username: " + result.username;
                 var user = EmployeeManagementSystem.GetUser(result.employee_id);
-                if(user != null)
+                if (user != null)
                 {
                     email.Text = "Email: " + user.email;
                     password.Text = "Password: " + user.password;
@@ -103,7 +103,7 @@ namespace CS106
                     break;
                 }
             }
-            if(result != null)
+            if (result != null)
             {
                 if (!string.IsNullOrWhiteSpace(new_name.Text))
                     result.name = new_name.Text.Trim();
@@ -115,16 +115,16 @@ namespace CS106
                     result.job_title = new_job_title.Text.Trim();
 
 
-                if (!string.IsNullOrWhiteSpace(new_pay_rate.Text) && double.TryParse(new_pay_rate.Text, out double answer) )
+                if (!string.IsNullOrWhiteSpace(new_pay_rate.Text) && double.TryParse(new_pay_rate.Text, out double answer))
                     result.pay_rate = answer;
 
                 if (new_hire_date.SelectedDate != null)
                     result.hire_date = new_hire_date.SelectedDate.Value.ToString("yyyy-MM-dd");
 
-                if (!string.IsNullOrWhiteSpace(new_total_leave.Text) && long.TryParse(new_total_leave.Text,out long answer_))
+                if (!string.IsNullOrWhiteSpace(new_total_leave.Text) && long.TryParse(new_total_leave.Text, out long answer_))
                     result.total_leave = answer_;
 
-                if (!string.IsNullOrWhiteSpace(new_leave_used.Text) && long.TryParse(new_leave_used.Text,out long answer__))
+                if (!string.IsNullOrWhiteSpace(new_leave_used.Text) && long.TryParse(new_leave_used.Text, out long answer__))
                     result.leave_used = answer__;
 
 
@@ -154,14 +154,14 @@ namespace CS106
                     if (!string.IsNullOrWhiteSpace(new_username.Text))
                         result.username = new_username.Text.Trim();
                     else result.username = old_user.username;
-                   
+
                 }
                 else
                 {
                     MessageBox.Show("Username taken, choose another Username");
                     return;
                 }
-                    EmployeeManagementSystem.UpdateEmployee(result);
+                EmployeeManagementSystem.UpdateEmployee(result);
 
             }
             else
@@ -171,7 +171,7 @@ namespace CS106
             }
 
 
-                NavigationService.Navigate(new ExitEmployee());
+            NavigationService.Navigate(new ExitEmployee());
 
         }
 
@@ -191,7 +191,7 @@ namespace CS106
             if (!string.IsNullOrWhiteSpace(new_pay_rate.Text) && double.TryParse(new_pay_rate.Text, out double answer))
                 new_employee.pay_rate = answer;
 
-            if (!string.IsNullOrWhiteSpace(new_total_leave.Text) && long.TryParse(new_total_leave.Text,out long answer_))
+            if (!string.IsNullOrWhiteSpace(new_total_leave.Text) && long.TryParse(new_total_leave.Text, out long answer_))
                 new_employee.total_leave = answer_;
 
             if (string.IsNullOrWhiteSpace(new_leave_used.Text.Trim()) == false && long.TryParse(new_leave_used.Text, out long answer__))
@@ -229,7 +229,7 @@ namespace CS106
 
 
 
-                NavigationService.Navigate(new ExitEmployee());
+            NavigationService.Navigate(new ExitEmployee());
 
         }
 

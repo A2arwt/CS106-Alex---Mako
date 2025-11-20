@@ -26,7 +26,7 @@ namespace CS106
         {
             InitializeComponent();
 
-        
+
         }
 
         private void Submit(object sender, RoutedEventArgs e)

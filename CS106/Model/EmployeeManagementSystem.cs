@@ -10,7 +10,7 @@ namespace CS106.Model
 {
     public class EmployeeManagementSystem
     {
-        static Database? database { get; set; }
+        static Database database { get; set; }
         public static Database.SQL_EmployeeDataStruct current_user { get; set; }
         public static bool is_admin = false;
 
@@ -50,8 +50,8 @@ namespace CS106.Model
 
             var requestlist = database.SQL_SelectAllRequest();
             List<SQL_RequestDataStruct> request = (List<SQL_RequestDataStruct>)(from item in requestlist
-                                                                                                      where item.employee_id == ID
-                                                                                                      select item);
+                                                                                where item.employee_id == ID
+                                                                                select item);
             return request;
         }
 
@@ -64,8 +64,8 @@ namespace CS106.Model
         {
             var requestlist = database.SQL_SelectAllRoster();
             List<SQL_RosterDataStruct> request = (List<SQL_RosterDataStruct>)(from item in requestlist
-                                                                                                    where item.employee_id == ID
-                                                                                                    select item);
+                                                                              where item.employee_id == ID
+                                                                              select item);
             return request;
         }
 
@@ -128,10 +128,10 @@ namespace CS106.Model
             return database.GetUser(ID);
         }
 
-        public static bool Does_user_exist(string  username)
+        public static bool Does_user_exist(string username)
         {
             var result = database.GetUser();
-            foreach(var i in result)
+            foreach (var i in result)
             {
                 if (i.username == username)
                     return true;
@@ -140,13 +140,13 @@ namespace CS106.Model
         }
         public static SQL_UserDataStruct? GetUser(string ID)
         {
-             var result = database.GetUser();
+            var result = database.GetUser();
 
-            foreach(var i in result)
+            foreach (var i in result)
             {
                 if (i.username == ID)
                     return i;
-            }    
+            }
 
             return null;
         }
@@ -156,7 +156,7 @@ namespace CS106.Model
         }
         public static void UpdateUsers(SQL_UserDataStruct data)
         {
-            database.UpdateUser(data) ;
+            database.UpdateUser(data);
         }
 
         public static void UpdateEmployee(SQL_EmployeeDataStruct data)
@@ -188,11 +188,53 @@ namespace CS106.Model
             data.message_pointer = message_pointer;
             data.recieve_data = DateTime.Now.ToString("yyyy-MM-dd");
             database.SendMessage(data);
-            
-            
+
+
         }
 
 
+        public static List<Database.SQL_PreformanceReviewDataStruct> GetPreformanceReview()
+        {
+            return database.GetPreformanceReview();
+        }
+        public static Database.SQL_PreformanceReviewDataStruct GetPreformanceReview(long id)
+        {
+            var list = database.GetPreformanceReview();
+
+            foreach (var i in list)
+            {
+                if (i.review_id == id)
+                    return i;
+            }
+
+            return null;
+        }
+        public static void CreatePreformanceReview(SQL_PreformanceReviewDataStruct data)
+        {
+
+            database.CreatePreformanceReview(data);
+        }
+        public static void UpdatePreformanceReview(SQL_PreformanceReviewDataStruct data)
+        {
+
+            database.UpdatePreformanceReview(data);
+        }
+
+
+        public static List<SQL_TrainingReportDataStruct> GetTrainingReport()
+        {
+            return database.GetTrainingReport();
+        }
+
+        public static void CreateTrainingReport(SQL_TrainingReportDataStruct data)
+        {
+            database.CreateTrainingReport(data);
+        }
+
+        public static void UpdateTrainingReport(SQL_TrainingReportDataStruct data)
+        {
+            database.UpdateTrainingReport(data);
+        }
     }
 
 }
