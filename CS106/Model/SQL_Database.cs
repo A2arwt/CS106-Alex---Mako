@@ -77,10 +77,10 @@ namespace CS106.Model
         public class SQL_TrainingReportDataStruct
         {
             public long employee_id { get; set; }
+            public long training_id { get; set; }
             public string? training_course { get; set; }
             public string? data_aquired { get; set; }
             public string? status { get; set; }
-            public long leave_used { get; set; }
             public string? date_expired { get; set; }
 
 
@@ -370,18 +370,19 @@ namespace CS106.Model
             using (SQLiteConnection sql_database = new SQLiteConnection("Data Source=database/CS106.db"))
             {
                 sql_database.Open();
-                using (var command = new SQLiteCommand("select * from request", sql_database))
+                using (var command = new SQLiteCommand("select * from training_report", sql_database))
                 {
                     using (var result = command.ExecuteReader())
                     {
                         while (result.Read())
                         {
                             SQL_TrainingReportDataStruct i = new SQL_TrainingReportDataStruct();
-                            i.employee_id = result["employee_id"] == DBNull.Value ? -1 : Convert.ToInt64(result["employee_id"])  ;
-                            i.training_course = result["training_course"] == DBNull.Value ? "" : result["leave_status"].ToString(); ;
-                            i.data_aquired = result["data_aquired"] == DBNull.Value ? "" : result["data_aquired"].ToString(); ;
+                            i.employee_id = result["employee_id"] == DBNull.Value ? -1 : Convert.ToInt64(result["employee_id"]);
+                            i.training_id = result["training_id"] == DBNull.Value ? -1 : Convert.ToInt64(result["training_id"]);
+                            i.training_course = result["training_course"] == DBNull.Value ? "" : result["training_course"].ToString(); ;
+                            i.data_aquired = result["date_aquired"] == DBNull.Value ? "" : result["date_aquired"].ToString(); ;
                             i.status = result["status"] == DBNull.Value ? "" : result["status"].ToString(); ;
-                            i.date_expired = result["date_expired"] == DBNull.Value ? "" : result["date_expired"].ToString(); ;
+                            i.date_expired = result["data_expired"] == DBNull.Value ? "" : result["data_expired"].ToString(); ;
                             data.Add(i);
                         }
                     }
@@ -565,25 +566,13 @@ namespace CS106.Model
             using (SQLiteConnection sql_database = new SQLiteConnection("Data Source=database/CS106.db"))
             {
                 sql_database.Open();
-                bool Is_user_real = true;
-                using (var command = new SQLiteCommand("select employee_id from employee where employee_id = @employee_id", sql_database))
-                {
-                    command.Parameters.AddWithValue("@employee_id", data.employee_id);
-                    using (var result = command.ExecuteReader())
+                
+               
+                    using (var command = new SQLiteCommand("update training_report set training_course = @training_course, date_aquired = @date_aquired, status = @status, data_expired = @date_expired where training_id = @training_id", sql_database))
                     {
-                        if (result.Read())
-                        {
-
-                        }
-                    }
-
-                }
-                if (Is_user_real)
-                    using (var command = new SQLiteCommand("update training_report set training_course = @training_course, data_aquired = @data_aquired, status = @status,\" +\r\n                                \"date_expired = @date_expired where employee_id = @employee_id", sql_database))
-                    {
-                        command.Parameters.AddWithValue("@employee_id", data.employee_id);
+                        command.Parameters.AddWithValue("@training_id", data.training_id);
                         command.Parameters.AddWithValue("@training_course", data.training_course);
-                        command.Parameters.AddWithValue("@data_aquired", data.data_aquired);
+                        command.Parameters.AddWithValue("@date_aquired", data.data_aquired);
                         command.Parameters.AddWithValue("@status", data.status);
                         command.Parameters.AddWithValue("@date_expired", data.date_expired);
                         command.ExecuteNonQuery();
@@ -742,12 +731,12 @@ namespace CS106.Model
             using (SQLiteConnection sql_database = new SQLiteConnection("Data Source=database/CS106.db"))
             {
                 sql_database.Open();
-                using (var command = new SQLiteCommand("insert into training_report(employee_id,training_course,data_aquired,status,date_expired)" +
-                                                                " VALUES(@employee_id,@training_course,@data_aquired,@status,@date_expired)", sql_database))
+                using (var command = new SQLiteCommand("insert into training_report(employee_id,training_course,date_aquired,status,data_expired)" +
+                                                                " VALUES(@employee_id,@training_course,@date_aquired,@status,@date_expired)", sql_database))
                 {
                     command.Parameters.AddWithValue("@employee_id", data.employee_id);
                     command.Parameters.AddWithValue("@training_course", data.training_course);
-                    command.Parameters.AddWithValue("@data_aquired", data.data_aquired);
+                    command.Parameters.AddWithValue("@date_aquired", data.data_aquired);
                     command.Parameters.AddWithValue("@status", data.status);
                     command.Parameters.AddWithValue("@date_expired", data.date_expired);
                     command.ExecuteNonQuery();

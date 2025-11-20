@@ -219,6 +219,22 @@ namespace CS106.Model
             
              database.UpdatePreformanceReview(data);
         }
+
+
+        public static List<SQL_TrainingReportDataStruct> GetTrainingReport()
+        {
+            return database.GetTrainingReport();
+        }
+
+        public static void CreateTrainingReport(SQL_TrainingReportDataStruct data)
+        {
+             database.CreateTrainingReport(data);
+        }
+
+        public static void UpdateTrainingReport(SQL_TrainingReportDataStruct data)
+        {
+             database.UpdateTrainingReport(data);
+        }
     }
 
 }

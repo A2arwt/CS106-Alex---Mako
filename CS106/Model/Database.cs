@@ -81,6 +81,21 @@ namespace CS106.Model
         {
             SQL_UpdatePreformanceReviews(data);
         }
+
+        public  List<SQL_TrainingReportDataStruct> GetTrainingReport()
+        {
+            return SQL_SelectAllTrainingReport();
+        }
+
+        public  void CreateTrainingReport(SQL_TrainingReportDataStruct data)
+        {
+            SQL_InsertTrainingReportData(data);
+        }
+
+        public  void UpdateTrainingReport(SQL_TrainingReportDataStruct data)
+        {
+            SQL_UpdateTrainingReport(data);
+        }
     }
 }
 

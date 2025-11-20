@@ -30,11 +30,13 @@
                     <ColumnDefinition></ColumnDefinition>
                     <ColumnDefinition></ColumnDefinition>
                     <ColumnDefinition></ColumnDefinition>
+                    <ColumnDefinition></ColumnDefinition>
                 </Grid.ColumnDefinitions>
                 <ListView x:Name="employee_list" Grid.Column="0" ></ListView>
                 <DatePicker x:Name="date_aquired" Grid.Column="1"></DatePicker>
-                <TextBox x:Name="feedback" Grid.Column="2"></TextBox>
-                <TextBox x:Name="review_score" Grid.Column="3"></TextBox>
+                <TextBox x:Name="status" Grid.Column="3"></TextBox>
+                <TextBox x:Name="training_course" Grid.Column="2"></TextBox>
+                <DatePicker x:Name="date_expired" Grid.Column="4"></DatePicker>
 
             </Grid>
             <Grid Grid.Row="2">
