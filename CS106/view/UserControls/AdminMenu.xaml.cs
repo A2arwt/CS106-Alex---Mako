@@ -61,5 +61,11 @@ namespace CS106.view.UserControls
             var nav = NavigationService.GetNavigationService(this);
             nav.Navigate(new Messages());
         }
+
+        private void Preformance_review(object sender, RoutedEventArgs e)
+        {
+            var nav = NavigationService.GetNavigationService(this);
+            nav.Navigate(new preformance_review());
+        }
     }
 }

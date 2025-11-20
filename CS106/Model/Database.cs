@@ -69,6 +69,18 @@ namespace CS106.Model
         {
              SQL_InsertMessageData(data);
         }
+        public List<Database.SQL_PreformanceReviewDataStruct> GetPreformanceReview()
+        {
+            return SQL_SelectAllPreformanceReviews();
+        }
+        public void CreatePreformanceReview(SQL_PreformanceReviewDataStruct data)
+        {
+            SQL_InsertPreformanceReviewData(data);
+        }
+        public void UpdatePreformanceReview(SQL_PreformanceReviewDataStruct data)
+        {
+            SQL_UpdatePreformanceReviews(data);
+        }
     }
 }
 

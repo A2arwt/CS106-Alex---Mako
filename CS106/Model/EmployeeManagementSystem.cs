@@ -10,7 +10,7 @@ namespace CS106.Model
 {
     public class EmployeeManagementSystem
     {
-        static Database? database { get; set; }
+        static Database database { get; set; }
         public static Database.SQL_EmployeeDataStruct current_user { get; set; }
         public static bool is_admin = false;
 
@@ -193,6 +193,32 @@ namespace CS106.Model
         }
 
 
+        public static List<Database.SQL_PreformanceReviewDataStruct> GetPreformanceReview()
+        {
+            return database.GetPreformanceReview();
+        }
+        public static Database.SQL_PreformanceReviewDataStruct GetPreformanceReview(long id)
+        {
+             var list = database.GetPreformanceReview();
+
+            foreach(var i in list)
+            {
+                if (i.review_id == id)
+                    return i;
+            }
+
+            return null;
+        }
+        public static void CreatePreformanceReview(SQL_PreformanceReviewDataStruct data)
+        {
+            
+             database.CreatePreformanceReview(data);
+        }
+        public static void UpdatePreformanceReview(SQL_PreformanceReviewDataStruct data)
+        {
+            
+             database.UpdatePreformanceReview(data);
+        }
     }
 
 }
