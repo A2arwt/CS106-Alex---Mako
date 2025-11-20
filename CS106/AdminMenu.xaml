@@ -16,27 +16,7 @@
             <ColumnDefinition Width="30*"></ColumnDefinition>
         </Grid.ColumnDefinitions>
 
-        <!--<Border BorderBrush="Black" BorderThickness="3" CornerRadius="1">
-            <Grid x:Name="pagelist">
-                <Grid.RowDefinitions >
-                    <RowDefinition></RowDefinition>
-                    <RowDefinition></RowDefinition>
-                    <RowDefinition></RowDefinition>
-                    <RowDefinition></RowDefinition>
-                    <RowDefinition></RowDefinition>
-                    <RowDefinition></RowDefinition>
-                    <RowDefinition ></RowDefinition>
-                </Grid.RowDefinitions>
-                <Button Grid.Row="0" BorderBrush="Black" BorderThickness="2" Background="#0468BF" Content="Leave Request" FontSize="32" Click="LeaveRequest"></Button>
-                <Button Grid.Row="1" BorderBrush="Black" BorderThickness="2" Background="#0468BF" Content="Salary Details" FontSize="32" Click="SalaryDetails"></Button>
-                <Button Grid.Row="2" BorderBrush="Black" BorderThickness="2" Background="#0468BF" Content="Personal Details" FontSize="32" Click="PersonalDetails"></Button>
-                <Button Grid.Row="3" BorderBrush="Black" BorderThickness="2" Background="#0468BF" Content="Company events/New" FontSize="32" Click="CompanyInfo"></Button>
-                <Button Grid.Row="4" BorderBrush="Black" BorderThickness="2" Background="#0468BF" Content="Resignation" FontSize="32" Click="Resignation"></Button>
-                <Button Grid.Row="5" BorderBrush="Black" BorderThickness="2" Background="#0468BF" Content="Logout" FontSize="32" Click="Logout"></Button>
-                <Button Grid.Row="6" BorderBrush="Black" BorderThickness="2" Background="#0468BF" Content="Edit Employee" FontSize="32" Click="ExitEmployee"></Button>
-                <Rectangle Grid.Row="6" Stroke="Black" StrokeThickness="2" Fill="Transparent"/>
-            </Grid>
-        </Border>-->
+       
 
         <userControls:Menu></userControls:Menu>
         <Border Grid.Column="1" BorderBrush="Black" BorderThickness="2" CornerRadius="1" Margin="10">
@@ -56,8 +36,9 @@
         <Border Grid.Column="2" BorderBrush="Black" BorderThickness="2" CornerRadius="1" Margin="10">
             <Grid >
                 <Rectangle Fill="#BBE2F2" Stroke="Black" StrokeThickness="2" Panel.ZIndex="-1"></Rectangle>
+                <ListView Background="Transparent"  x:Name="shift_stack"></ListView>
+
                 <TextBlock FontSize="30" TextDecorations="Underline" HorizontalAlignment="Center" Grid.Row="1">Upcoming Shifts</TextBlock>
-                <StackPanel x:Name="shift_stack"></StackPanel>
             </Grid>
         </Border>
 

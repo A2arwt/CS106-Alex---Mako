@@ -73,5 +73,17 @@ namespace CS106.view.UserControls
             var nav = NavigationService.GetNavigationService(this);
             nav.Navigate(new TrainingReport());
         }
+
+        private void Logout(object sender, RoutedEventArgs e)
+        {
+            var nav = NavigationService.GetNavigationService(this);
+            nav.Navigate(new CS106.LoginPage());
+        }
+
+        private void Home(object sender, RoutedEventArgs e)
+        {
+            var nav = NavigationService.GetNavigationService(this);
+            nav.Navigate(new CS106.Menu());
+        }
     }
 }

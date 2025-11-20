@@ -59,7 +59,7 @@ namespace CS106
                 status.Text = request[i].shift_finish_time.ToString();
                 stack.Children.Add(status);
 
-                shift_stack.Children.Add(stack);
+                shift_stack.Items.Add(stack);
             }
 
         }
