@@ -53,7 +53,7 @@ namespace CS106.view.UserControls
         private void Exit(object sender, RoutedEventArgs e)
         {
             var nav = NavigationService.GetNavigationService(this);
-            nav.Navigate(new Menu());
+            nav.Navigate(new AdminMenu());
         }
 
         private void Message(object sender, RoutedEventArgs e)
