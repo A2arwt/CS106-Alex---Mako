@@ -19,7 +19,7 @@
             <StackPanel Grid.Row="1" Margin="40" HorizontalAlignment="Center">
 
                 <!-- Logo -->
-                <Image Source="D:\Users\270040396\Documents\GitHub\CS106-Alex---Mako\CS106\Assests\Style Guide\Logo 2.2 - Transparent.png"
+                <Image Source="Assests\Style Guide\Logo 2.2 - Transparent.png"
                  Height="212"
                  Width="221"
                  Stretch="Uniform"
@@ -52,10 +52,11 @@
                     </Grid.ColumnDefinitions>
 
                     <Button x:Name="LoginButton"
-                     Content="Login"
+                     Content="LOGIN"
                      IsDefault="True"
                      Grid.Column="1"
                      Background="#bbe2f2"
+                     FontSize="23"
                      Height="35"
                      MinWidth="80"
                      HorizontalAlignment="Stretch"

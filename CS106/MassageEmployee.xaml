@@ -1,0 +1,75 @@
+﻿<Page x:Class="CS106.MassageEmployee"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:userControls="clr-namespace:CS106.view.UserControls"
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:CS106"
+      mc:Ignorable="d" 
+      d:DesignHeight="450" d:DesignWidth="800"
+      Title="MassageEmployee">
+
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="30*"></ColumnDefinition>
+            <ColumnDefinition Width="70*"></ColumnDefinition>
+        </Grid.ColumnDefinitions>
+
+        <userControls:Menu></userControls:Menu>
+
+        <Grid Grid.Column="1" Background="White">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="Auto"></RowDefinition>
+                <RowDefinition Height="*"></RowDefinition>
+            </Grid.RowDefinitions>
+
+            <!-- Header -->
+            <Border Grid.Row="0" Background="#2C3E50" Padding="15">
+                <TextBlock Text="Messages" 
+                      FontSize="24" 
+                      FontWeight="Bold" 
+                      Foreground="White"/>
+            </Border>
+
+            <!-- Main Content Area -->
+            <Grid Grid.Row="1" Margin="10">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="Auto"></RowDefinition>
+                    <RowDefinition Height="*"></RowDefinition>
+                    <RowDefinition Height="Auto"></RowDefinition>
+                    <RowDefinition Height="*"></RowDefinition>
+                </Grid.RowDefinitions>
+
+                <!-- Recent Conversations Section -->
+                <TextBlock Grid.Row="0" 
+                      Text="Recent Conversations" 
+                      FontSize="18" 
+                      FontWeight="SemiBold" 
+                      Margin="5,10,5,10"
+                      Foreground="#34495E"/>
+
+                <ScrollViewer Grid.Row="1" 
+                        VerticalScrollBarVisibility="Auto"
+                        Margin="0,0,0,10">
+                    <StackPanel x:Name="message_panel"></StackPanel>
+                </ScrollViewer>
+
+                <!-- All Employees Section -->
+                <Border Grid.Row="2" 
+                   BorderBrush="#BDC3C7" 
+                   BorderThickness="0,1,0,0" 
+                   Padding="0,10,0,10">
+                    <TextBlock Text="Start New Conversation" 
+                          FontSize="18" 
+                          FontWeight="SemiBold" 
+                          Margin="5"
+                          Foreground="#34495E"/>
+                </Border>
+
+                <ScrollViewer Grid.Row="3" VerticalScrollBarVisibility="Auto">
+                    <StackPanel x:Name="employee_panel"></StackPanel>
+                </ScrollViewer>
+            </Grid>
+        </Grid>
+    </Grid>
+</Page>

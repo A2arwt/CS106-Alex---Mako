@@ -56,8 +56,15 @@
         <Border Grid.Column="2" BorderBrush="Black" BorderThickness="2" CornerRadius="1" Margin="10">
             <Grid >
                 <Rectangle Fill="#BBE2F2" Stroke="Black" StrokeThickness="2" Panel.ZIndex="-1"></Rectangle>
-                <TextBlock FontSize="30" TextDecorations="Underline" HorizontalAlignment="Center" Grid.Row="1">Upcoming Shifts</TextBlock>
-                <ListView Background="Transparent" x:Name="shift_stack"></ListView>
+                <Grid>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="10*"></RowDefinition>
+                        <RowDefinition Height="90*"></RowDefinition>
+                    </Grid.RowDefinitions>
+                    <TextBlock FontSize="30" TextDecorations="Underline" HorizontalAlignment="Center" Grid.Row="0">Upcoming Shifts</TextBlock>
+                    <ListView Background="Transparent" x:Name="shift_stack"  Grid.Row="1"></ListView>
+                </Grid>
+                
             </Grid>
         </Border>
 

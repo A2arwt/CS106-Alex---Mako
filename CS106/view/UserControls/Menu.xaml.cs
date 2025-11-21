@@ -29,7 +29,7 @@ namespace CS106.view.UserControls
             {
                 foreach (UIElement child in pagelist.Children)
                 {
-                    if (Grid.GetRow(child) == 6)
+                    if (Grid.GetRow(child) == 5)
                         child.Visibility = Visibility.Collapsed;
                 }
             }
@@ -84,6 +84,12 @@ namespace CS106.view.UserControls
             nav.Navigate(new CS106.Menu());
         }
 
-       
+        private void Message(object sender, RoutedEventArgs e)
+        {
+            
+                var nav = NavigationService.GetNavigationService(this);
+                nav.Navigate(new CS106.MassageEmployee());
+            
+        }
     }
 }

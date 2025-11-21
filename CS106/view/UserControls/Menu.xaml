@@ -19,17 +19,13 @@
                     <RowDefinition></RowDefinition>
                     <RowDefinition></RowDefinition>
                     <RowDefinition></RowDefinition>
-                    <RowDefinition></RowDefinition>
-                    <RowDefinition></RowDefinition>
                 </Grid.RowDefinitions>
                 <Button Grid.Row="0" BorderBrush="Black" BorderThickness="2" Background="#0468BF" Content="Home" FontSize="32" Click="Home"></Button>
                 <Button Grid.Row="1" BorderBrush="Black" BorderThickness="2" Background="#0468BF" Content="Leave Request" FontSize="32" Click="LeaveRequest"></Button>
-                <Button Grid.Row="2" BorderBrush="Black" BorderThickness="2" Background="#0468BF" Content="Salary Details" FontSize="32" Click="SalaryDetails"></Button>
-                <Button Grid.Row="3" BorderBrush="Black" BorderThickness="2" Background="#0468BF" Content="Personal Details" FontSize="32" Click="PersonalDetails"></Button>
-                <Button Grid.Row="4" BorderBrush="Black" BorderThickness="2" Background="#0468BF" Content="Company events/New" FontSize="32" Click="ComanyEvent"></Button>
-                <Button Grid.Row="5" BorderBrush="Black" BorderThickness="2" Background="#0468BF" Content="Resignation" FontSize="32" Click="Resignation"></Button>
-                <Button Grid.Row="7" BorderBrush="Black" BorderThickness="2" Background="#0468BF" Content="Logout" FontSize="32" Click="Logout"></Button>
-                <Button x:Name="EditButton" Grid.Row="6" BorderBrush="Black" BorderThickness="2" Background="#0468BF" Content="Edit Employee" FontSize="32" Click="EditEmployee"></Button>
+                <Button Grid.Row="2" BorderBrush="Black" BorderThickness="2" Background="#0468BF" Content="Personal Details" FontSize="32" Click="PersonalDetails"></Button>
+                <Button Grid.Row="3" BorderBrush="Black" BorderThickness="2" Background="#0468BF" Content="Message" FontSize="32" Click="Message"></Button>
+                <Button x:Name="EditButton" Grid.Row="5" BorderBrush="Black" BorderThickness="2" Background="#0468BF" Content="Edit Employee" FontSize="32" Click="EditEmployee"></Button>
+                <Button Grid.Row="4" BorderBrush="Black" BorderThickness="2" Background="#0468BF" Content="Logout" FontSize="32" Click="Logout"></Button>
 
             </Grid>
         </Border>

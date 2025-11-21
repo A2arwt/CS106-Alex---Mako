@@ -39,27 +39,46 @@ namespace CS106
         private void Submit(object sender, RoutedEventArgs e)
         {
             var roster = workers_list.SelectedItems;
-
+            if (workers_list.SelectedItems.Count == 0)
+            {
+                MessageBox.Show("Please user");
+                return;
+            }
+            
             if (TimeSpan.TryParse(start_time.Text, out TimeSpan s_time) && TimeSpan.TryParse(end_time.Text, out TimeSpan e_time))
             {
                 foreach (var i in roster)
                 {
                     if (i != null)
                     {
-#warning chech the message and make sure they give the right info
 
                         if (date.SelectedDate != null)
                         {
                             if (date.SelectedDate < DateTime.Now)
                             {
                                 MessageBox.Show("Please pick a valid date");
+                                return;
 
                             }
                             else
                             {
                                 string roster_id = i.ToString().Substring(0, i.ToString().IndexOf(":"));
-                                string _time = new string(start_time.ToString().Where(char.IsDigit).ToArray());
-                                string __time = new string(end_time.ToString().Where(char.IsDigit).ToArray());
+                                if (start_time.SelectionBoxItem == null)
+                                {
+                                    MessageBox.Show("Pick start time");
+                                    return;
+                                }
+                                string _time = new string(start_time.SelectionBoxItem.ToString().Where(char.IsDigit).ToArray());
+
+
+                                if (end_time.SelectionBoxItem == null)
+                                {
+                                    MessageBox.Show("Pick end time");
+                                    return;
+                                }
+                                string __time = new string(end_time.SelectionBoxItem.ToString().Where(char.IsDigit).ToArray());
+
+
                                 double i_time = double.Parse(_time);
                                 double i__time = double.Parse(__time);
 
@@ -73,22 +92,23 @@ namespace CS106
                                     if (i_time < i__time)
                                         EmployeeManagementSystem.UpdateRoster(long.Parse(roster_id), date.SelectedDate.Value.ToString(), i_time, i__time);
                                     else
-                                        MessageBox.Show("Please pick a valid time. start time is greater then end time working time is 9:00 to 17:30");
+                                        { MessageBox.Show("Please pick a valid time. start time is greater then end time working time is 9:00 to 17:30"); return; }
                                 }
                                 else
-                                    MessageBox.Show("Please pick a valid time. working time is 9:00 to 17:30");
+                                    { MessageBox.Show("Please pick a valid time. working time is 9:00 to 17:30"); return; }
 
 
                             }
                         }
                         else
-                            MessageBox.Show("Please pick a valid date");
+                            { MessageBox.Show("Please pick a valid date"); return; }
                     }
                 }
             }
             else
             {
                 MessageBox.Show("Please enter a valid time (e.g., 14:30)");
+                return;
             }
 
             NavigationService.Navigate(new EditRoster());

@@ -38,27 +38,21 @@ namespace CS106
             {
                 StackPanel stack = new StackPanel();
                 stack.Orientation = Orientation.Horizontal;
+                
 
-
-                TextBlock ID = new TextBlock();
-                ID.Text = request[i].employee_id.ToString();
-                ID.Background = new SolidColorBrush(Color.FromArgb(0, 0xbb, 0xe2, 0xf2));
-                stack.Children.Add(ID);
 
                 TextBlock request_number = new TextBlock();
-                request_number.Text = request[i].shift_date.ToString();
-                request_number.Background = new SolidColorBrush(Color.FromArgb(0, 0xbb, 0xe2, 0xf2));
+                request_number.Text = "Date: " + request[i].shift_date.ToString() ;
                 stack.Children.Add(request_number);
 
 
 
                 TextBlock type = new TextBlock();
-                type.Text = request[i].shift_start_time.ToString();
-                type.Background = new SolidColorBrush(Color.FromArgb(0, 0xbb, 0xe2, 0xf2));
+                type.Text = " Start Time: "+ request[i].shift_start_time.ToString() +" End Time: ";
                 stack.Children.Add(type);
 
                 TextBlock status = new TextBlock();
-                status.Text = request[i].shift_finish_time.ToString();
+                status.Text = " "+ request[i].shift_finish_time.ToString();
                 stack.Children.Add(status);
 
                 shift_stack.Items.Add(stack);

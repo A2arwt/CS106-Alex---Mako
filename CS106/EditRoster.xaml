@@ -31,8 +31,43 @@
 
             <DatePicker x:Name="date" Grid.Row="1" VerticalAlignment="Stretch" HorizontalAlignment="Stretch"></DatePicker>
 
-            <TextBox x:Name="start_time" Grid.Row="2"/>
-            <TextBox x:Name="end_time" Grid.Row="3"/>
+            <ComboBox  x:Name="start_time" Grid.Row="2">
+                <ComboBoxItem Content="9:30"/>
+                <ComboBoxItem Content="10:00"/>
+                <ComboBoxItem Content="10:30"/>
+                <ComboBoxItem Content="11:00"/>
+                <ComboBoxItem Content="11:30"/>
+                <ComboBoxItem Content="12:00"/>
+                <ComboBoxItem Content="12:30"/>
+                <ComboBoxItem Content="13:00"/>
+                <ComboBoxItem Content="13:30"/>
+                <ComboBoxItem Content="14:00"/>
+                <ComboBoxItem Content="14:30"/>
+                <ComboBoxItem Content="15:00"/>
+                <ComboBoxItem Content="15:30"/>
+                <ComboBoxItem Content="16:00"/>
+                <ComboBoxItem Content="16:30"/>
+                <ComboBoxItem Content="17:00"/>
+                <ComboBoxItem Content="17:30"/>
+            </ComboBox>
+            <ComboBox  x:Name="end_time" Grid.Row="3">
+                <ComboBoxItem Content="10:00"/>
+                <ComboBoxItem Content="10:30"/>
+                <ComboBoxItem Content="11:00"/>
+                <ComboBoxItem Content="11:30"/>
+                <ComboBoxItem Content="12:00"/>
+                <ComboBoxItem Content="12:30"/>
+                <ComboBoxItem Content="13:00"/>
+                <ComboBoxItem Content="13:30"/>
+                <ComboBoxItem Content="14:00"/>
+                <ComboBoxItem Content="14:30"/>
+                <ComboBoxItem Content="15:00"/>
+                <ComboBoxItem Content="15:30"/>
+                <ComboBoxItem Content="16:00"/>
+                <ComboBoxItem Content="16:30"/>
+                <ComboBoxItem Content="17:00"/>
+                <ComboBoxItem Content="17:30"/>
+            </ComboBox>
             <Grid  Grid.Row="4">
                 <Grid.ColumnDefinitions>
                     <ColumnDefinition></ColumnDefinition>

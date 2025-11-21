@@ -9,18 +9,25 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <None Remove="Assests\Style Guide\Logo 2.2 - Transparent.png" />
     <None Remove="database\CS106.db" />
   </ItemGroup>
 
   <ItemGroup>
     <Content Include="database\CS106.db">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
   </ItemGroup>
 
   <ItemGroup>
     <PackageReference Include="Microsoft.Data.Sqlite" Version="9.0.10" />
     <PackageReference Include="System.Data.SQLite" Version="2.0.2" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="Assests\Style Guide\Logo 2.2 - Transparent.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
   </ItemGroup>
 
 </Project>

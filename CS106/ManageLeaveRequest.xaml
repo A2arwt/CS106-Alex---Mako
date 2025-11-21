@@ -15,13 +15,12 @@
 
 
             <Grid.ColumnDefinitions>
-                <ColumnDefinition Width="30*"></ColumnDefinition>
                 <ColumnDefinition Width="40*"></ColumnDefinition>
-                <ColumnDefinition Width="30*"></ColumnDefinition>
+                <ColumnDefinition Width="60*"></ColumnDefinition>
             </Grid.ColumnDefinitions>
 
             <userControls:AdminMenu></userControls:AdminMenu>
-            <StackPanel x:Name="Stack" Grid.Column="1"></StackPanel>
+            <StackPanel Background="#BBE2F2" x:Name="Stack" Grid.Column="1"></StackPanel>
 
 
 

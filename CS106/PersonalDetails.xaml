@@ -12,11 +12,56 @@
     <Grid>
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="30*"></ColumnDefinition>
-            <ColumnDefinition Width="40*"></ColumnDefinition>
-            <ColumnDefinition Width="30*"></ColumnDefinition>
+            <ColumnDefinition Width="70*"></ColumnDefinition>
         </Grid.ColumnDefinitions>
 
         <userControls:Menu></userControls:Menu>
-        <Button Grid.Column="1" Click="Message"></Button>
+        <Grid Grid.Column="1">
+            <Grid.RowDefinitions>
+                <RowDefinition></RowDefinition>
+                <RowDefinition></RowDefinition>
+                <RowDefinition></RowDefinition>
+                <RowDefinition></RowDefinition>
+            </Grid.RowDefinitions>
+
+
+            
+            <Grid Grid.Row="0">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="20*"></RowDefinition>
+                    <RowDefinition Height="80*"></RowDefinition>
+                </Grid.RowDefinitions>
+                <Label Background="#BBE2F2">Performance review</Label>
+                <ListBox Grid.Row="1" Background="#BBE2F2" x:Name="Preforemance_review"></ListBox>
+            </Grid>
+            
+            <Grid Grid.Row="1">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="20*"></RowDefinition>
+                    <RowDefinition Height="80*"></RowDefinition>
+                </Grid.RowDefinitions>
+                <Label Background="#BBE2F2">Training Report</Label>
+                <ListBox Grid.Row="1" Background="#BBE2F2" x:Name="training_report"></ListBox>
+            </Grid>
+            
+            <Grid Grid.Row="2">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="20*"></RowDefinition>
+                    <RowDefinition Height="80*"></RowDefinition>
+                </Grid.RowDefinitions>
+                <Label Background="#BBE2F2">Salary Details</Label>
+                <ListBox Grid.Row="1" Background="#BBE2F2" x:Name="salary_details"></ListBox>
+            </Grid>
+            <Grid Grid.Row="3">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="20*"></RowDefinition>
+                    <RowDefinition Height="80*"></RowDefinition>
+                </Grid.RowDefinitions>
+                <Label Background="#BBE2F2">Leave</Label>
+                <ListBox Grid.Row="1" Background="#BBE2F2" x:Name="Leave"></ListBox>
+            </Grid>
+            
+        </Grid>
+
     </Grid>
 </Page>

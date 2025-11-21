@@ -1,150 +1,46 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "D:\\Users\\270040396\\Documents\\GitHub\\CS106-Alex---Mako\\CS106\\",
+  "WorkspaceRootPath": "D:\\Users\\270621423\\OneDrive - UP Education\\Documents\\GitHub\\CS106-Alex---Mako\\CS106\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{DB577B1B-092B-40FA-90EB-9E58DA041897}|CS106.csproj|d:\\users\\270040396\\documents\\github\\cs106-alex---mako\\cs106\\makeleaverequest.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{DB577B1B-092B-40FA-90EB-9E58DA041897}|CS106.csproj|solutionrelative:makeleaverequest.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{DB577B1B-092B-40FA-90EB-9E58DA041897}|CS106.csproj|d:\\users\\270040396\\documents\\github\\cs106-alex---mako\\cs106\\adminmenu.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{DB577B1B-092B-40FA-90EB-9E58DA041897}|CS106.csproj|solutionrelative:adminmenu.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{DB577B1B-092B-40FA-90EB-9E58DA041897}|CS106.csproj|d:\\users\\270040396\\documents\\github\\cs106-alex---mako\\cs106\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{DB577B1B-092B-40FA-90EB-9E58DA041897}|CS106.csproj|solutionrelative:mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{DB577B1B-092B-40FA-90EB-9E58DA041897}|CS106.csproj|d:\\users\\270040396\\documents\\github\\cs106-alex---mako\\cs106\\logout.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{DB577B1B-092B-40FA-90EB-9E58DA041897}|CS106.csproj|solutionrelative:logout.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{DB577B1B-092B-40FA-90EB-9E58DA041897}|CS106.csproj|d:\\users\\270040396\\documents\\github\\cs106-alex---mako\\cs106\\view\\usercontrols\\menu.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{DB577B1B-092B-40FA-90EB-9E58DA041897}|CS106.csproj|solutionrelative:view\\usercontrols\\menu.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{DB577B1B-092B-40FA-90EB-9E58DA041897}|CS106.csproj|d:\\users\\270040396\\documents\\github\\cs106-alex---mako\\cs106\\loginpage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{DB577B1B-092B-40FA-90EB-9E58DA041897}|CS106.csproj|solutionrelative:loginpage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{DB577B1B-092B-40FA-90EB-9E58DA041897}|CS106.csproj|d:\\users\\270040396\\documents\\github\\cs106-alex---mako\\cs106\\makeleaverequest.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{DB577B1B-092B-40FA-90EB-9E58DA041897}|CS106.csproj|solutionrelative:makeleaverequest.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{DB577B1B-092B-40FA-90EB-9E58DA041897}|CS106.csproj|d:\\users\\270040396\\documents\\github\\cs106-alex---mako\\cs106\\manageleaverequest.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{DB577B1B-092B-40FA-90EB-9E58DA041897}|CS106.csproj|solutionrelative:manageleaverequest.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{DB577B1B-092B-40FA-90EB-9E58DA041897}|CS106.csproj|d:\\users\\270040396\\documents\\github\\cs106-alex---mako\\cs106\\adminmenu.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{DB577B1B-092B-40FA-90EB-9E58DA041897}|CS106.csproj|solutionrelative:adminmenu.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{DB577B1B-092B-40FA-90EB-9E58DA041897}|CS106.csproj|d:\\users\\270040396\\documents\\github\\cs106-alex---mako\\cs106\\view\\usercontrols\\menu.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{DB577B1B-092B-40FA-90EB-9E58DA041897}|CS106.csproj|solutionrelative:view\\usercontrols\\menu.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{DB577B1B-092B-40FA-90EB-9E58DA041897}|CS106.csproj|d:\\users\\270040396\\documents\\github\\cs106-alex---mako\\cs106\\view\\usercontrols\\adminmenu.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{DB577B1B-092B-40FA-90EB-9E58DA041897}|CS106.csproj|solutionrelative:view\\usercontrols\\adminmenu.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{DB577B1B-092B-40FA-90EB-9E58DA041897}|CS106.csproj|d:\\users\\270040396\\documents\\github\\cs106-alex---mako\\cs106\\loginpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{DB577B1B-092B-40FA-90EB-9E58DA041897}|CS106.csproj|solutionrelative:loginpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{DB577B1B-092B-40FA-90EB-9E58DA041897}|CS106.csproj|d:\\users\\270040396\\documents\\github\\cs106-alex---mako\\cs106\\logout.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{DB577B1B-092B-40FA-90EB-9E58DA041897}|CS106.csproj|solutionrelative:logout.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{DB577B1B-092B-40FA-90EB-9E58DA041897}|CS106.csproj|d:\\users\\270040396\\documents\\github\\cs106-alex---mako\\cs106\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{DB577B1B-092B-40FA-90EB-9E58DA041897}|CS106.csproj|solutionrelative:mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{DB577B1B-092B-40FA-90EB-9E58DA041897}|CS106.csproj|d:\\users\\270040396\\documents\\github\\cs106-alex---mako\\cs106\\addroster.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "AbsoluteMoniker": "D:0:0:{DB577B1B-092B-40FA-90EB-9E58DA041897}|CS106.csproj|d:\\users\\270621423\\onedrive - up education\\documents\\github\\cs106-alex---mako\\cs106\\addroster.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
       "RelativeMoniker": "D:0:0:{DB577B1B-092B-40FA-90EB-9E58DA041897}|CS106.csproj|solutionrelative:addroster.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{DB577B1B-092B-40FA-90EB-9E58DA041897}|CS106.csproj|d:\\users\\270040396\\documents\\github\\cs106-alex---mako\\cs106\\trainingreport.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{DB577B1B-092B-40FA-90EB-9E58DA041897}|CS106.csproj|solutionrelative:trainingreport.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+      "AbsoluteMoniker": "D:0:0:{DB577B1B-092B-40FA-90EB-9E58DA041897}|CS106.csproj|d:\\users\\270621423\\onedrive - up education\\documents\\github\\cs106-alex---mako\\cs106\\makeleaverequest.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{DB577B1B-092B-40FA-90EB-9E58DA041897}|CS106.csproj|solutionrelative:makeleaverequest.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{DB577B1B-092B-40FA-90EB-9E58DA041897}|CS106.csproj|d:\\users\\270040396\\documents\\github\\cs106-alex---mako\\cs106\\personaldetails.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{DB577B1B-092B-40FA-90EB-9E58DA041897}|CS106.csproj|solutionrelative:personaldetails.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{DB577B1B-092B-40FA-90EB-9E58DA041897}|CS106.csproj|d:\\users\\270040396\\documents\\github\\cs106-alex---mako\\cs106\\trainingreport.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{DB577B1B-092B-40FA-90EB-9E58DA041897}|CS106.csproj|solutionrelative:trainingreport.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{DB577B1B-092B-40FA-90EB-9E58DA041897}|CS106.csproj|d:\\users\\270040396\\documents\\github\\cs106-alex---mako\\cs106\\resignation.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{DB577B1B-092B-40FA-90EB-9E58DA041897}|CS106.csproj|solutionrelative:resignation.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{DB577B1B-092B-40FA-90EB-9E58DA041897}|CS106.csproj|d:\\users\\270040396\\documents\\github\\cs106-alex---mako\\cs106\\preformance_review.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{DB577B1B-092B-40FA-90EB-9E58DA041897}|CS106.csproj|solutionrelative:preformance_review.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{DB577B1B-092B-40FA-90EB-9E58DA041897}|CS106.csproj|d:\\users\\270040396\\documents\\github\\cs106-alex---mako\\cs106\\preformance_review.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{DB577B1B-092B-40FA-90EB-9E58DA041897}|CS106.csproj|solutionrelative:preformance_review.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{DB577B1B-092B-40FA-90EB-9E58DA041897}|CS106.csproj|d:\\users\\270040396\\documents\\github\\cs106-alex---mako\\cs106\\personaldetails.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{DB577B1B-092B-40FA-90EB-9E58DA041897}|CS106.csproj|solutionrelative:personaldetails.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{DB577B1B-092B-40FA-90EB-9E58DA041897}|CS106.csproj|d:\\users\\270040396\\documents\\github\\cs106-alex---mako\\cs106\\openmassage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{DB577B1B-092B-40FA-90EB-9E58DA041897}|CS106.csproj|solutionrelative:openmassage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{DB577B1B-092B-40FA-90EB-9E58DA041897}|CS106.csproj|d:\\users\\270040396\\documents\\github\\cs106-alex---mako\\cs106\\openmassage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{DB577B1B-092B-40FA-90EB-9E58DA041897}|CS106.csproj|solutionrelative:openmassage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{DB577B1B-092B-40FA-90EB-9E58DA041897}|CS106.csproj|d:\\users\\270040396\\documents\\github\\cs106-alex---mako\\cs106\\messages.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{DB577B1B-092B-40FA-90EB-9E58DA041897}|CS106.csproj|solutionrelative:messages.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{DB577B1B-092B-40FA-90EB-9E58DA041897}|CS106.csproj|d:\\users\\270040396\\documents\\github\\cs106-alex---mako\\cs106\\messages.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{DB577B1B-092B-40FA-90EB-9E58DA041897}|CS106.csproj|solutionrelative:messages.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{DB577B1B-092B-40FA-90EB-9E58DA041897}|CS106.csproj|d:\\users\\270040396\\documents\\github\\cs106-alex---mako\\cs106\\manageleaverequest.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{DB577B1B-092B-40FA-90EB-9E58DA041897}|CS106.csproj|d:\\users\\270621423\\onedrive - up education\\documents\\github\\cs106-alex---mako\\cs106\\manageleaverequest.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{DB577B1B-092B-40FA-90EB-9E58DA041897}|CS106.csproj|solutionrelative:manageleaverequest.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{DB577B1B-092B-40FA-90EB-9E58DA041897}|CS106.csproj|d:\\users\\270040396\\documents\\github\\cs106-alex---mako\\cs106\\editroster.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{DB577B1B-092B-40FA-90EB-9E58DA041897}|CS106.csproj|solutionrelative:editroster.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+      "AbsoluteMoniker": "D:0:0:{DB577B1B-092B-40FA-90EB-9E58DA041897}|CS106.csproj|d:\\users\\270621423\\onedrive - up education\\documents\\github\\cs106-alex---mako\\cs106\\view\\usercontrols\\adminmenu.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{DB577B1B-092B-40FA-90EB-9E58DA041897}|CS106.csproj|solutionrelative:view\\usercontrols\\adminmenu.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{DB577B1B-092B-40FA-90EB-9E58DA041897}|CS106.csproj|d:\\users\\270040396\\documents\\github\\cs106-alex---mako\\cs106\\editemployee.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{DB577B1B-092B-40FA-90EB-9E58DA041897}|CS106.csproj|solutionrelative:editemployee.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{DB577B1B-092B-40FA-90EB-9E58DA041897}|CS106.csproj|d:\\users\\270621423\\onedrive - up education\\documents\\github\\cs106-alex---mako\\cs106\\makeleaverequest.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DB577B1B-092B-40FA-90EB-9E58DA041897}|CS106.csproj|solutionrelative:makeleaverequest.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{DB577B1B-092B-40FA-90EB-9E58DA041897}|CS106.csproj|d:\\users\\270040396\\documents\\github\\cs106-alex---mako\\cs106\\editroster.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{DB577B1B-092B-40FA-90EB-9E58DA041897}|CS106.csproj|solutionrelative:editroster.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{DB577B1B-092B-40FA-90EB-9E58DA041897}|CS106.csproj|d:\\users\\270621423\\onedrive - up education\\documents\\github\\cs106-alex---mako\\cs106\\loginpage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DB577B1B-092B-40FA-90EB-9E58DA041897}|CS106.csproj|solutionrelative:loginpage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{DB577B1B-092B-40FA-90EB-9E58DA041897}|CS106.csproj|d:\\users\\270040396\\documents\\github\\cs106-alex---mako\\cs106\\editemployee.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{DB577B1B-092B-40FA-90EB-9E58DA041897}|CS106.csproj|solutionrelative:editemployee.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+      "AbsoluteMoniker": "D:0:0:{DB577B1B-092B-40FA-90EB-9E58DA041897}|CS106.csproj|d:\\users\\270621423\\onedrive - up education\\documents\\github\\cs106-alex---mako\\cs106\\loginpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{DB577B1B-092B-40FA-90EB-9E58DA041897}|CS106.csproj|solutionrelative:loginpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{DB577B1B-092B-40FA-90EB-9E58DA041897}|CS106.csproj|d:\\users\\270040396\\documents\\github\\cs106-alex---mako\\cs106\\companyinfo.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{DB577B1B-092B-40FA-90EB-9E58DA041897}|CS106.csproj|solutionrelative:companyinfo.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+      "AbsoluteMoniker": "D:0:0:{DB577B1B-092B-40FA-90EB-9E58DA041897}|CS106.csproj|d:\\users\\270621423\\onedrive - up education\\documents\\github\\cs106-alex---mako\\cs106\\personaldetails.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{DB577B1B-092B-40FA-90EB-9E58DA041897}|CS106.csproj|solutionrelative:personaldetails.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{DB577B1B-092B-40FA-90EB-9E58DA041897}|CS106.csproj|d:\\users\\270040396\\documents\\github\\cs106-alex---mako\\cs106\\addroster.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{DB577B1B-092B-40FA-90EB-9E58DA041897}|CS106.csproj|solutionrelative:addroster.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{DB577B1B-092B-40FA-90EB-9E58DA041897}|CS106.csproj|d:\\users\\270621423\\onedrive - up education\\documents\\github\\cs106-alex---mako\\cs106\\view\\usercontrols\\menu.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DB577B1B-092B-40FA-90EB-9E58DA041897}|CS106.csproj|solutionrelative:view\\usercontrols\\menu.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{DB577B1B-092B-40FA-90EB-9E58DA041897}|CS106.csproj|d:\\users\\270040396\\documents\\github\\cs106-alex---mako\\cs106\\view\\usercontrols\\adminmenu.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{DB577B1B-092B-40FA-90EB-9E58DA041897}|CS106.csproj|solutionrelative:view\\usercontrols\\adminmenu.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{DB577B1B-092B-40FA-90EB-9E58DA041897}|CS106.csproj|d:\\users\\270040396\\documents\\github\\cs106-alex---mako\\cs106\\model\\employeemanagementsystem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{DB577B1B-092B-40FA-90EB-9E58DA041897}|CS106.csproj|solutionrelative:model\\employeemanagementsystem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{DB577B1B-092B-40FA-90EB-9E58DA041897}|CS106.csproj|d:\\users\\270040396\\documents\\github\\cs106-alex---mako\\cs106\\model\\database.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{DB577B1B-092B-40FA-90EB-9E58DA041897}|CS106.csproj|solutionrelative:model\\database.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{DB577B1B-092B-40FA-90EB-9E58DA041897}|CS106.csproj|d:\\users\\270621423\\onedrive - up education\\documents\\github\\cs106-alex---mako\\cs106\\view\\usercontrols\\menu.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{DB577B1B-092B-40FA-90EB-9E58DA041897}|CS106.csproj|solutionrelative:view\\usercontrols\\menu.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     }
   ],
   "DocumentGroupContainers": [
@@ -154,438 +50,137 @@
       "DocumentGroups": [
         {
           "DockedWidth": 849,
-          "SelectedChildIndex": 5,
+          "SelectedChildIndex": 0,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "MainWindow.xaml",
-              "DocumentMoniker": "D:\\Users\\270040396\\Documents\\GitHub\\CS106-Alex---Mako\\CS106\\MainWindow.xaml",
-              "RelativeDocumentMoniker": "MainWindow.xaml",
-              "ToolTip": "D:\\Users\\270040396\\Documents\\GitHub\\CS106-Alex---Mako\\CS106\\MainWindow.xaml",
-              "RelativeToolTip": "MainWindow.xaml",
+              "DocumentIndex": 0,
+              "Title": "AddRoster.xaml",
+              "DocumentMoniker": "D:\\Users\\270621423\\OneDrive - UP Education\\Documents\\GitHub\\CS106-Alex---Mako\\CS106\\AddRoster.xaml",
+              "RelativeDocumentMoniker": "AddRoster.xaml",
+              "ToolTip": "D:\\Users\\270621423\\OneDrive - UP Education\\Documents\\GitHub\\CS106-Alex---Mako\\CS106\\AddRoster.xaml",
+              "RelativeToolTip": "AddRoster.xaml",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2025-11-20T20:25:45.503Z",
+              "WhenOpened": "2025-11-21T02:33:06.672Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "Logout.xaml",
-              "DocumentMoniker": "D:\\Users\\270040396\\Documents\\GitHub\\CS106-Alex---Mako\\CS106\\Logout.xaml",
-              "RelativeDocumentMoniker": "Logout.xaml",
-              "ToolTip": "D:\\Users\\270040396\\Documents\\GitHub\\CS106-Alex---Mako\\CS106\\Logout.xaml",
-              "RelativeToolTip": "Logout.xaml",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2025-11-20T20:25:42.707Z",
+              "DocumentIndex": 2,
+              "Title": "ManageLeaveRequest.xaml.cs",
+              "DocumentMoniker": "D:\\Users\\270621423\\OneDrive - UP Education\\Documents\\GitHub\\CS106-Alex---Mako\\CS106\\ManageLeaveRequest.xaml.cs",
+              "RelativeDocumentMoniker": "ManageLeaveRequest.xaml.cs",
+              "ToolTip": "D:\\Users\\270621423\\OneDrive - UP Education\\Documents\\GitHub\\CS106-Alex---Mako\\CS106\\ManageLeaveRequest.xaml.cs",
+              "RelativeToolTip": "ManageLeaveRequest.xaml.cs",
+              "ViewState": "AgIAAE8AAAAAAAAAAAAgwGIAAAAfAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-21T02:32:23.08Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 4,
-              "Title": "Menu.xaml",
-              "DocumentMoniker": "D:\\Users\\270040396\\Documents\\GitHub\\CS106-Alex---Mako\\CS106\\view\\UserControls\\Menu.xaml",
-              "RelativeDocumentMoniker": "view\\UserControls\\Menu.xaml",
-              "ToolTip": "D:\\Users\\270040396\\Documents\\GitHub\\CS106-Alex---Mako\\CS106\\view\\UserControls\\Menu.xaml",
-              "RelativeToolTip": "view\\UserControls\\Menu.xaml",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2025-11-20T20:21:42.416Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "Menu.xaml.cs",
-              "DocumentMoniker": "D:\\Users\\270040396\\Documents\\GitHub\\CS106-Alex---Mako\\CS106\\view\\UserControls\\Menu.xaml.cs",
-              "RelativeDocumentMoniker": "view\\UserControls\\Menu.xaml.cs",
-              "ToolTip": "D:\\Users\\270040396\\Documents\\GitHub\\CS106-Alex---Mako\\CS106\\view\\UserControls\\Menu.xaml.cs",
-              "RelativeToolTip": "view\\UserControls\\Menu.xaml.cs",
-              "ViewState": "AgIAAA8AAAAAAAAAAAAAAB8AAAAwAAAAAAAAAA==",
+              "Title": "MakeLeaveRequest.xaml.cs",
+              "DocumentMoniker": "D:\\Users\\270621423\\OneDrive - UP Education\\Documents\\GitHub\\CS106-Alex---Mako\\CS106\\MakeLeaveRequest.xaml.cs",
+              "RelativeDocumentMoniker": "MakeLeaveRequest.xaml.cs",
+              "ToolTip": "D:\\Users\\270621423\\OneDrive - UP Education\\Documents\\GitHub\\CS106-Alex---Mako\\CS106\\MakeLeaveRequest.xaml.cs",
+              "RelativeToolTip": "MakeLeaveRequest.xaml.cs",
+              "ViewState": "AgIAAA8AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-20T20:22:07.338Z",
+              "WhenOpened": "2025-11-21T02:32:18.282Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "AdminMenu.xaml.cs",
-              "DocumentMoniker": "D:\\Users\\270040396\\Documents\\GitHub\\CS106-Alex---Mako\\CS106\\AdminMenu.xaml.cs",
-              "RelativeDocumentMoniker": "AdminMenu.xaml.cs",
-              "ToolTip": "D:\\Users\\270040396\\Documents\\GitHub\\CS106-Alex---Mako\\CS106\\AdminMenu.xaml.cs",
-              "RelativeToolTip": "AdminMenu.xaml.cs",
-              "ViewState": "AgIAABIAAAAAAAAAAAAAAB0AAAAiAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-20T20:23:37.94Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "MakeLeaveRequest.xaml",
-              "DocumentMoniker": "D:\\Users\\270040396\\Documents\\GitHub\\CS106-Alex---Mako\\CS106\\MakeLeaveRequest.xaml",
+              "DocumentMoniker": "D:\\Users\\270621423\\OneDrive - UP Education\\Documents\\GitHub\\CS106-Alex---Mako\\CS106\\MakeLeaveRequest.xaml",
               "RelativeDocumentMoniker": "MakeLeaveRequest.xaml",
-              "ToolTip": "D:\\Users\\270040396\\Documents\\GitHub\\CS106-Alex---Mako\\CS106\\MakeLeaveRequest.xaml",
+              "ToolTip": "D:\\Users\\270621423\\OneDrive - UP Education\\Documents\\GitHub\\CS106-Alex---Mako\\CS106\\MakeLeaveRequest.xaml",
               "RelativeToolTip": "MakeLeaveRequest.xaml",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2025-11-20T20:25:47.287Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "ManageLeaveRequest.xaml",
-              "DocumentMoniker": "D:\\Users\\270040396\\Documents\\GitHub\\CS106-Alex---Mako\\CS106\\ManageLeaveRequest.xaml",
-              "RelativeDocumentMoniker": "ManageLeaveRequest.xaml",
-              "ToolTip": "D:\\Users\\270040396\\Documents\\GitHub\\CS106-Alex---Mako\\CS106\\ManageLeaveRequest.xaml",
-              "RelativeToolTip": "ManageLeaveRequest.xaml",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2025-11-20T20:26:17.991Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "MakeLeaveRequest.xaml.cs",
-              "DocumentMoniker": "D:\\Users\\270040396\\Documents\\GitHub\\CS106-Alex---Mako\\CS106\\MakeLeaveRequest.xaml.cs",
-              "RelativeDocumentMoniker": "MakeLeaveRequest.xaml.cs",
-              "ToolTip": "D:\\Users\\270040396\\Documents\\GitHub\\CS106-Alex---Mako\\CS106\\MakeLeaveRequest.xaml.cs",
-              "RelativeToolTip": "MakeLeaveRequest.xaml.cs",
-              "ViewState": "AgIAABEAAAAAAAAAAAAowBgAAAAiAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-20T20:26:00.887Z",
+              "WhenOpened": "2025-11-21T02:32:15.187Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 5,
               "Title": "LoginPage.xaml.cs",
-              "DocumentMoniker": "D:\\Users\\270040396\\Documents\\GitHub\\CS106-Alex---Mako\\CS106\\LoginPage.xaml.cs",
+              "DocumentMoniker": "D:\\Users\\270621423\\OneDrive - UP Education\\Documents\\GitHub\\CS106-Alex---Mako\\CS106\\LoginPage.xaml.cs",
               "RelativeDocumentMoniker": "LoginPage.xaml.cs",
-              "ToolTip": "D:\\Users\\270040396\\Documents\\GitHub\\CS106-Alex---Mako\\CS106\\LoginPage.xaml.cs",
+              "ToolTip": "D:\\Users\\270621423\\OneDrive - UP Education\\Documents\\GitHub\\CS106-Alex---Mako\\CS106\\LoginPage.xaml.cs",
               "RelativeToolTip": "LoginPage.xaml.cs",
-              "ViewState": "AgIAABcAAAAAAAAAAAAQwCsAAAA9AAAAAAAAAA==",
+              "ViewState": "AgIAABIAAAAAAAAAAAAAADEAAAAmAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-20T20:49:21.968Z",
+              "WhenOpened": "2025-11-21T02:24:59.425Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "AdminMenu.xaml",
-              "DocumentMoniker": "D:\\Users\\270040396\\Documents\\GitHub\\CS106-Alex---Mako\\CS106\\AdminMenu.xaml",
-              "RelativeDocumentMoniker": "AdminMenu.xaml",
-              "ToolTip": "D:\\Users\\270040396\\Documents\\GitHub\\CS106-Alex---Mako\\CS106\\AdminMenu.xaml",
-              "RelativeToolTip": "AdminMenu.xaml",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2025-11-20T20:23:07.479Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 10,
-              "Title": "AdminMenu.xaml",
-              "DocumentMoniker": "D:\\Users\\270040396\\Documents\\GitHub\\CS106-Alex---Mako\\CS106\\view\\UserControls\\AdminMenu.xaml",
-              "RelativeDocumentMoniker": "view\\UserControls\\AdminMenu.xaml",
-              "ToolTip": "D:\\Users\\270040396\\Documents\\GitHub\\CS106-Alex---Mako\\CS106\\view\\UserControls\\AdminMenu.xaml",
-              "RelativeToolTip": "view\\UserControls\\AdminMenu.xaml",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2025-11-20T20:20:19.382Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 6,
               "Title": "LoginPage.xaml",
-              "DocumentMoniker": "D:\\Users\\270040396\\Documents\\GitHub\\CS106-Alex---Mako\\CS106\\LoginPage.xaml",
+              "DocumentMoniker": "D:\\Users\\270621423\\OneDrive - UP Education\\Documents\\GitHub\\CS106-Alex---Mako\\CS106\\LoginPage.xaml",
               "RelativeDocumentMoniker": "LoginPage.xaml",
-              "ToolTip": "D:\\Users\\270040396\\Documents\\GitHub\\CS106-Alex---Mako\\CS106\\LoginPage.xaml",
+              "ToolTip": "D:\\Users\\270621423\\OneDrive - UP Education\\Documents\\GitHub\\CS106-Alex---Mako\\CS106\\LoginPage.xaml",
               "RelativeToolTip": "LoginPage.xaml",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2025-11-20T20:25:39.848Z",
+              "WhenOpened": "2025-11-21T02:24:53.875Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 13,
-              "Title": "MainWindow.xaml.cs",
-              "DocumentMoniker": "D:\\Users\\270040396\\Documents\\GitHub\\CS106-Alex---Mako\\CS106\\MainWindow.xaml.cs",
-              "RelativeDocumentMoniker": "MainWindow.xaml.cs",
-              "ToolTip": "D:\\Users\\270040396\\Documents\\GitHub\\CS106-Alex---Mako\\CS106\\MainWindow.xaml.cs",
-              "RelativeToolTip": "MainWindow.xaml.cs",
-              "ViewState": "AgIAAAkAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-20T20:49:01.876Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 12,
-              "Title": "Logout.xaml.cs",
-              "DocumentMoniker": "D:\\Users\\270040396\\Documents\\GitHub\\CS106-Alex---Mako\\CS106\\Logout.xaml.cs",
-              "RelativeDocumentMoniker": "Logout.xaml.cs",
-              "ToolTip": "D:\\Users\\270040396\\Documents\\GitHub\\CS106-Alex---Mako\\CS106\\Logout.xaml.cs",
-              "RelativeToolTip": "Logout.xaml.cs",
-              "ViewState": "AgIAAAMAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-20T20:54:24.3Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 14,
-              "Title": "AddRoster.xaml",
-              "DocumentMoniker": "D:\\Users\\270040396\\Documents\\GitHub\\CS106-Alex---Mako\\CS106\\AddRoster.xaml",
-              "RelativeDocumentMoniker": "AddRoster.xaml",
-              "ToolTip": "D:\\Users\\270040396\\Documents\\GitHub\\CS106-Alex---Mako\\CS106\\AddRoster.xaml",
-              "RelativeToolTip": "AddRoster.xaml",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2025-11-20T20:22:13.535Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 15,
-              "Title": "TrainingReport.xaml",
-              "DocumentMoniker": "D:\\Users\\270040396\\Documents\\GitHub\\CS106-Alex---Mako\\CS106\\TrainingReport.xaml",
-              "RelativeDocumentMoniker": "TrainingReport.xaml",
-              "ToolTip": "D:\\Users\\270040396\\Documents\\GitHub\\CS106-Alex---Mako\\CS106\\TrainingReport.xaml",
-              "RelativeToolTip": "TrainingReport.xaml",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2025-11-20T20:29:04.042Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 17,
-              "Title": "TrainingReport.xaml.cs",
-              "DocumentMoniker": "D:\\Users\\270040396\\Documents\\GitHub\\CS106-Alex---Mako\\CS106\\TrainingReport.xaml.cs",
-              "RelativeDocumentMoniker": "TrainingReport.xaml.cs",
-              "ToolTip": "D:\\Users\\270040396\\Documents\\GitHub\\CS106-Alex---Mako\\CS106\\TrainingReport.xaml.cs",
-              "RelativeToolTip": "TrainingReport.xaml.cs",
-              "ViewState": "AgIAALoAAAAAAAAAAAAuwM4AAAA8AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-20T20:29:17.987Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 23,
-              "Title": "OpenMassage.xaml",
-              "DocumentMoniker": "D:\\Users\\270040396\\Documents\\GitHub\\CS106-Alex---Mako\\CS106\\OpenMassage.xaml",
-              "RelativeDocumentMoniker": "OpenMassage.xaml",
-              "ToolTip": "D:\\Users\\270040396\\Documents\\GitHub\\CS106-Alex---Mako\\CS106\\OpenMassage.xaml",
-              "RelativeToolTip": "OpenMassage.xaml",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2025-11-20T20:27:07.348Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 22,
-              "Title": "OpenMassage.xaml.cs",
-              "DocumentMoniker": "D:\\Users\\270040396\\Documents\\GitHub\\CS106-Alex---Mako\\CS106\\OpenMassage.xaml.cs",
-              "RelativeDocumentMoniker": "OpenMassage.xaml.cs",
-              "ToolTip": "D:\\Users\\270040396\\Documents\\GitHub\\CS106-Alex---Mako\\CS106\\OpenMassage.xaml.cs",
-              "RelativeToolTip": "OpenMassage.xaml.cs",
-              "ViewState": "AgIAAG8AAAAAAAAAAAAuwJYAAAABAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-20T20:27:16.036Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 16,
+              "DocumentIndex": 7,
               "Title": "PersonalDetails.xaml",
-              "DocumentMoniker": "D:\\Users\\270040396\\Documents\\GitHub\\CS106-Alex---Mako\\CS106\\PersonalDetails.xaml",
+              "DocumentMoniker": "D:\\Users\\270621423\\OneDrive - UP Education\\Documents\\GitHub\\CS106-Alex---Mako\\CS106\\PersonalDetails.xaml",
               "RelativeDocumentMoniker": "PersonalDetails.xaml",
-              "ToolTip": "D:\\Users\\270040396\\Documents\\GitHub\\CS106-Alex---Mako\\CS106\\PersonalDetails.xaml",
+              "ToolTip": "D:\\Users\\270621423\\OneDrive - UP Education\\Documents\\GitHub\\CS106-Alex---Mako\\CS106\\PersonalDetails.xaml",
               "RelativeToolTip": "PersonalDetails.xaml",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2025-11-20T20:27:26.706Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 21,
-              "Title": "PersonalDetails.xaml.cs",
-              "DocumentMoniker": "D:\\Users\\270040396\\Documents\\GitHub\\CS106-Alex---Mako\\CS106\\PersonalDetails.xaml.cs",
-              "RelativeDocumentMoniker": "PersonalDetails.xaml.cs",
-              "ToolTip": "D:\\Users\\270040396\\Documents\\GitHub\\CS106-Alex---Mako\\CS106\\PersonalDetails.xaml.cs",
-              "RelativeToolTip": "PersonalDetails.xaml.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAIwCYAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-20T20:27:46.446Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 20,
-              "Title": "preformance_review.xaml",
-              "DocumentMoniker": "D:\\Users\\270040396\\Documents\\GitHub\\CS106-Alex---Mako\\CS106\\preformance_review.xaml",
-              "RelativeDocumentMoniker": "preformance_review.xaml",
-              "ToolTip": "D:\\Users\\270040396\\Documents\\GitHub\\CS106-Alex---Mako\\CS106\\preformance_review.xaml",
-              "RelativeToolTip": "preformance_review.xaml",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2025-11-20T20:28:00.033Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 19,
-              "Title": "preformance_review.xaml.cs",
-              "DocumentMoniker": "D:\\Users\\270040396\\Documents\\GitHub\\CS106-Alex---Mako\\CS106\\preformance_review.xaml.cs",
-              "RelativeDocumentMoniker": "preformance_review.xaml.cs",
-              "ToolTip": "D:\\Users\\270040396\\Documents\\GitHub\\CS106-Alex---Mako\\CS106\\preformance_review.xaml.cs",
-              "RelativeToolTip": "preformance_review.xaml.cs",
-              "ViewState": "AgIAAKcAAAAAAAAAAAAuwM4AAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-20T20:28:15.666Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 18,
-              "Title": "Resignation.xaml",
-              "DocumentMoniker": "D:\\Users\\270040396\\Documents\\GitHub\\CS106-Alex---Mako\\CS106\\Resignation.xaml",
-              "RelativeDocumentMoniker": "Resignation.xaml",
-              "ToolTip": "D:\\Users\\270040396\\Documents\\GitHub\\CS106-Alex---Mako\\CS106\\Resignation.xaml",
-              "RelativeToolTip": "Resignation.xaml",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2025-11-20T20:28:20.666Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 24,
-              "Title": "Messages.xaml.cs",
-              "DocumentMoniker": "D:\\Users\\270040396\\Documents\\GitHub\\CS106-Alex---Mako\\CS106\\Messages.xaml.cs",
-              "RelativeDocumentMoniker": "Messages.xaml.cs",
-              "ToolTip": "D:\\Users\\270040396\\Documents\\GitHub\\CS106-Alex---Mako\\CS106\\Messages.xaml.cs",
-              "RelativeToolTip": "Messages.xaml.cs",
-              "ViewState": "AgIAAJgAAAAAAAAAAAAuwL8AAAABAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-20T20:27:02.316Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 25,
-              "Title": "Messages.xaml",
-              "DocumentMoniker": "D:\\Users\\270040396\\Documents\\GitHub\\CS106-Alex---Mako\\CS106\\Messages.xaml",
-              "RelativeDocumentMoniker": "Messages.xaml",
-              "ToolTip": "D:\\Users\\270040396\\Documents\\GitHub\\CS106-Alex---Mako\\CS106\\Messages.xaml",
-              "RelativeToolTip": "Messages.xaml",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2025-11-20T20:26:50.988Z",
+              "WhenOpened": "2025-11-21T02:23:03.25Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 26,
-              "Title": "ManageLeaveRequest.xaml.cs",
-              "DocumentMoniker": "D:\\Users\\270040396\\Documents\\GitHub\\CS106-Alex---Mako\\CS106\\ManageLeaveRequest.xaml.cs",
-              "RelativeDocumentMoniker": "ManageLeaveRequest.xaml.cs",
-              "ToolTip": "D:\\Users\\270040396\\Documents\\GitHub\\CS106-Alex---Mako\\CS106\\ManageLeaveRequest.xaml.cs",
-              "RelativeToolTip": "ManageLeaveRequest.xaml.cs",
-              "ViewState": "AgIAAF0AAAAAAAAAAAAuwIQAAAAAAAAAAAAAAA==",
+              "DocumentIndex": 8,
+              "Title": "Menu.xaml.cs",
+              "DocumentMoniker": "D:\\Users\\270621423\\OneDrive - UP Education\\Documents\\GitHub\\CS106-Alex---Mako\\CS106\\view\\UserControls\\Menu.xaml.cs",
+              "RelativeDocumentMoniker": "view\\UserControls\\Menu.xaml.cs",
+              "ToolTip": "D:\\Users\\270621423\\OneDrive - UP Education\\Documents\\GitHub\\CS106-Alex---Mako\\CS106\\view\\UserControls\\Menu.xaml.cs",
+              "RelativeToolTip": "view\\UserControls\\Menu.xaml.cs",
+              "ViewState": "AgIAAEQAAAAAAAAAAAA0wFgAAAAMAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-20T20:26:38.644Z"
+              "WhenOpened": "2025-11-21T02:18:28.472Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 29,
-              "Title": "EditRoster.xaml.cs",
-              "DocumentMoniker": "D:\\Users\\270040396\\Documents\\GitHub\\CS106-Alex---Mako\\CS106\\EditRoster.xaml.cs",
-              "RelativeDocumentMoniker": "EditRoster.xaml.cs",
-              "ToolTip": "D:\\Users\\270040396\\Documents\\GitHub\\CS106-Alex---Mako\\CS106\\EditRoster.xaml.cs",
-              "RelativeToolTip": "EditRoster.xaml.cs",
-              "ViewState": "AgIAAE8AAAAAAAAAAAAuwHYAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-20T20:25:07.651Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 27,
-              "Title": "EditRoster.xaml",
-              "DocumentMoniker": "D:\\Users\\270040396\\Documents\\GitHub\\CS106-Alex---Mako\\CS106\\EditRoster.xaml",
-              "RelativeDocumentMoniker": "EditRoster.xaml",
-              "ToolTip": "D:\\Users\\270040396\\Documents\\GitHub\\CS106-Alex---Mako\\CS106\\EditRoster.xaml",
-              "RelativeToolTip": "EditRoster.xaml",
+              "DocumentIndex": 9,
+              "Title": "Menu.xaml",
+              "DocumentMoniker": "D:\\Users\\270621423\\OneDrive - UP Education\\Documents\\GitHub\\CS106-Alex---Mako\\CS106\\view\\UserControls\\Menu.xaml",
+              "RelativeDocumentMoniker": "view\\UserControls\\Menu.xaml",
+              "ToolTip": "D:\\Users\\270621423\\OneDrive - UP Education\\Documents\\GitHub\\CS106-Alex---Mako\\CS106\\view\\UserControls\\Menu.xaml",
+              "RelativeToolTip": "view\\UserControls\\Menu.xaml",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2025-11-20T20:24:53.15Z"
-            },
+              "WhenOpened": "2025-11-21T02:16:48.688Z",
+              "EditorCaption": ""
+            }
+          ]
+        },
+        {
+          "DockedWidth": 849,
+          "SelectedChildIndex": 0,
+          "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 28,
-              "Title": "EditEmployee.xaml.cs",
-              "DocumentMoniker": "D:\\Users\\270040396\\Documents\\GitHub\\CS106-Alex---Mako\\CS106\\EditEmployee.xaml.cs",
-              "RelativeDocumentMoniker": "EditEmployee.xaml.cs",
-              "ToolTip": "D:\\Users\\270040396\\Documents\\GitHub\\CS106-Alex---Mako\\CS106\\EditEmployee.xaml.cs",
-              "RelativeToolTip": "EditEmployee.xaml.cs",
-              "ViewState": "AgIAAMIAAAAAAAAAAAAuwOcAAAAnAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-20T20:24:34.793Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 30,
-              "Title": "EditEmployee.xaml",
-              "DocumentMoniker": "D:\\Users\\270040396\\Documents\\GitHub\\CS106-Alex---Mako\\CS106\\EditEmployee.xaml",
-              "RelativeDocumentMoniker": "EditEmployee.xaml",
-              "ToolTip": "D:\\Users\\270040396\\Documents\\GitHub\\CS106-Alex---Mako\\CS106\\EditEmployee.xaml",
-              "RelativeToolTip": "EditEmployee.xaml",
+              "DocumentIndex": 3,
+              "Title": "AdminMenu.xaml",
+              "DocumentMoniker": "D:\\Users\\270621423\\OneDrive - UP Education\\Documents\\GitHub\\CS106-Alex---Mako\\CS106\\view\\UserControls\\AdminMenu.xaml",
+              "RelativeDocumentMoniker": "view\\UserControls\\AdminMenu.xaml",
+              "ToolTip": "D:\\Users\\270621423\\OneDrive - UP Education\\Documents\\GitHub\\CS106-Alex---Mako\\CS106\\view\\UserControls\\AdminMenu.xaml",
+              "RelativeToolTip": "view\\UserControls\\AdminMenu.xaml",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2025-11-20T20:24:15.852Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 31,
-              "Title": "CompanyInfo.xaml",
-              "DocumentMoniker": "D:\\Users\\270040396\\Documents\\GitHub\\CS106-Alex---Mako\\CS106\\CompanyInfo.xaml",
-              "RelativeDocumentMoniker": "CompanyInfo.xaml",
-              "ToolTip": "D:\\Users\\270040396\\Documents\\GitHub\\CS106-Alex---Mako\\CS106\\CompanyInfo.xaml",
-              "RelativeToolTip": "CompanyInfo.xaml",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2025-11-20T20:24:13.562Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 32,
-              "Title": "AddRoster.xaml.cs",
-              "DocumentMoniker": "D:\\Users\\270040396\\Documents\\GitHub\\CS106-Alex---Mako\\CS106\\AddRoster.xaml.cs",
-              "RelativeDocumentMoniker": "AddRoster.xaml.cs",
-              "ToolTip": "D:\\Users\\270040396\\Documents\\GitHub\\CS106-Alex---Mako\\CS106\\AddRoster.xaml.cs",
-              "RelativeToolTip": "AddRoster.xaml.cs",
-              "ViewState": "AgIAADwAAAAAAAAAAAAuwGMAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-20T20:23:02.556Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 33,
-              "Title": "AdminMenu.xaml.cs",
-              "DocumentMoniker": "D:\\Users\\270040396\\Documents\\GitHub\\CS106-Alex---Mako\\CS106\\view\\UserControls\\AdminMenu.xaml.cs",
-              "RelativeDocumentMoniker": "view\\UserControls\\AdminMenu.xaml.cs",
-              "ToolTip": "D:\\Users\\270040396\\Documents\\GitHub\\CS106-Alex---Mako\\CS106\\view\\UserControls\\AdminMenu.xaml.cs",
-              "RelativeToolTip": "view\\UserControls\\AdminMenu.xaml.cs",
-              "ViewState": "AgIAADIAAAAAAAAAAAAuwFkAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-20T20:21:25.714Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 34,
-              "Title": "EmployeeManagementSystem.cs",
-              "DocumentMoniker": "D:\\Users\\270040396\\Documents\\GitHub\\CS106-Alex---Mako\\CS106\\Model\\EmployeeManagementSystem.cs",
-              "RelativeDocumentMoniker": "Model\\EmployeeManagementSystem.cs",
-              "ToolTip": "D:\\Users\\270040396\\Documents\\GitHub\\CS106-Alex---Mako\\CS106\\Model\\EmployeeManagementSystem.cs",
-              "RelativeToolTip": "Model\\EmployeeManagementSystem.cs",
-              "ViewState": "AgIAAMIAAAAAAAAAAAAcwPAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-20T20:20:43.184Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 35,
-              "Title": "Database.cs",
-              "DocumentMoniker": "D:\\Users\\270040396\\Documents\\GitHub\\CS106-Alex---Mako\\CS106\\Model\\Database.cs",
-              "RelativeDocumentMoniker": "Model\\Database.cs",
-              "ToolTip": "D:\\Users\\270040396\\Documents\\GitHub\\CS106-Alex---Mako\\CS106\\Model\\Database.cs",
-              "RelativeToolTip": "Model\\Database.cs",
-              "ViewState": "AgIAAD8AAAAAAAAAAAAuwGYAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-20T20:19:59.062Z"
+              "WhenOpened": "2025-11-21T02:19:49.844Z",
+              "EditorCaption": ""
             }
           ]
         }

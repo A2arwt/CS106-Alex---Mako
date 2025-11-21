@@ -29,10 +29,16 @@
     <Compile Update="ManageLeaveRequest.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
+    <Compile Update="MassageEmployee.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Update="Messages.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
     <Compile Update="OpenMassage.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="OpenMassageEmployee.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
     <Compile Update="PersonalDetails.xaml.cs">

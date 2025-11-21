@@ -24,7 +24,7 @@ namespace CS106
         {
             try
             {
-                SoundPlayer player = new SoundPlayer("D:/Users/270040396/Documents/GitHub/CS106-Alex---Mako/Assests/Style Guide/granny-i-see-you.mp3");
+                SoundPlayer player = new SoundPlayer("./Assests/Style Guide/granny-i-see-you.mp3");
                 player.Load();
                 player.Play();
             }
