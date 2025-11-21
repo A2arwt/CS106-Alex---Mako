@@ -45,6 +45,10 @@ namespace CS106
                 }
                 
             }
+            else
+            {
+                MessageBox.Show("Wrong Password or username");
+            }
         }
     }
 }
