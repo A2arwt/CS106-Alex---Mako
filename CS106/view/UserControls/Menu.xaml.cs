@@ -70,6 +70,7 @@ namespace CS106.view.UserControls
         {
             var nav = NavigationService.GetNavigationService(this);
             nav.Navigate(new CS106.LoginPage());
+            EmployeeManagementSystem.current_user = null;
         }
 
         private void EditEmployee(object sender, RoutedEventArgs e)

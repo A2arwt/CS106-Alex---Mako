@@ -1,4 +1,5 @@
-﻿using System;
+﻿using CS106.Model;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -78,6 +79,8 @@ namespace CS106.view.UserControls
         {
             var nav = NavigationService.GetNavigationService(this);
             nav.Navigate(new CS106.LoginPage());
+            EmployeeManagementSystem.current_user = null;
+
         }
 
         private void Home(object sender, RoutedEventArgs e)
